@@ -1,0 +1,1832 @@
+fileFormatVersion: 2
+guid: 1e97bd0ea2aeffc4f9b712f90ae8bd74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4860964148911071832
+    second: BasicMovement_0
+  - first:
+      213: -5967581972341757264
+    second: BasicMovement_1
+  - first:
+      213: -3480160801207977360
+    second: BasicMovement_2
+  - first:
+      213: -1374042654653640668
+    second: BasicMovement_3
+  - first:
+      213: -6511017060319234179
+    second: BasicMovement_4
+  - first:
+      213: -7110827652732333203
+    second: BasicMovement_5
+  - first:
+      213: -6668655659289718438
+    second: BasicMovement_6
+  - first:
+      213: -3489517699879056043
+    second: BasicMovement_7
+  - first:
+      213: 5376697587722174541
+    second: BasicMovement_8
+  - first:
+      213: -4578408139554722052
+    second: BasicMovement_9
+  - first:
+      213: 8803298335450008190
+    second: BasicMovement_10
+  - first:
+      213: -8585098017560295697
+    second: BasicMovement_11
+  - first:
+      213: -8997026827228695395
+    second: BasicMovement_12
+  - first:
+      213: 9021321633126446935
+    second: BasicMovement_13
+  - first:
+      213: -8527937903603533108
+    second: BasicMovement_14
+  - first:
+      213: -7232643930508137890
+    second: BasicMovement_15
+  - first:
+      213: 1740794487539426709
+    second: BasicMovement_16
+  - first:
+      213: 1099754926381154115
+    second: BasicMovement_17
+  - first:
+      213: -4701660604144008503
+    second: BasicMovement_18
+  - first:
+      213: -1288120679268176450
+    second: BasicMovement_19
+  - first:
+      213: 122338749899076290
+    second: BasicMovement_20
+  - first:
+      213: 7142578625869971968
+    second: BasicMovement_21
+  - first:
+      213: 4357633268739916518
+    second: BasicMovement_22
+  - first:
+      213: -3156526480347731566
+    second: BasicMovement_23
+  - first:
+      213: -1634525139727753654
+    second: BasicMovement_24
+  - first:
+      213: 5788560528464442358
+    second: BasicMovement_25
+  - first:
+      213: 5098191550272541300
+    second: BasicMovement_26
+  - first:
+      213: 5025647996659121508
+    second: BasicMovement_27
+  - first:
+      213: 1334061204047618347
+    second: BasicMovement_28
+  - first:
+      213: -5854814295377101265
+    second: BasicMovement_29
+  - first:
+      213: 8290957391982276435
+    second: BasicMovement_30
+  - first:
+      213: 7609077219766054899
+    second: BasicMovement_31
+  - first:
+      213: -415159899162963652
+    second: BasicMovement_32
+  - first:
+      213: -4181176340927619523
+    second: BasicMovement_33
+  - first:
+      213: 3094340437815307237
+    second: BasicMovement_34
+  - first:
+      213: -1941379478499209341
+    second: BasicMovement_35
+  - first:
+      213: -1948616261113072076
+    second: BasicMovement_36
+  - first:
+      213: 6906212635600669071
+    second: BasicMovement_37
+  - first:
+      213: 3449353467937128843
+    second: BasicMovement_38
+  - first:
+      213: 5563322620525030868
+    second: BasicMovement_39
+  - first:
+      213: -4280059264588630777
+    second: BasicMovement_40
+  - first:
+      213: 4857021101493181876
+    second: BasicMovement_41
+  - first:
+      213: 3991321631805720717
+    second: BasicMovement_42
+  - first:
+      213: 7565865090075742596
+    second: BasicMovement_43
+  - first:
+      213: 3019070059577116850
+    second: BasicMovement_44
+  - first:
+      213: -6987212637926381864
+    second: BasicMovement_45
+  - first:
+      213: 5834328942973032822
+    second: BasicMovement_46
+  - first:
+      213: -6724067886952184680
+    second: BasicMovement_47
+  - first:
+      213: -3718603977759979835
+    second: BasicMovement_48
+  - first:
+      213: -6150011235320473456
+    second: BasicMovement_49
+  - first:
+      213: -1789380742755352629
+    second: BasicMovement_50
+  - first:
+      213: 2520592617070757291
+    second: BasicMovement_51
+  - first:
+      213: 6012081400202673622
+    second: BasicMovement_52
+  - first:
+      213: 5926837790427949466
+    second: BasicMovement_53
+  - first:
+      213: 5849017486709743183
+    second: BasicMovement_54
+  - first:
+      213: 4615479219368526543
+    second: BasicMovement_55
+  - first:
+      213: -5783924421477124470
+    second: BasicMovement_56
+  - first:
+      213: 3717180217108189041
+    second: BasicMovement_57
+  - first:
+      213: -9082247111564140026
+    second: BasicMovement_58
+  - first:
+      213: -7611384321506231765
+    second: BasicMovement_59
+  - first:
+      213: -7584991944743370861
+    second: BasicMovement_60
+  - first:
+      213: 6801139856125079367
+    second: BasicMovement_61
+  - first:
+      213: -1332374331525608129
+    second: BasicMovement_62
+  - first:
+      213: -8017828555315644860
+    second: BasicMovement_63
+  - first:
+      213: 1817827729792224821
+    second: BasicMovement_64
+  - first:
+      213: 6479122564784847993
+    second: BasicMovement_65
+  - first:
+      213: 4751117574199720452
+    second: BasicMovement_66
+  - first:
+      213: 3826021447299666751
+    second: BasicMovement_67
+  - first:
+      213: 4948692096454970012
+    second: BasicMovement_68
+  - first:
+      213: -8010982115180251887
+    second: BasicMovement_69
+  - first:
+      213: -8199953727553896024
+    second: BasicMovement_70
+  - first:
+      213: -5603552248575503415
+    second: BasicMovement_71
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BasicMovement_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ad1f3e6cd26a8cb0800000000000000
+      internalID: -4860964148911071832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba6b8250d3ee2da0800000000000000
+      internalID: -5967581972341757264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_2
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07a72c2a03cf3bfc0800000000000000
+      internalID: -3480160801207977360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_3
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 420922f4c7b6eece0800000000000000
+      internalID: -1374042654653640668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_4
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77f9210b7834a5a0800000000000000
+      internalID: -6511017060319234179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_5
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d635dd3bce3415d90800000000000000
+      internalID: -7110827652732333203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_6
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5153aa820d2473a0800000000000000
+      internalID: -6668655659289718438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_7
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d4545e32eb29fc0800000000000000
+      internalID: -3489517699879056043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4041e418fddd9a40800000000000000
+      internalID: 5376697587722174541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_9
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe6515fd0a3670c0800000000000000
+      internalID: -4578408139554722052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_10
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a0948b1399b2a70800000000000000
+      internalID: 8803298335450008190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_11
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe6886db6da9bd880800000000000000
+      internalID: -8585098017560295697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_12
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d94bf58d4c3242380800000000000000
+      internalID: -8997026827228695395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_13
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7577c037a3c223d70800000000000000
+      internalID: 9021321633126446935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_14
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca3f1dd8ada6a980800000000000000
+      internalID: -8527937903603533108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_15
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a6d275aac70ab90800000000000000
+      internalID: -7232643930508137890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595eeb00d5b882810800000000000000
+      internalID: 1740794487539426709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_17
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 450
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f3fee574d134f00800000000000000
+      internalID: 1099754926381154115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c24c8b479850ceb0800000000000000
+      internalID: -4701660604144008503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_19
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebda264211daf1ee0800000000000000
+      internalID: -1288120679268176450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_20
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2fff1e172a2b100800000000000000
+      internalID: 122338749899076290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_21
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002074fca698f1360800000000000000
+      internalID: 7142578625869971968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_22
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2caa4ce5c697c30800000000000000
+      internalID: 4357633268739916518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29962ced3e3c134d0800000000000000
+      internalID: -3156526480347731566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_24
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4ed416ab000159e0800000000000000
+      internalID: -1634525139727753654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_25
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f378fba129155050800000000000000
+      internalID: 5788560528464442358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_26
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47294ee143a60c640800000000000000
+      internalID: 5098191550272541300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_27
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46d3507d930beb540800000000000000
+      internalID: 5025647996659121508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_28
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2163efc899838210800000000000000
+      internalID: 1334061204047618347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_29
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2e3b222b658fbea0800000000000000
+      internalID: -5854814295377101265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_30
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35fa00512d56f0370800000000000000
+      internalID: 8290957391982276435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_31
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff2ca0ba6fd89960800000000000000
+      internalID: 7609077219766054899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_32
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c319765754e0d3af0800000000000000
+      internalID: -415159899162963652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_33
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3eddbf454a79f5c0800000000000000
+      internalID: -4181176340927619523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_34
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ebab12db3e41fa20800000000000000
+      internalID: 3094340437815307237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_35
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 300
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38f42d176a5de05e0800000000000000
+      internalID: -1941379478499209341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4363ec0b5df15f4e0800000000000000
+      internalID: -1948616261113072076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_37
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89ca482dcbc7df50800000000000000
+      internalID: 6906212635600669071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_38
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b81872124b09edf20800000000000000
+      internalID: 3449353467937128843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_39
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd2a479274e43d40800000000000000
+      internalID: 5563322620525030868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_40
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 705339c86cc2a94c0800000000000000
+      internalID: -4280059264588630777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_41
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdd31d45fa976340800000000000000
+      internalID: 4857021101493181876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_42
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88cc1090e5046730800000000000000
+      internalID: 3991321631805720717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_43
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4815e78b63a5ff860800000000000000
+      internalID: 7565865090075742596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_44
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b88c153934e5e920800000000000000
+      internalID: 3019070059577116850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_45
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d6274a202f680f90800000000000000
+      internalID: -6987212637926381864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_46
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67910b41343b7f050800000000000000
+      internalID: 5834328942973032822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_47
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8948a98e1ef4fa2a0800000000000000
+      internalID: -6724067886952184680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_48
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6034d526dd46cc0800000000000000
+      internalID: -3718603977759979835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_49
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098df0a9d55c6aaa0800000000000000
+      internalID: -6150011235320473456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_50
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf742ce1b7da27e0800000000000000
+      internalID: -1789380742755352629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_51
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba589fb61a1faf220800000000000000
+      internalID: 2520592617070757291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_52
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd30db1e243f6350800000000000000
+      internalID: 6012081400202673622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_53
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 150
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a99a1d3919b504250800000000000000
+      internalID: 5926837790427949466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4ed16c2a62eb2150800000000000000
+      internalID: 5849017486709743183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_55
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc288aa65e97d0040800000000000000
+      internalID: 4615479219368526543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_56
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86362a126f5bbfa0800000000000000
+      internalID: -5783924421477124470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_57
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17fc7d686b3169330800000000000000
+      internalID: 3717180217108189041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_58
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602e6e03f5065f180800000000000000
+      internalID: -9082247111564140026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_59
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2ab4a3594eee5690800000000000000
+      internalID: -7611384321506231765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_60
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39f3f556302bcb690800000000000000
+      internalID: -7584991944743370861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_61
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f26184aa0826e50800000000000000
+      internalID: 6801139856125079367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_62
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d419dca94728de0800000000000000
+      internalID: -1332374331525608129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_63
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4467d62c863fab090800000000000000
+      internalID: -8017828555315644860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_64
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ece1160b83a3910800000000000000
+      internalID: 1817827729792224821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_65
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97cf73215a77ae950800000000000000
+      internalID: 6479122564784847993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_66
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a3a40e24c5fe140800000000000000
+      internalID: 4751117574199720452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_67
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3392553c32c81530800000000000000
+      internalID: 3826021447299666751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_68
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a4bff0e394da440800000000000000
+      internalID: 4948692096454970012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_69
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1157ca2d53643d090800000000000000
+      internalID: -8010982115180251887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_70
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a1828ea789e33e80800000000000000
+      internalID: -8199953727553896024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasicMovement_71
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 120
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c3d0573bee2c32b0800000000000000
+      internalID: -5603552248575503415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
