@@ -7,9 +7,9 @@ public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointer
     public float radius;
     public static Vector2 joystickpos;
     public float drag;
-    public Vector2 circlebPos;
-    public Vector2 circlesPos;
-    public Vector2 tmp,tmp1;
+    private Vector2 circlebPos;
+    private Vector2 circlesPos;
+    private Vector2 tmp,tmp1;
     public float scaler;
     // child0 joystick
     public void OnDrag(PointerEventData eventData)

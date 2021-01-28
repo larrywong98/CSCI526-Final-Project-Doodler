@@ -1,0 +1,73 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class PlayerController : MonoBehaviour
+{
+
+    public Animator animator;
+    // public int playerId = 0;
+    public GameObject crossHair;
+
+    public GameObject arrowPrefab;
+
+    // private Player player;
+
+    // Start is called before the first frame update
+    
+    // void Awake()
+    // {
+    //     player = ReInput.players.GetPlayer(playerId);
+    // }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        Vector3 movement = new Vector3 (Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
+
+
+
+        AimAndShoot();
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Magnitude", movement.magnitude);
+
+        
+        transform.position = transform.position + movement * Time.deltaTime;
+    }
+
+    private void AimAndShoot(){
+
+        
+        Vector3 aim = new Vector3(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"), 0.0f);  // the location where crosshair should appear
+
+        Vector2 shootingDirection = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical")); // GET the shooting angle
+        
+        if (aim.magnitude > 0.0f){
+
+            // set the crosshair distance
+            aim.Normalize();
+            aim = aim * 1.4f;
+            crossHair.transform.localPosition = aim;
+
+            crossHair.SetActive(true); // activate the crosshair (since we closed it before)
+
+
+
+
+            shootingDirection.Normalize();
+            if(Input.GetButtonDown("Fire")) { // the player is FIRE !!!
+                GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
+                arrow.GetComponent<Rigidbody2D>().velocity = shootingDirection * 3.0f; // set arrow velocity
+                arrow.transform.Rotate(0.0f, 0.0f, Mathf.Atan2(-shootingDirection.y, -shootingDirection.x) * Mathf.Rad2Deg);
+                Destroy(arrow, 2.0f);
+        }
+
+
+        }else{ // if we do not aim at something, the crosshair will not activate
+            crossHair.SetActive(false); // deactivate the crosshair
+        }
+    }
+}
