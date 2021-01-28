@@ -14,8 +14,7 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position=
-        transform.position+(Vector3)VJoystick.joystickpos*speed*Time.deltaTime;
+        transform.position=transform.position+(Vector3)VJoystick.joystickpos*speed*Time.deltaTime;
     
     }
 }
