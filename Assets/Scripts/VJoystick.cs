@@ -10,6 +10,7 @@ public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointer
     public Vector2 circlebPos;
     public Vector2 circlesPos;
     public Vector2 tmp,tmp1;
+    public float scaler;
     // child0 joystick
     public void OnDrag(PointerEventData eventData)
     {
@@ -27,8 +28,7 @@ public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointer
         else
         {
             transform.GetChild(0).GetChild(0).localPosition=
-            transform.GetChild(0).position+
-            100*Vector3.Normalize((Vector3)circlesPos-(Vector3)circlebPos);
+            scaler*radius*Vector3.Normalize((Vector3)circlesPos-(Vector3)circlebPos);
             // ((Vector3)eventData.position-transform.GetChild(0).position)*radius;
         }
         joystickpos.x=transform.GetChild(0).GetChild(0).localPosition.x/radius;
