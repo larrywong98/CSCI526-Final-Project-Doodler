@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 
     public float speed;
 
+    public Rigidbody2D rb;
     // private Player player;
 
     // Start is called before the first frame update
@@ -25,10 +26,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        
-
         Move();
         AimAndShoot();
 
@@ -36,7 +33,7 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Move(){
-
+        // rgd = GetComponent<Rigidbody>();
         Vector3 movement = new Vector3(VJoystick.joystickpos.x, VJoystick.joystickpos.y, 0.0f);
 
         if(Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0){
@@ -53,8 +50,8 @@ public class PlayerController : MonoBehaviour
         Debug.Log(VJoystick.joystickpos.x);
 
         
-        transform.position = transform.position + movement* speed * Time.deltaTime;
-
+        // transform.position = transform.position + movement* speed * Time.deltaTime;
+        rb.velocity=new Vector2(movement.x,movement.y)*speed;
     }
 
     private void AimAndShoot(){

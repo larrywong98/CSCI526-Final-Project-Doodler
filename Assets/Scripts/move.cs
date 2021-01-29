@@ -5,6 +5,7 @@ using UnityEngine;
 public class move : MonoBehaviour
 {
     public float speed;
+    // private Rigidbody rgd;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,8 @@ public class move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // rgd.AddForce((Vector3)VJoystick.joystickpos*speed);
         transform.position=transform.position+(Vector3)VJoystick.joystickpos*speed*Time.deltaTime;
     
     }
