@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log(VJoystick.joystickpos.x);
 
         
-        transform.position = transform.position + movement * Time.deltaTime;
+        transform.position = transform.position + movement* speed * Time.deltaTime;
 
     }
 
