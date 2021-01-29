@@ -1,3 +1,6 @@
 Logs
 Temp
-Library
+Library/PackageCache
+Library/PlayerDataCache
+Library/ShaderCache
+Library/StateCache
