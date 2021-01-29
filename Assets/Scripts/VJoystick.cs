@@ -18,8 +18,8 @@ public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointer
         // circlebPos=new Vector2(Camera.main.WorldToScreenPoint(circlebPos).x,Camera.main.WorldToScreenPoint(circlebPos).y);
         // transform.GetChild(0).position=
         //relative coordinate
-        Debug.Log(circlesPos);
-        Debug.Log(Vector2.Distance(circlesPos,circlebPos));
+        // Debug.Log(circlesPos);
+        // Debug.Log(Vector2.Distance(circlesPos,circlebPos));
         if(Vector2.Distance(circlesPos,circlebPos)<=radius)
         {
             // tmp1=Camera.main.WorldToScreenPoint(circlesPos);
