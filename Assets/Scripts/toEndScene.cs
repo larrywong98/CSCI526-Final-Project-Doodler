@@ -14,7 +14,7 @@ public class toEndScene : MonoBehaviour
     {
         Debug.Log(target.position);
         if(target.position.x<=-15 && target.position.x>=-20 &&
-           target.position.y<=-2 && target.position.y<=0)
+           target.position.y>=-2 && target.position.y<=0)
         {
             Loader.Load(Loader.Scene.EndScene);
         }
