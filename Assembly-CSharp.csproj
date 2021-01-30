@@ -36,11 +36,15 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Loader.cs" />
+     <Compile Include="Assets\Scripts\LoaderFunc.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\VJoystick.cs" />
      <Compile Include="Assets\Scripts\camcontroller.cs" />
-     <Compile Include="Assets\Scripts\collideornot.cs" />
-     <Compile Include="Assets\Scripts\move.cs" />
+     <Compile Include="Assets\Scripts\fire.cs" />
+     <Compile Include="Assets\Scripts\toEndScene.cs" />
+     <Compile Include="Assets\Scripts\tolevel1.cs" />
+     <Compile Include="Assets\Scripts\tolevel2.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

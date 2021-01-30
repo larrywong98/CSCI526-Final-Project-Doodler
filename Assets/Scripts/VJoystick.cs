@@ -11,6 +11,7 @@ public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointer
     private Vector2 circlesPos;
     private Vector2 tmp,tmp1;
     public float scaler;
+    // private Button btn;
     // child0 joystick
     public void OnDrag(PointerEventData eventData)
     {

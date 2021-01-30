@@ -27,7 +27,7 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Move();
-        AimAndShoot();
+        // AimAndShoot(0);
 
 
     }
@@ -46,20 +46,22 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Vertical", movement.y);
         animator.SetFloat("Magnitude", movement.magnitude);
 
-        Debug.Log(movement.x);
-        Debug.Log(VJoystick.joystickpos.x);
+        // Debug.Log(movement.x);
+        // Debug.Log(VJoystick.joystickpos.x);
 
         
         // transform.position = transform.position + movement* speed * Time.deltaTime;
         rb.velocity=new Vector2(movement.x,movement.y)*speed;
     }
 
-    private void AimAndShoot(){
+    public void AimAndShoot(float test){
 
         
-        Vector3 aim = new Vector3(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"), 0.0f);  // the location where crosshair should appear
+        // Vector3 aim = new Vector3(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical"), 0.0f);  // the location where crosshair should appear
+        Vector3 aim = new Vector3(VJoystick.joystickpos.x, VJoystick.joystickpos.y, 0.0f);
 
-        Vector2 shootingDirection = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical")); // GET the shooting angle
+        // Vector2 shootingDirection = new Vector2(Input.GetAxis("AimHorizontal"), Input.GetAxis("AimVertical")); // GET the shooting angle
+        Vector2 shootingDirection = new Vector2(VJoystick.joystickpos.x, VJoystick.joystickpos.y); // GET the shooting angle
         
         if (aim.magnitude > 0.0f){
 
@@ -67,23 +69,19 @@ public class PlayerController : MonoBehaviour
             aim.Normalize();
             aim = aim * 1.4f;
             crossHair.transform.localPosition = aim;
-
             crossHair.SetActive(true); // activate the crosshair (since we closed it before)
-
-
-
-
             shootingDirection.Normalize();
-            if(Input.GetButtonDown("Fire")) { // the player is FIRE !!!
+            // if(Input.GetButtonDown("Fire")) { // the player is FIRE !!!
+            if(test==1){
                 GameObject arrow = Instantiate(arrowPrefab, transform.position, Quaternion.identity);
                 arrow.GetComponent<Rigidbody2D>().velocity = shootingDirection * 3.0f; // set arrow velocity
                 arrow.transform.Rotate(0.0f, 0.0f, Mathf.Atan2(-shootingDirection.y, -shootingDirection.x) * Mathf.Rad2Deg);
                 Destroy(arrow, 2.0f);
-        }
+            }
 
 
-        }else{ // if we do not aim at something, the crosshair will not activate
-            crossHair.SetActive(false); // deactivate the crosshair
-        }
+            }else{ // if we do not aim at something, the crosshair will not activate
+                crossHair.SetActive(false); // deactivate the crosshair
+            }
     }
 }
