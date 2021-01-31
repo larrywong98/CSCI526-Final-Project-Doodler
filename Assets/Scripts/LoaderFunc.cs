@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class LoaderFunc : MonoBehaviour
 {
-    // Start is called before the first frame update
-    private bool isfirstUpdate=true;
+    private bool isFirst=true;
     private void Update(){
-        isfirstUpdate=false;
-        Loader.LoaderFunc();
+        if(isFirst==true){
+            isFirst=false;
+            Loader.onLoaderFunc();
+        }
     }
 }

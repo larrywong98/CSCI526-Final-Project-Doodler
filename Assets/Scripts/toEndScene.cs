@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+
 public class toEndScene : MonoBehaviour
 {
     private Transform target;
@@ -12,9 +13,9 @@ public class toEndScene : MonoBehaviour
     }
     private void Update() 
     {
-        Debug.Log(target.position);
-        if(target.position.x<=-15 && target.position.x>=-20 &&
-           target.position.y>=-2 && target.position.y<=0)
+        // Debug.Log(target.position);
+        if(target.position.x<=-16.5 && target.position.x>=-18.5 &&
+           target.position.y>=-4 && target.position.y<=-1.5)
         {
             Loader.Load(Loader.Scene.EndScene);
         }

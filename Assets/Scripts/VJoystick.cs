@@ -4,21 +4,20 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHandler
 {   
-    public float radius;
+    [SerializeField] private float radius;
+    private float drag;
     public static Vector2 joystickpos;
-    public float drag;
     private Vector2 circlebPos;
     private Vector2 circlesPos;
-    private Vector2 tmp,tmp1;
-    public float scaler;
+    private Vector2 tmp;
+    [SerializeField] private float scaler;
     // private Button btn;
     // child0 joystick
     public void OnDrag(PointerEventData eventData)
     {
         circlesPos=eventData.position;
         // circlebPos=new Vector2(Camera.main.WorldToScreenPoint(circlebPos).x,Camera.main.WorldToScreenPoint(circlebPos).y);
-        // transform.GetChild(0).position=
-        //relative coordinate
+        // relative coordinate
         // Debug.Log(circlesPos);
         // Debug.Log(Vector2.Distance(circlesPos,circlebPos));
         if(Vector2.Distance(circlesPos,circlebPos)<=radius)

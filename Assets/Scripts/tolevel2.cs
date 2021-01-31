@@ -13,8 +13,8 @@ public class tolevel2 : MonoBehaviour
     private void Update() 
     {
         // Debug.Log(target.position);
-        if(target.position.x<=-15 && target.position.x>=-20 &&
-           target.position.y<=-2 && target.position.y<=0)
+        if(target.position.x<=-18.5 && target.position.x>=-20.5 &&
+           target.position.y>=-1.5 && target.position.y<=1)
         {
             Loader.Load(Loader.Scene.Level2);
         }

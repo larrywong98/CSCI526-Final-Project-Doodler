@@ -12042,7 +12042,7 @@ GameObject:
   - component: {fileID: 155287931}
   - component: {fileID: 155287933}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: nextlevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12177,7 +12177,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 30
-  drag: 0
   scaler: 2.1
 --- !u!114 &401725912
 MonoBehaviour:
@@ -12291,6 +12290,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothspeed: 10
+  minx: -14.2
+  miny: -7
+  maxx: 6.4
+  maxy: 13
 --- !u!81 &404621380
 AudioListener:
   m_ObjectHideFlags: 0
@@ -12307,7 +12310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404621377}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 5.4, y: 0.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -13038,7 +13041,6 @@ GameObject:
   - component: {fileID: 1126499035}
   - component: {fileID: 1126499034}
   - component: {fileID: 1126499033}
-  - component: {fileID: 1126499032}
   - component: {fileID: 1126499031}
   - component: {fileID: 1126499030}
   m_Layer: 0
@@ -13095,18 +13097,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1126499032
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1126499029}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e79c3daade08c3408b941af344c33c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1126499033
 MonoBehaviour:
   m_ObjectHideFlags: 0
