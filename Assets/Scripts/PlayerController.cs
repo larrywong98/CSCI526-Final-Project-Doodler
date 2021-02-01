@@ -84,4 +84,5 @@ public class PlayerController : MonoBehaviour
                 crossHair.SetActive(false); // deactivate the crosshair
             }
     }
+   
 }
