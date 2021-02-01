@@ -7,9 +7,15 @@ using UnityEngine.EventSystems;
 
 public class toEndScene : MonoBehaviour
 {
+    public Animator fade;
+    public float transitionTime=1f;
     private Transform target;
     private void Start() {
         target=GameObject.FindGameObjectWithTag("character").GetComponent<Transform>();
+    }
+    private IEnumerator waitLoad(){
+        yield return new WaitForSeconds(transitionTime); 
+        Loader.Load(Loader.Scene.Level2);
     }
     private void Update() 
     {
@@ -17,7 +23,8 @@ public class toEndScene : MonoBehaviour
         if(target.position.x<=-16.5 && target.position.x>=-18.5 &&
            target.position.y>=-4 && target.position.y<=-1.5)
         {
-            Loader.Load(Loader.Scene.EndScene);
+            fade.SetTrigger("out");
+            StartCoroutine(waitLoad());
         }
     }
 }

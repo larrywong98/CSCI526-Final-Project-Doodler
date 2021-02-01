@@ -6,7 +6,6 @@ using System;
 
 public static class Loader 
 {
-    //
     private class LoadingBehav: MonoBehaviour {}
     //private Action need public function
     public static Action onLoaderFunc;
@@ -25,8 +24,10 @@ public static class Loader
     //     }
     // }
     // Async loading required 
+    // public static void setTransition(Animator fade){
+    //     transition=fade;
+    // }
     private static IEnumerator LoadSceneAsync(Scene scene){
-        // yield return null;
         asyncOp=SceneManager.LoadSceneAsync(scene.ToString());
         asyncOp.allowSceneActivation = false;
         while(!asyncOp.isDone){

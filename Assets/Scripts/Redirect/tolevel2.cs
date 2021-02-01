@@ -6,9 +6,15 @@ using UnityEngine.EventSystems;
 
 public class tolevel2 : MonoBehaviour
 {
+    public Animator fade;
+    public float transitionTime=1f;
     private Transform target;
     private void Start() {
         target=GameObject.FindGameObjectWithTag("character").GetComponent<Transform>();
+    }
+    private IEnumerator waitLoad(){
+        yield return new WaitForSeconds(transitionTime); 
+        Loader.Load(Loader.Scene.Level2);
     }
     private void Update() 
     {
@@ -16,7 +22,8 @@ public class tolevel2 : MonoBehaviour
         if(target.position.x<=-18.5 && target.position.x>=-20.5 &&
            target.position.y>=-1.5 && target.position.y<=1)
         {
-            Loader.Load(Loader.Scene.Level2);
+            fade.SetTrigger("out");
+            StartCoroutine(waitLoad());
         }
     }
 }
