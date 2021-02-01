@@ -330,6 +330,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothspeed: 10
+  minx: 0
+  miny: 0
+  maxx: 0
+  maxy: 0
 --- !u!81 &762434756
 AudioListener:
   m_ObjectHideFlags: 0
@@ -665,7 +669,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1346620183}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c163a5a392e4cb94098a4ad0cbdfe6c3, type: 3}
+  m_Script: {fileID: 11500000, guid: d9e865c76b915654795075e35057b0de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Btn: {fileID: 1346620185}
