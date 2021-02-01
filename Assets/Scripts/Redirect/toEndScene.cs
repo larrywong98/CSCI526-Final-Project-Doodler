@@ -15,7 +15,7 @@ public class toEndScene : MonoBehaviour
     }
     private IEnumerator waitLoad(){
         yield return new WaitForSeconds(transitionTime); 
-        Loader.Load(Loader.Scene.Level2);
+        Loader.Load(Loader.Scene.EndScene);
     }
     private void Update() 
     {
