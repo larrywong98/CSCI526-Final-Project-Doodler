@@ -61,7 +61,7 @@ public class EnemyAI_1 : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(enemyState);
+        // Debug.Log(enemyState);
         switch (enemyState)
         {
             case EnemyState.roam:

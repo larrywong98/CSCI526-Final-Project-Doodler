@@ -52,6 +52,7 @@ public class PlayerController : MonoBehaviour
         
         // transform.position = transform.position + movement* speed * Time.deltaTime;
         rb.velocity=new Vector2(movement.x,movement.y)*speed;
+        // Debug.Log(transform.position);
     }
 
     public void AimAndShoot(float test){

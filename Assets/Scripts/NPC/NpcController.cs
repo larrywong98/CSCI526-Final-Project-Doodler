@@ -60,7 +60,7 @@ public class NpcController : MonoBehaviour
        if(Vector2.Distance(transform.position, target.position) > stoppingDistance){
 
            
-            Debug.Log("Follow function runs");
+            // Debug.Log("Follow function runs");
            
             Vector3 movement = Vector3.MoveTowards(transform.position, target.position, Vector2.Distance(transform.position, target.position) - stoppingDistance) 
                                 - transform.position;
