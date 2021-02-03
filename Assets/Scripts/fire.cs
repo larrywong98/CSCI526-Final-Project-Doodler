@@ -11,6 +11,7 @@ public class fire : MonoBehaviour
     public GameObject arrowPrefab;
     public Transform playerTransform;
     public Vector2 shootingDirection;
+    public Transform enemyTransform;
 
     public Button m_Btn;
     public GameObject target;
@@ -24,7 +25,7 @@ public class fire : MonoBehaviour
     void Shoot()
     { 
         // playerController.AimAndShoot(1);
-        shootingDirection= new Vector3(-4.9f,4.9f,0)-playerTransform.position;
+        shootingDirection= enemyTransform.position-playerTransform.position;
         GameObject arrow = Instantiate(arrowPrefab, playerTransform.position+new Vector3(0f,1f,0f), Quaternion.identity);
         // arrow.GetComponent<Rigidbody2D>().velocity = shootingDirection * 10.0f; // set arrow velocity
         arrow.transform.Rotate(0.0f, 0.0f, Mathf.Atan2(-shootingDirection.y, -shootingDirection.x) * Mathf.Rad2Deg);

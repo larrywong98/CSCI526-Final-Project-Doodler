@@ -11,10 +11,11 @@ public class Bullet : MonoBehaviour
     // public GameObject arrowPrefab;
     public float speed;
     private Vector2 target;
+    public Transform enemyTransform;
     // Start is called before the first frame update
     void Start()
     {
-        target=new Vector2(-4.9f,4.9f);
+        target=enemyTransform.position;
     }
 
     // Update is called once per frame

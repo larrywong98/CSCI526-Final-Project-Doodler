@@ -10,7 +10,7 @@ public class EnemyAI_1 : MonoBehaviour
     private Vector3 roamingPos;
     // [SerializeField]private Rigidbody2D rb;
     private Transform playerTransform;
-    public HealthBar healthBar;
+    // public HealthBar healthBar;
     private EnemyState enemyState;
     public Player player;
     private float attackRange=2f;
@@ -66,7 +66,7 @@ public class EnemyAI_1 : MonoBehaviour
         {
             case EnemyState.roam:
                 MoveTo(roamingPos);
-                float closedistance=0.5f;
+                float closedistance=1f;
                 if(Vector3.Distance(transform.position,roamingPos)<closedistance){
                     roamingPos=Roaming();
                 }
