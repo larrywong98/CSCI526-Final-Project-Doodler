@@ -36,26 +36,36 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Camera\CameraController.cs" />
+     <Compile Include="Assets\Scripts\Camera\camcontroller.cs" />
+     <Compile Include="Assets\Scripts\Destroyer.cs" />
      <Compile Include="Assets\Scripts\Destructible Map\Bullet.cs" />
      <Compile Include="Assets\Scripts\Destructible Map\Destructible.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAI_1.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyState.cs" />
-     <Compile Include="Assets\Scripts\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy_Bat.cs" />
+     <Compile Include="Assets\Scripts\HP\HealthBar.cs" />
+     <Compile Include="Assets\Scripts\HP\Player.cs" />
      <Compile Include="Assets\Scripts\Load\Loader.cs" />
      <Compile Include="Assets\Scripts\Load\LoaderFunc.cs" />
      <Compile Include="Assets\Scripts\Load\LoadingProgress.cs" />
      <Compile Include="Assets\Scripts\NPC\NpcController.cs" />
      <Compile Include="Assets\Scripts\NPC\NpcFollow.cs" />
      <Compile Include="Assets\Scripts\NPC\TalkButton.cs" />
-     <Compile Include="Assets\Scripts\Player.cs" />
-     <Compile Include="Assets\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerCtrl\PlayerController.cs" />
+     <Compile Include="Assets\Scripts\PlayerCtrl\VJoystick.cs" />
      <Compile Include="Assets\Scripts\Redirect\toEndScene.cs" />
      <Compile Include="Assets\Scripts\Redirect\tolevel1.cs" />
      <Compile Include="Assets\Scripts\Redirect\tolevel2.cs" />
-     <Compile Include="Assets\Scripts\VJoystick.cs" />
+     <Compile Include="Assets\Scripts\Skill\fire.cs" />
+     <Compile Include="Assets\Scripts\Skill\slash.cs" />
+     <Compile Include="Assets\Scripts\Tallgeese\DamageNum.cs" />
+     <Compile Include="Assets\Scripts\Tallgeese\PlayerAttack.cs" />
+     <Compile Include="Assets\Scripts\Tallgeese\PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\Tallgeese\Slash.cs" />
      <Compile Include="Assets\Scripts\backup.cs" />
-     <Compile Include="Assets\Scripts\camcontroller.cs" />
-     <Compile Include="Assets\Scripts\fire.cs" />
+     <None Include="Assets\Shaders\DefaultColorFlash.shader" />
+     <None Include="Assets\Shader\shader1.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
