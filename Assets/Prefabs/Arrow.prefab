@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8861144184828189577}
   - component: {fileID: 9100021977420090452}
   - component: {fileID: 8453540418319876887}
+  - component: {fileID: -5852502867874285409}
+  - component: {fileID: 2323564802956495053}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -103,4 +105,41 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!58 &-5852502867874285409
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832263386772222561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.42557746, y: -0.00000023841858}
+  serializedVersion: 2
+  m_Radius: 0.61214095
+--- !u!114 &2323564802956495053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8832263386772222561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a674b6aeffe8ad4c9fa9aba3514ca67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  effectArea: 3
+  isDestructible:
+    serializedVersion: 2
+    m_Bits: 512
+  damage: 1
+  effect: {fileID: 101288716696358930, guid: aba3fc702fd40924a82f2baf79e62868, type: 3}
+  speed: 10
+  enemyTransform: {fileID: 965063580760497015, guid: f3764e6c09d08984f8c307308defa0a4,
+    type: 3}
