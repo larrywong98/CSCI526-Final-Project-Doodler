@@ -10,7 +10,7 @@ public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointer
     public static Vector2 lateJoystickPos;
     private Vector2 circlebPos;
     private Vector2 circlesPos;
-    private Vector2 tmp;
+    // private Vector2 tmp;
     [SerializeField] private float scaler;
     // private Button btn;
     // child0 joystick
@@ -46,7 +46,7 @@ public class VJoystick : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointer
     {
         transform.GetChild(0).gameObject.SetActive(true);
         circlebPos =  eventData.position;
-        tmp=Camera.main.ScreenToWorldPoint(eventData.position);
+        Vector2 tmp=Camera.main.ScreenToWorldPoint(eventData.position);
         transform.GetChild(0).position=tmp;
     }
     public void OnPointerUp(PointerEventData eventData)

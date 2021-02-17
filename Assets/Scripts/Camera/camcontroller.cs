@@ -22,7 +22,7 @@ public class camcontroller : MonoBehaviour
     }
     public IEnumerator CameraShakeCo(float _maxTime, float _amount)
     {
-        Vector3 originalPos = transform.localPosition;
+        Vector3 originalPos = transform.position;
         float shakeTime = 0.0f;
 
         while(shakeTime < _maxTime)
@@ -30,10 +30,12 @@ public class camcontroller : MonoBehaviour
             float x = Random.Range(-1f, 1f) * _amount;
             float y = Random.Range(-1f, 1f) * _amount;
 
-            transform.localPosition = new Vector3(x, y, originalPos.z);
+            transform.position =transform.position+new Vector3(x,y,0);
+            // Debug.Log(transform.position);
             shakeTime += Time.deltaTime;
 
             yield return new WaitForSeconds(0f);
         }
+
     }
 }

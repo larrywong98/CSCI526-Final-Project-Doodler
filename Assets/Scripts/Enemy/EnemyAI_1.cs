@@ -89,11 +89,16 @@ public class EnemyAI_1 : MonoBehaviour
                     enemyState=EnemyState.chase;
                 }
                 break;
+            // case EnemyState.idle:
+            //     transform.position=transform.position;
+            //     break;
             default:
                 break;
         }
+        Debug.Log(player.currentHealth);
         if(player.currentHealth==0){
             Loader.Load(Loader.Scene.EndScene);
+            // enemyState=EnemyState.idle;
         }
         // Debug.Log(roamingPos);
         // Debug.Log(Math.Ceiling(transform.position.x));

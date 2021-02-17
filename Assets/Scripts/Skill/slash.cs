@@ -20,12 +20,14 @@ public class slash : MonoBehaviour
 
     void slashFunc()
     {
+
         difference = VJoystick.lateJoystickPos;
         
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;//Radius -> Degree 弧度转角度
         spTransform.rotation = Quaternion.Euler(0, 0, rotZ);
-
         spTransform.GetChild(0).gameObject.SetActive(true);
+
+
         
     }
 }

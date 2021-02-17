@@ -7,9 +7,9 @@ public class PlayerController : MonoBehaviour
 
     // public Animator animator;
     // public int playerId = 0;
-    public GameObject crossHair;
+    // public GameObject crossHair;
 
-    public GameObject arrowPrefab;
+    // public GameObject arrowPrefab;
 
     public float speed;
 

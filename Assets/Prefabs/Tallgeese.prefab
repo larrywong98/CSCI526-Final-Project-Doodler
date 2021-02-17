@@ -165,7 +165,8 @@ MonoBehaviour:
   minDamage: 5
   maxDamage: 70
   apDamage: 0
-  damageCanvas: {fileID: 8153569683777211592, guid: d2b59ba81b67f5146a85e6a204948cf6,
+  parentTransform: {fileID: 0}
+  damageCanvas: {fileID: 4921988587516973254, guid: 65d6dbf4e17020b43a6f06087fae36c5,
     type: 3}
 --- !u!61 &6939670171867387089
 BoxCollider2D:
@@ -206,9 +207,11 @@ GameObject:
   - component: {fileID: 6939670171879904594}
   - component: {fileID: 6939670171879904599}
   - component: {fileID: 6939670171879904598}
+  - component: {fileID: 226645619}
+  - component: {fileID: 226645625}
   m_Layer: 0
   m_Name: Tallgeese
-  m_TagString: Player
+  m_TagString: character
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -222,7 +225,7 @@ Transform:
   m_GameObject: {fileID: 6939670171879904605}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7.749821, y: 6.906093, z: 1}
   m_Children:
   - {fileID: 6939670171131645483}
   m_Father: {fileID: 0}
@@ -344,3 +347,32 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14050993, y: 0.08716872}
   m_EdgeRadius: 0
+--- !u!114 &226645619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6939670171879904605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50f7e84065d904a4dabe60a58bcc07f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  rb: {fileID: 6939670171879904599}
+--- !u!114 &226645625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6939670171879904605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5535f9b6a79b2ac4485859c0ae646168, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 500
+  currentHealth: 0
+  healthBar: {fileID: 0}
