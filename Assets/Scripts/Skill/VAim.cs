@@ -64,7 +64,7 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
         // transform.GetChild(0).gameObject.SetActive(true);
         // circlebPos =  eventData.position;
         // Debug.Log(eventData.position);
-        Debug.Log( imageBig.color);
+        // Debug.Log( imageBig.color);
         if(eventData.position.x>=892 && eventData.position.x<=1092 && eventData.position.y>=140 && eventData.position.y<=325)
         {
             imageBig.color=new Color(1f,1f,1f,0.93f);
