@@ -9,12 +9,16 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
     // private float drag;
     public static Vector2 joystickpos;
     public static Vector2 attackDirection;
+    public static int isAttackButtionUp = 0; // 为1则进行攻击，为0则表示不攻击
     private Vector2 circlebPos,circlesPos;
     private Vector2 startPos,endPos;
 
     [SerializeField] private Image imageBig,imageSmall;
     [SerializeField] private float invalidRange;
-    private int flag=0;
+    private int flag=0; // 
+    // [SerializeField] private Collider2D col;
+    // public GameObject slashObject;
+    [SerializeField] private Transform transformBig;
 
     // private Vector2 tmp;
     // [SerializeField] private float scaler;
@@ -29,27 +33,29 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
             // relative coordinate
             // Debug.Log(circlesPos);
             // Debug.Log(Vector2.Distance(circlesPos,circlebPos));
-            if(Vector2.Distance(startPos,endPos)<=radius)
+            if(Vector2.Distance(startPos,endPos)<=radius) // 如果攻击拖动小于瞄准框，那么
             {
                 // tmp1=Camera.main.WorldToScreenPoint(circlesPos);
-                transform.GetChild(0).GetChild(0).localPosition=endPos-startPos;
+                transformBig.GetChild(0).localPosition=endPos-startPos; // 取瞄准框内测的小圆，拉倒哪里就是哪里
                 circlesPos=endPos-startPos;
             }
             else
-            {
-                transform.GetChild(0).GetChild(0).localPosition=
+            { // 否则（选的范围超出大圆圈），贴着边
+                transformBig.GetChild(0).localPosition=
                 radius*Vector3.Normalize((Vector3)endPos-(Vector3)startPos);
-                circlesPos=transform.GetChild(0).GetChild(0).localPosition;
-                // ((Vector3)eventData.position-transform.GetChild(0).position)*radius;
+                circlesPos=transformBig.GetChild(0).localPosition;
+                // ((Vector3)eventData.position-transformBig.position)*radius;
             }
-            joystickpos.x=transform.GetChild(0).GetChild(0).localPosition.x;///radius;
-            joystickpos.y=transform.GetChild(0).GetChild(0).localPosition.y;///radius;
+            joystickpos.x=transformBig.GetChild(0).localPosition.x;///radius;  //给当前joystick的方向赋值
+            joystickpos.y=transformBig.GetChild(0).localPosition.y;///radius;
             if(joystickpos!=Vector2.zero){
-                if(Vector2.Distance(circlesPos,circlebPos)<invalidRange){
+                if(Vector2.Distance(circlesPos,circlebPos)<invalidRange){ // 如果小于dead阙值，就自动攻击
                     Debug.Log("auto attack");
                     // Debug.Log(Vector2.Distance(circlesPos,circlebPos));
                 }else{
-                    attackDirection=joystickpos;
+                    attackDirection=joystickpos; // 否则攻击方向就是joystickpos
+                    Debug.Log(attackDirection);
+                    
                 }
             }
             // transform.GetChild(0).position=transform.GetChild(0).position+
@@ -65,12 +71,24 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
         // circlebPos =  eventData.position;
         // Debug.Log(eventData.position);
         // Debug.Log( imageBig.color);
-        if(eventData.position.x>=892 && eventData.position.x<=1092 && eventData.position.y>=140 && eventData.position.y<=325)
+        // Debug.Log(Camera.main.ScreenToWorldPoint(transform.position));
+        // Debug.Log(transformBig.position);
+        Vector3 eventPos=Camera.main.ScreenToWorldPoint(eventData.position);
+        // Debug.Log(eventData.position);
+
+        // Bounds bound=col.bounds;
+        // Debug.Log(bound);
+        // Debug.Log(bound.Contains(eventData.position));
+        // Debug.Log(onscreen);
+        // Debug.Log(onworldwide);
+        if(eventPos.x>=transformBig.position.x-1 && eventPos.x<=transformBig.position.x+1 && 
+            eventPos.y>=transformBig.position.y-1 && eventPos.y<=transformBig.position.y+1)
         {
             imageBig.color=new Color(1f,1f,1f,0.93f);
             imageSmall.color=new Color(1f,1f,1f,0.93f);
             startPos=eventData.position;
             flag=1;
+            // Debug.Log("okkkkkkk");
         }else{
             flag=0;
         }
@@ -81,12 +99,13 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
     public void OnPointerUp(PointerEventData eventData)
     {
         // transform.GetChild(0).gameObject.SetActive(false);
-        
+        // slashObject.slashFunc();
         imageBig.color=new Color(1f,1f,1f,0.549f);
         imageSmall.color=new Color(1f,1f,1f,0.549f);
-        transform.GetChild(0).GetChild(0).localPosition=Vector2.zero;
+        transformBig.GetChild(0).localPosition=Vector2.zero;
         joystickpos=Vector2.zero;
         flag=0;
         // drag=0;
+        isAttackButtionUp = 1;
     }
 }

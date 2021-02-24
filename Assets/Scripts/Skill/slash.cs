@@ -9,16 +9,12 @@ public class slash : MonoBehaviour
 
     private Vector2 difference;
     public Transform spTransform;
-    public Button m_Btn;
+    // public Button m_Btn;
     // public GameObject target;
     // private PlayerController playerController;
-    void Start(){
-        m_Btn.onClick.AddListener(slashFunc);
-        // playerController=target.GetComponent<PlayerController>();
-        // playerTransform=GameObject.FindGameObjectWithTag("character").GetComponent<Transform>().transform;
-    }
+ 
 
-    void slashFunc()
+    public void slashFunc()
     {
 
         difference = VJoystick.lateJoystickPos;
