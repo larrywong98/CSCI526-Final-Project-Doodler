@@ -64,7 +64,7 @@ public class Enemy_Bat : MonoBehaviour
         hp -= _amount; // 扣血
 
         HurtShader(); // 伤害贴图
-
+        // Instantiate(explosionEffect, transform.position, Quaternion.identity);
         if (hp <= 0){
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);

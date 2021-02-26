@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Bat (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1457628614525234962, guid: 392dc3db12b78fa40a5a7401a314a01c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392dc3db12b78fa40a5a7401a314a01c, type: 3}
 --- !u!1 &14913889
@@ -8824,7 +8829,7 @@ TilemapRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: aba0cb2c390a539409e7715157da2a0b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -56024,6 +56029,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Bat (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1457628614525234962, guid: 392dc3db12b78fa40a5a7401a314a01c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392dc3db12b78fa40a5a7401a314a01c, type: 3}
 --- !u!224 &898446648 stripped
@@ -70459,7 +70469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1256345212
 Transform:
   m_ObjectHideFlags: 0
@@ -71313,6 +71323,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy_Bat (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1457628614525234962, guid: 392dc3db12b78fa40a5a7401a314a01c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392dc3db12b78fa40a5a7401a314a01c, type: 3}
 --- !u!1 &1390691971
@@ -71621,6 +71636,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1411022116}
   m_CullTransparentMesh: 0
+--- !u!114 &1419121941 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8460011173667151340, guid: eee0959bb363cf14a9bb4a1593e05552,
+    type: 3}
+  m_PrefabInstance: {fileID: 5233629516391719065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1447573462
 GameObject:
   m_ObjectHideFlags: 0
@@ -71798,7 +71825,7 @@ PrefabInstance:
     - target: {fileID: 1457628614525234962, guid: 392dc3db12b78fa40a5a7401a314a01c,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392dc3db12b78fa40a5a7401a314a01c, type: 3}
@@ -71884,6 +71911,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Enemy_Bat (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457628614525234962, guid: 392dc3db12b78fa40a5a7401a314a01c,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 392dc3db12b78fa40a5a7401a314a01c, type: 3}
@@ -73026,6 +73058,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1457628614525234959, guid: 392dc3db12b78fa40a5a7401a314a01c,
         type: 3}
+      propertyPath: maxHp
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1457628614525234959, guid: 392dc3db12b78fa40a5a7401a314a01c,
+        type: 3}
       propertyPath: moveSpeed
       value: 0.5
       objectReference: {fileID: 0}
@@ -73042,12 +73079,12 @@ PrefabInstance:
     - target: {fileID: 1457628614525234961, guid: 392dc3db12b78fa40a5a7401a314a01c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.3542595
+      value: -12.7
       objectReference: {fileID: 0}
     - target: {fileID: 1457628614525234961, guid: 392dc3db12b78fa40a5a7401a314a01c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0018138885
+      value: -2.44
       objectReference: {fileID: 0}
     - target: {fileID: 1457628614525234961, guid: 392dc3db12b78fa40a5a7401a314a01c,
         type: 3}
@@ -75060,6 +75097,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5233629515662103968, guid: eee0959bb363cf14a9bb4a1593e05552,
+        type: 3}
+      propertyPath: hpeffect
+      value: 
+      objectReference: {fileID: 1419121941}
     - target: {fileID: 5233629515662103969, guid: eee0959bb363cf14a9bb4a1593e05552,
         type: 3}
       propertyPath: m_Pivot.x
@@ -75170,10 +75212,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: HP Bar
       objectReference: {fileID: 0}
-    - target: {fileID: 5233629515662103982, guid: eee0959bb363cf14a9bb4a1593e05552,
+    - target: {fileID: 6248023107302376174, guid: eee0959bb363cf14a9bb4a1593e05552,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_Name
+      value: effect
+      objectReference: {fileID: 0}
+    - target: {fileID: 8460011173667151340, guid: eee0959bb363cf14a9bb4a1593e05552,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eee0959bb363cf14a9bb4a1593e05552, type: 3}
