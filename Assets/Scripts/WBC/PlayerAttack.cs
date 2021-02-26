@@ -23,7 +23,7 @@ public class PlayerAttack : MonoBehaviour
         // }
 
         // 判断控制杆被放开，就攻击
-        Debug.Log(VAim.isAttackButtionUp);
+        // Debug.Log(VAim.isAttackButtionUp);
         if(VAim.isAttackButtionUp == 1){
             Attack();
             VAim.isAttackButtionUp = 0;

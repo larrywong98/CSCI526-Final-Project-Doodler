@@ -49,12 +49,12 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
             joystickpos.x=transformBig.GetChild(0).localPosition.x;///radius;  //给当前joystick的方向赋值
             joystickpos.y=transformBig.GetChild(0).localPosition.y;///radius;
             if(joystickpos!=Vector2.zero){
-                if(Vector2.Distance(circlesPos,circlebPos)<invalidRange){ // 如果小于dead阙值，就自动攻击
+                if(Vector2.Distance(circlesPos,circlebPos)<invalidRange){ // 如果小于dead阈值，就自动攻击
                     Debug.Log("auto attack");
                     // Debug.Log(Vector2.Distance(circlesPos,circlebPos));
                 }else{
                     attackDirection=joystickpos; // 否则攻击方向就是joystickpos
-                    Debug.Log(attackDirection);
+                    // Debug.Log(attackDirection);
                     
                 }
             }
