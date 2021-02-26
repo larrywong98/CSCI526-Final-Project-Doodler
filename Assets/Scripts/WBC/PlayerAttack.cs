@@ -27,6 +27,7 @@ public class PlayerAttack : MonoBehaviour
         if(VAim.isAttackButtionUp == 1){
             Attack();
             VAim.isAttackButtionUp = 0;
+            VAim.attackDirection=new Vector2(0f,0f);
         }
 
 
