@@ -77,4 +77,4 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FlashColor: {r: 0.9339623, g: 0.87607855, b: 0.8590691, a: 1}
+    - _FlashColor: {r: 0.88235295, g: 0.88591933, b: 1, a: 1}
