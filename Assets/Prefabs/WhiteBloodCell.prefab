@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 4456828522690191100}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 39.7, y: -26.9, z: -1}
-  m_LocalScale: {x: 2.9922273, y: 2.6637318, z: 1}
+  m_LocalScale: {x: 4.8884916, y: 4.2862377, z: 1}
   m_Children:
   - {fileID: 4456828523814182288}
   - {fileID: 4456828523296888894}
@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 65f826dd4b07ab44cadcce1c5df6650f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 3cb64d3b912be1748868a00aea577fd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dissolveEffect: {fileID: 6659163671901249211}
-  startDissolveColor: {r: 0, g: 0.7212255, b: 1, a: 1}
-  stopDissolveColor: {r: 1, g: 0, b: 0, a: 1}
+  disappearColor: {r: 0, g: 0, b: 0, a: 0}
+  reappearColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &4456828522690191101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc9f083b3cc5ed94d9b1ba54e8aafbf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 2
   animator: {fileID: 4456828522690191096}
 --- !u!114 &1967915591
 MonoBehaviour:

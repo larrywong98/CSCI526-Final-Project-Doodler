@@ -36,9 +36,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dissove\DissolveEffect.cs" />
-     <Compile Include="Assets\Dissove\Teleporter.cs" />
-     <Compile Include="Assets\Dissove\Testing_Dissolve.cs" />
      <Compile Include="Assets\Scripts\Camera\camcontroller.cs" />
      <Compile Include="Assets\Scripts\Destructible Map\Bullet.cs" />
      <Compile Include="Assets\Scripts\Destructible Map\Destructible.cs" />
@@ -76,7 +73,10 @@
      <Compile Include="Assets\Scripts\WBC\WbcMovement.cs" />
      <Compile Include="Assets\Scripts\WBC\WbcWave.cs" />
      <Compile Include="Assets\Scripts\backup.cs" />
-     <Compile Include="Assets\Shaders\FlowEffect.cs" />
+     <Compile Include="Assets\Shaders\Dissove\DissolveEffect.cs" />
+     <Compile Include="Assets\Shaders\Dissove\Teleporter.cs" />
+     <Compile Include="Assets\Shaders\Dissove\Testing_Dissolve.cs" />
+     <Compile Include="Assets\Shaders\Magma\FlowEffect.cs" />
      <None Include="Assets\Shaders\DefaultColorFlash.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>

@@ -8805,7 +8805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 549065470}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.41683, y: -1.8578173, z: 6.8290753}
+  m_LocalPosition: {x: 9.41683, y: -1.8578173, z: 0}
   m_LocalScale: {x: 0.57770234, y: 0.6035235, z: 1}
   m_Children: []
   m_Father: {fileID: 1005533030}
@@ -8847,7 +8847,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 294240143
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -41862,7 +41862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657726190}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.44083, y: -1.8328173, z: 6.8290753}
+  m_LocalPosition: {x: 9.44083, y: -1.8328173, z: 0}
   m_LocalScale: {x: 0.57635015, y: 0.5952017, z: 1}
   m_Children: []
   m_Father: {fileID: 1005533030}
@@ -42547,7 +42547,7 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 294240143
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -69698,7 +69698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005533029}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.2208304, y: 1.4628173, z: -6.8290753}
+  m_LocalPosition: {x: -4.2208304, y: 1.4628173, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 549065471}
@@ -70595,7 +70595,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325062192}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.810831, y: -2.0428174, z: 6.8290753}
+  m_LocalPosition: {x: 10.810831, y: -2.0428174, z: 0}
   m_LocalScale: {x: 0.641047, y: 0.5906508, z: 1}
   m_Children: []
   m_Father: {fileID: 1005533030}
@@ -74943,70 +74943,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 898446649}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: dissolveColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: dissolveColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: dissolveColor.g
-      value: 0.73424315
-      objectReference: {fileID: 0}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: dissolveColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: reappearColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: reappearColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: reappearColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 382367136675694684, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: reappearColor.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456828522690191097, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456828522690191097, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 65f826dd4b07ab44cadcce1c5df6650f, type: 2}
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
       propertyPath: m_RootOrder
       value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 4.8884916
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 4.2862377
       objectReference: {fileID: 0}
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
@@ -75021,7 +74961,7 @@ PrefabInstance:
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
@@ -75063,26 +75003,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WhiteBloodCell
       objectReference: {fileID: 0}
-    - target: {fileID: 4456828522690191100, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456828522690191101, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 4456828523417979266, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
       propertyPath: parentTransform
       value: 
       objectReference: {fileID: 1915506675}
-    - target: {fileID: 4456828523814182289, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e40f5289f5b4b71448cd49461daf034d, type: 3}
 --- !u!1001 &5233629516391719065
