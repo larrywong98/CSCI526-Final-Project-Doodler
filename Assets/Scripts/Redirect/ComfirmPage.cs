@@ -19,9 +19,9 @@ public class ComfirmPage : MonoBehaviour
         transClose.parent.parent.GetChild(1).gameObject.SetActive(false);
         transClose.GetChild(1).gameObject.SetActive(true);
         transClose.GetChild(2).gameObject.SetActive(true);
-        for(int i=0;i<4;i++){
-            transClose.GetChild(2).GetChild(i).gameObject.SetActive(true);
-        }
+        // for(int i=0;i<4;i++){
+        //     transClose.GetChild(2).GetChild(i).gameObject.SetActive(true);
+        // }
       
         
         // Loader.Load(Loader.Scene.Level1);
