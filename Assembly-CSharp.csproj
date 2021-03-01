@@ -52,7 +52,9 @@
      <Compile Include="Assets\Scripts\Load\Loader.cs" />
      <Compile Include="Assets\Scripts\Load\LoaderFunc.cs" />
      <Compile Include="Assets\Scripts\Load\LoadingProgress.cs" />
+     <Compile Include="Assets\Scripts\Mission\Request.cs" />
      <Compile Include="Assets\Scripts\Mission\missionbtn.cs" />
+     <Compile Include="Assets\Scripts\NPC\Dentritic\OfferRequest.cs" />
      <Compile Include="Assets\Scripts\NPC\NpcController.cs" />
      <Compile Include="Assets\Scripts\NPC\NpcFollow.cs" />
      <Compile Include="Assets\Scripts\NPC\TalkButton.cs" />

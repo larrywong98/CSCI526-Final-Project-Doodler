@@ -15,7 +15,7 @@ public class ComfirmPage : MonoBehaviour
         if(FullControl.buttonNum!=0)return ;
         FullControl.buttonNum=2;
         // Debug.Log("to loading");
-        transClose.parent.parent.GetChild(2).gameObject.SetActive(false);
+        transClose.parent.parent.GetChild(0).gameObject.SetActive(false);
         transClose.parent.parent.GetChild(1).gameObject.SetActive(false);
         transClose.GetChild(1).gameObject.SetActive(true);
         transClose.GetChild(2).gameObject.SetActive(true);

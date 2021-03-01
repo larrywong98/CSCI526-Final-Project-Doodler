@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
 
 	public Queue<string> sentences;
 	public Transform transformCanvas;
+	public DentriticTrigger dentriticTrigger;
     // Start is called before the first frame update
     void Start()
     {
@@ -59,5 +60,6 @@ public class DialogueManager : MonoBehaviour
 		transformCanvas.GetChild(1).gameObject.SetActive(true);
 		// dialogueTransform.GetChild(1).gameObject.SetActive(false);
     	// animator.SetBool("IsOpen", false);
+		dentriticTrigger.AddRequest();
     }
 }

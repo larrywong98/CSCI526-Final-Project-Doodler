@@ -18,7 +18,7 @@ public class OpenSettings : MonoBehaviour
     {
         if(FullControl.buttonNum!=0)return ;
         FullControl.buttonNum=1;
-        transClose.parent.parent.GetChild(2).gameObject.SetActive(false);
+        transClose.parent.parent.GetChild(0).gameObject.SetActive(false);
         transClose.parent.parent.GetChild(1).gameObject.SetActive(false);
         transClose.GetChild(1).gameObject.SetActive(true);
         transClose.GetChild(2).gameObject.SetActive(true);

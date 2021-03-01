@@ -8,6 +8,7 @@ public class DentriticTrigger : MonoBehaviour
     public Transform dialogueTransform;
     public Transform player;
     public Transform transformCanvas;
+    public Request request;
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space) && Vector2.Distance(transform.position,player.position)<1.5f){
             dialogueTransform.GetChild(0).gameObject.SetActive(true);
@@ -23,5 +24,8 @@ public class DentriticTrigger : MonoBehaviour
     {
         // Debug.Log(dialogue.sentences);
     	FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+    }
+    public void AddRequest(){
+        request.AddRow("Kill 5 green bacteria","In progress","HP +50");
     }
 }

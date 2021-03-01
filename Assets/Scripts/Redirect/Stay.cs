@@ -7,15 +7,16 @@ public class Stay : MonoBehaviour
 {
     public Button m_Btn;
     public Transform transClose;
+    public Transform canvasTransform;
     // public FullControl fc;
     void Start(){
-        m_Btn.onClick.AddListener(CloseComfirm);
+        m_Btn.onClick.AddListener(Close);
     }
-    public void CloseComfirm()
+    public void Close()
     {
         // Debug.Log("to loading");
-        transClose.parent.parent.GetChild(2).gameObject.SetActive(true);
-        transClose.parent.parent.GetChild(1).gameObject.SetActive(true);
+        canvasTransform.GetChild(0).gameObject.SetActive(true);
+        canvasTransform.GetChild(1).gameObject.SetActive(true);
         transClose.GetChild(1).gameObject.SetActive(false);
         transClose.GetChild(2).gameObject.SetActive(false);
         FullControl.buttonNum=0;

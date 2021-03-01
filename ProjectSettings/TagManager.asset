@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - joybig
   - Enemy
+  - request
   layers:
   - Default
   - TransparentFX
