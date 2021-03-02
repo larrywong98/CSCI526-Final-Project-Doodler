@@ -7,15 +7,14 @@ public class Request : MonoBehaviour
 {
     // public static string[,] table_requests=new string[1,3];
     public static List<List<string>> table_requests=new List<List<string>>();
-    public void AddRow(string request,string status,string reward){
-        // table_requests[table_requests.GetLength(0)-1,0]=request;
-        // table_requests[table_requests.GetLength(0)-1,1]=status;
-        // table_requests[table_requests.GetLength(0)-1,2]=reward;
-        // Debug.Log(table_requests.GetLength(0));
+    public static int[] tableRequestsHash=new int[100];
+    public static int prevCount=0;
+    public void AddRow(string request,string status,string reward,int val){
         List<string> tmp=new List<string>();
         tmp.Add(request);
         tmp.Add(status);
         tmp.Add(reward);
+        tableRequestsHash[val]=1;
         table_requests.Add(tmp);
     }
     public void ModifyRow(int rowid,string status){
