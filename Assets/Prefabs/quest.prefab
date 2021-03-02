@@ -34,8 +34,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 354, y: -50}
-  m_SizeDelta: {x: 438.30334, y: 100}
+  m_AnchoredPosition: {x: 536.6, y: -50}
+  m_SizeDelta: {x: 827.6183, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4184604310653032100
 CanvasRenderer:
@@ -71,7 +71,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 70
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 482475755}
   m_Layer: 5
   m_Name: quest
-  m_TagString: Untagged
+  m_TagString: requestItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -292,8 +292,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1468, y: -50}
-  m_SizeDelta: {x: 286.86652, y: 100}
+  m_AnchoredPosition: {x: 1483.2, y: -50}
+  m_SizeDelta: {x: 337.99518, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4184604312260976120
 CanvasRenderer:
@@ -329,7 +329,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 5
     m_MaxSize: 70
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0

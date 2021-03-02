@@ -9,6 +9,13 @@ public class Request : MonoBehaviour
     public static List<List<string>> table_requests=new List<List<string>>();
     public static int[] tableRequestsHash=new int[100];
     public static int prevCount=0;
+    public static List<List<string>> awaitingRequest=new List<List<string>>{
+        new List<string>{"Kill 5 green bacteria","In progress","HP +50"},
+        new List<string>{"Kill 5 bats","In progress","SP +50"},
+        new List<string>{"Complete tutorial","In progress","HP +100"},
+        new List<string>{"kill 10 bats","In progress","Oxygen +50"},
+        new List<string>{"Kill 10 green bacteria","In progress","Oxygen +100"}};
+
     public void AddRow(string request,string status,string reward,int val){
         List<string> tmp=new List<string>();
         tmp.Add(request);

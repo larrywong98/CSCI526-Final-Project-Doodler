@@ -10,6 +10,7 @@ TagManager:
   - joybig
   - Enemy
   - request
+  - requestItem
   layers:
   - Default
   - TransparentFX

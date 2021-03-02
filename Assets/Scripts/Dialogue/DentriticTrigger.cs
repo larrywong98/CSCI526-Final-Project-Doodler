@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DentriticTrigger : MonoBehaviour
 {
@@ -9,12 +10,7 @@ public class DentriticTrigger : MonoBehaviour
     public Transform player;
     public Transform transformCanvas;
     public Request request;
-    public List<List<string>> awaitingRequest=new List<List<string>>{
-        new List<string>{"Kill 5 green bacteria","In progress","HP +50"},
-        new List<string>{"Kill 5 bats","In progress","SP +50"},
-        new List<string>{"Complete tutorial","In progress","HP +100"},
-        new List<string>{"kill 10 bats","In progress","Oxygen +50"},
-        new List<string>{"Kill 10 green bacteria","In progress","Oxygen +100"}};
+    public GameObject quest;
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space) && Vector2.Distance(transform.position,player.position)<1.5f){
@@ -26,19 +22,25 @@ public class DentriticTrigger : MonoBehaviour
         }
     }
    
-
     public void TriggerDialogue ()
     {
-        // Debug.Log(dialogue.sentences);
     	FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
     }
     public void AddRequest(){
-        // Random ran=new Random();
-        int ranVal=Random.Range(0,awaitingRequest.Count);
+        if(Request.awaitingRequest.Count==0){
+            Debug.Log("print no more requests");
+            return ;
+        }
+        int ranVal=Random.Range(0,Request.awaitingRequest.Count);
+        // countNumRequests=countNumRequests+1;
         // if(request.tableRequestsHash[ranVal]==1) return;
         // Debug.Log(ranVal);
-        request.AddRow(awaitingRequest[ranVal][0],
-                       awaitingRequest[ranVal][1],
-                       awaitingRequest[ranVal][2],ranVal);
+        // while(countNumRequests<=Request.awaitingRequest.Count && Request.tableRequestsHash[ranVal]==1){
+        //     ranVal=Random.Range(0,Request.awaitingRequest.Count);
+        // }
+        request.AddRow(Request.awaitingRequest[ranVal][0],
+                       Request.awaitingRequest[ranVal][1],
+                       Request.awaitingRequest[ranVal][2],ranVal);
+        Request.awaitingRequest.Remove(Request.awaitingRequest[ranVal]);
     }
 }

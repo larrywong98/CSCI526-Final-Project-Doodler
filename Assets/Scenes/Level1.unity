@@ -1810,6 +1810,7 @@ MonoBehaviour:
   player: {fileID: 1077259405}
   transformCanvas: {fileID: 1915506675}
   request: {fileID: 849791794}
+  quest: {fileID: 4184604311474564151, guid: ae7df4de538a1f14fb1f558799bc69df, type: 3}
 --- !u!61 &362262428
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -73095,6 +73096,7 @@ MonoBehaviour:
   player: {fileID: 1077259405}
   transformCanvas: {fileID: 1915506675}
   request: {fileID: 0}
+  quest: {fileID: 0}
 --- !u!50 &1142415485
 Rigidbody2D:
   serializedVersion: 4
@@ -79318,6 +79320,7 @@ MonoBehaviour:
   player: {fileID: 1077259405}
   transformCanvas: {fileID: 1915506675}
   request: {fileID: 0}
+  quest: {fileID: 0}
 --- !u!61 &2071449791
 BoxCollider2D:
   m_ObjectHideFlags: 0
