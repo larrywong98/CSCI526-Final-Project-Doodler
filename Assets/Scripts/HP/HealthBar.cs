@@ -17,9 +17,9 @@ public class HealthBar : MonoBehaviour
         slider.value=health;
     }
     void Update(){
-        if(Input.GetMouseButtonDown(0)){
-            SetHealth(slider.value-20);
-        }
+        // if(Input.GetMouseButtonDown(0)){
+        //     SetHealth(slider.value-20);
+        // }
         if(hpeffect.fillAmount>slider.value/100f){
             hpeffect.fillAmount=hpeffect.fillAmount-hurtspeed;
         }else{
