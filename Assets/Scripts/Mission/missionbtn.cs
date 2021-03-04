@@ -9,6 +9,7 @@ public class missionbtn : MonoBehaviour
     public Transform missionTransform;
     public Transform canvasTransform;
     public GameObject quest;
+    // public TreasureChest treasureChestObj;
     void Start(){
         m_Btn.onClick.AddListener(ShowMission);
     }
@@ -34,7 +35,8 @@ public class missionbtn : MonoBehaviour
                             tableRequestObj.GetComponent<RectTransform>().sizeDelta.y+128);
             row.transform.GetChild(0).GetComponent<Text>().text=Request.table_requests[i][0];
             row.transform.GetChild(1).GetComponent<Text>().text=Request.table_requests[i][1];
-            row.transform.GetChild(2).GetComponent<Text>().text=Request.table_requests[i][2];
+            // treasureChestObj.treasure(Request.table_requests[i][2]);
+            
          }
         // Request.prevCount=Request.table_requests.Count-1;
     }

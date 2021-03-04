@@ -7,21 +7,21 @@ public class Request : MonoBehaviour
 {
     // public static string[,] table_requests=new string[1,3];
     public static List<List<string>> table_requests=new List<List<string>>();
-    public static int[] tableRequestsHash=new int[100];
+    // public static int[] tableRequestsHash=new int[100];
     public static int prevCount=0;
     public static List<List<string>> awaitingRequest=new List<List<string>>{
-        new List<string>{"Kill 5 green bacteria","In progress","HP +50"},
-        new List<string>{"Kill 5 bats","In progress","SP +50"},
-        new List<string>{"Complete tutorial","In progress","HP +100"},
-        new List<string>{"kill 10 bats","In progress","Oxygen +50"},
-        new List<string>{"Kill 10 green bacteria","In progress","Oxygen +100"}};
+        new List<string>{"0","Kill 5 green bacteria","HP +50","0"},
+        new List<string>{"1","Kill 5 bats","SP +50","0"},
+        new List<string>{"2","Complete tutorial","HP +100","0"},
+        new List<string>{"3","kill 10 bats","Oxygen +50","0"},
+        new List<string>{"4","Kill 10 green bacteria","Oxygen +100","0"}};
 
-    public void AddRow(string request,string status,string reward,int val){
+    public void AddRow(string request,string reward,string status,int val){
         List<string> tmp=new List<string>();
         tmp.Add(request);
-        tmp.Add(status);
         tmp.Add(reward);
-        tableRequestsHash[val]=1;
+        tmp.Add(status);
+        // tableRequestsHash[val]=1;
         table_requests.Add(tmp);
     }
     public void ModifyRow(int rowid,string status){

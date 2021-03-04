@@ -985,8 +985,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -707.78925, y: -118.29294}
-  m_SizeDelta: {x: 408.6173, y: 319.3841}
+  m_AnchoredPosition: {x: 773.4, y: -76}
+  m_SizeDelta: {x: 507.4749, y: 662.0878}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &170871535
 MonoBehaviour:
@@ -1007,7 +1007,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 31b58788812c23847a5a7edc0a545ea5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0124f050be0f71b4ab2ff7a39a5eac03, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1130,11 +1130,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1211294107}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 642.8, y: 0}
+  m_AnchoredPosition: {x: 342.81, y: 24}
   m_SizeDelta: {x: 359.15833, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &208182529
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1332,8 +1332,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -149.80615}
-  m_SizeDelta: {x: 0, y: -299.61227}
+  m_AnchoredPosition: {x: 0, y: -79.399994}
+  m_SizeDelta: {x: 0, y: -158.77399}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &315076688
 MonoBehaviour:
@@ -1782,7 +1782,7 @@ GameObject:
   - component: {fileID: 362262428}
   - component: {fileID: 362262427}
   m_Layer: 0
-  m_Name: missionNPC
+  m_Name: sidemissionNPC
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1802,14 +1802,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     npcid: 3
-    name: DendriticMission
+    name: Dendritic
     sentences:
-    - Hello  {player name}, I am a dendritic cell.
+    - Hello adventurer,  I am a dendritic cell.
     - My main job is to offer you some jobs, you can get the rewards in return.
   dialogueTransform: {fileID: 614845082}
   player: {fileID: 1077259405}
   transformCanvas: {fileID: 1915506675}
-  request: {fileID: 849791794}
+  request: {fileID: 521422114}
   quest: {fileID: 4184604311474564151, guid: ae7df4de538a1f14fb1f558799bc69df, type: 3}
 --- !u!61 &362262428
 BoxCollider2D:
@@ -2080,16 +2080,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 383238184}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1211294107}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 327.61, y: 0}
+  m_AnchoredPosition: {x: 657.9995, y: 0}
   m_SizeDelta: {x: 271.2243, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &383238186
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -9942,6 +9942,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492872144}
   m_CullTransparentMesh: 0
+--- !u!1 &521422113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 521422115}
+  - component: {fileID: 521422114}
+  m_Layer: 0
+  m_Name: Global
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &521422114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521422113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 529c3ff0c1cab3e4fba873f6fd61a1f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &521422115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 521422113}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 55.166363, y: -22.818447, z: -0.39080498}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &536222594
 GameObject:
   m_ObjectHideFlags: 0
@@ -43331,8 +43374,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -63.147865}
-  m_SizeDelta: {x: 0, y: 126.29573}
+  m_AnchoredPosition: {x: 0, y: -36.899994}
+  m_SizeDelta: {x: 0, y: 73.946396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &648291947
 MonoBehaviour:
@@ -43347,7 +43390,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -43355,10 +43398,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 90
+    m_FontSize: 40
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 7
+    m_MinSize: 4
     m_MaxSize: 90
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -43366,7 +43409,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 0
-  m_Text: Request
+  m_Text: Q u e s t
 --- !u!222 &648291948
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -57860,13 +57903,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.74509805}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: e76e5a8c5696d7041a7e8a2f40f30b78, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -57978,7 +58021,6 @@ GameObject:
   m_Component:
   - component: {fileID: 849791791}
   - component: {fileID: 849791792}
-  - component: {fileID: 849791794}
   m_Layer: 5
   m_Name: table_requests
   m_TagString: request
@@ -58030,18 +58072,6 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 1
---- !u!114 &849791794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 849791790}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 529c3ff0c1cab3e4fba873f6fd61a1f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &851213565
 GameObject:
   m_ObjectHideFlags: 0
@@ -58726,7 +58756,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.51318467}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -58849,7 +58879,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 918647287}
   m_Direction: 3
   m_Value: 1
-  m_Size: 0.51318467
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -73070,7 +73100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     npcid: 1
-    name: RBC
+    name: Red Blood Cell
     sentences:
     - I am a red blood cell
     - In the human body, there are about 37 trillion 200 billion cells
@@ -73095,7 +73125,7 @@ MonoBehaviour:
   dialogueTransform: {fileID: 614845082}
   player: {fileID: 1077259405}
   transformCanvas: {fileID: 1915506675}
-  request: {fileID: 0}
+  request: {fileID: 521422114}
   quest: {fileID: 0}
 --- !u!50 &1142415485
 Rigidbody2D:
@@ -73676,7 +73706,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1211294107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -73689,14 +73719,14 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1344689401}
-  - {fileID: 383238185}
   - {fileID: 208182528}
+  - {fileID: 383238185}
   m_Father: {fileID: 806505145}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -183.9}
+  m_AnchoredPosition: {x: 0, y: -165.82}
   m_SizeDelta: {x: 0, y: 183.89044}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1211294108
@@ -74756,7 +74786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -79711,7 +79741,7 @@ PrefabInstance:
     - target: {fileID: 1161230073013032162, guid: 2324c9974f33d7f47abb75d9d1fc7c5a,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1161230073013032163, guid: 2324c9974f33d7f47abb75d9d1fc7c5a,
         type: 3}
@@ -79892,6 +79922,11 @@ PrefabInstance:
       propertyPath: transformBig
       value: 
       objectReference: {fileID: 126562441}
+    - target: {fileID: 326718554411180441, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2420655590448682981, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -80025,7 +80060,7 @@ PrefabInstance:
     - target: {fileID: 3165070417723255904, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}

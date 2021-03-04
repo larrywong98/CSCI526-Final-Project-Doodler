@@ -53,6 +53,7 @@
      <Compile Include="Assets\Scripts\Load\LoaderFunc.cs" />
      <Compile Include="Assets\Scripts\Load\LoadingProgress.cs" />
      <Compile Include="Assets\Scripts\Mission\Request.cs" />
+     <Compile Include="Assets\Scripts\Mission\TreasureChest.cs" />
      <Compile Include="Assets\Scripts\Mission\missionbtn.cs" />
      <Compile Include="Assets\Scripts\NPC\Dentritic\OfferRequest.cs" />
      <Compile Include="Assets\Scripts\NPC\NpcController.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\Scripts\Skill\fire.cs" />
      <Compile Include="Assets\Scripts\Skill\slash.cs" />
      <Compile Include="Assets\Scripts\Skill\utimate.cs" />
+     <Compile Include="Assets\Scripts\SplitSprite.cs" />
      <Compile Include="Assets\Scripts\Tallgeese\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\WBC\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\WBC\Slash.cs" />
