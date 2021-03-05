@@ -11,6 +11,7 @@ TagManager:
   - Enemy
   - request
   - requestItem
+  - requeststatus
   layers:
   - Default
   - TransparentFX

@@ -38,9 +38,10 @@ public class DentriticTrigger : MonoBehaviour
         // while(countNumRequests<=Request.awaitingRequest.Count && Request.tableRequestsHash[ranVal]==1){
         //     ranVal=Random.Range(0,Request.awaitingRequest.Count);
         // }
-        request.AddRow(Request.awaitingRequest[ranVal][1],
+        request.AddRow(Request.awaitingRequest[ranVal][0],
+                       Request.awaitingRequest[ranVal][1],
                        Request.awaitingRequest[ranVal][2],
-                       Request.awaitingRequest[ranVal][3],ranVal);
+                       Request.awaitingRequest[ranVal][3]);
         Request.awaitingRequest.Remove(Request.awaitingRequest[ranVal]);
     }
 }
