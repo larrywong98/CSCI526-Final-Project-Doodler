@@ -35,7 +35,7 @@ public class missionbtn : MonoBehaviour
                 new Vector2(tableRequestObj.GetComponent<RectTransform>().sizeDelta.x,
                             tableRequestObj.GetComponent<RectTransform>().sizeDelta.y+128);
             row.transform.GetChild(0).GetComponent<Text>().text=Request.table_requests[i][1];
-            row.transform.GetChild(1).GetComponent<Text>().text=Request.table_requests[i][2];
+            row.transform.GetChild(1).GetComponent<Text>().text=MissionStatus.killed[MissionStatus.TaskMap(i)]+"/"+Request.table_requests[i][2];
             // treasureChestObj.StartRequest(Request.table_requests[i][2]);
             treasureChestObj.StartRequest();
             

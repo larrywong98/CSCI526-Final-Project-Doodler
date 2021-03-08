@@ -29,7 +29,7 @@ public class Stay : MonoBehaviour
             }
            
         }
-        TreasureChest.flag=0;
+        TreasureChest.enterOnce=0;
        
         // Debug.Log("to loading");
         canvasTransform.GetChild(0).gameObject.SetActive(true);

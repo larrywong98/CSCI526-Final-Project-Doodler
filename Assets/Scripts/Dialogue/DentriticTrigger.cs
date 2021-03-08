@@ -31,17 +31,18 @@ public class DentriticTrigger : MonoBehaviour
             Debug.Log("print no more requests");
             return ;
         }
-        int ranVal=Random.Range(0,Request.awaitingRequest.Count);
+        // int ranVal=Random.Range(0,Request.awaitingRequest.Count);
         // countNumRequests=countNumRequests+1;
         // if(request.tableRequestsHash[ranVal]==1) return;
         // Debug.Log(ranVal);
         // while(countNumRequests<=Request.awaitingRequest.Count && Request.tableRequestsHash[ranVal]==1){
         //     ranVal=Random.Range(0,Request.awaitingRequest.Count);
         // }
-        request.AddRow(Request.awaitingRequest[ranVal][0],
-                       Request.awaitingRequest[ranVal][1],
-                       Request.awaitingRequest[ranVal][2],
-                       Request.awaitingRequest[ranVal][3]);
-        Request.awaitingRequest.Remove(Request.awaitingRequest[ranVal]);
+        request.AddRow(Request.awaitingRequest[Request.ranVal][0],
+                       Request.awaitingRequest[Request.ranVal][1],
+                       Request.awaitingRequest[Request.ranVal][2],
+                       Request.awaitingRequest[Request.ranVal][3]);
+        Request.awaitingRequest.Remove(Request.awaitingRequest[Request.ranVal]);
+        // Request.ranVal=Request.ranVal+1;
     }
 }

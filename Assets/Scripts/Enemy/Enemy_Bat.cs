@@ -68,6 +68,8 @@ public class Enemy_Bat : MonoBehaviour
         if (hp <= 0){
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            MissionStatus.killed[0]=MissionStatus.killed[0]+1;
+            MissionStatus.CheckComplete();
         } // 血条为0则销毁            
     }
 

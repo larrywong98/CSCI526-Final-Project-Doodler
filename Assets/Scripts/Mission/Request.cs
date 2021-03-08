@@ -6,16 +6,17 @@ using UnityEngine;
 public class Request : MonoBehaviour
 {
     // public static string[,] table_requests=new string[1,3];
+    public static int ranVal=0;
     public static List<List<string>> table_requests=new List<List<string>>();
     // public static int[] tableRequestsHash=new int[100];
     // public static int prevCount=0;
-    //id 任务内容 奖励 状态
+    //  awaitingreqeust id, 任务内容, 进度, 状态， table request id,
     public static List<List<string>> awaitingRequest=new List<List<string>>{
-        new List<string>{"0","Kill 5 green bacteria","HP +50","0"},
-        new List<string>{"1","Kill 5 bats","SP +50","0"},
-        new List<string>{"2","Complete tutorial","HP +100","0"},
-        new List<string>{"3","kill 10 bats","Oxygen +50","0"},
-        new List<string>{"4","Kill 10 green bacteria","Oxygen +100","0"}
+        new List<string>{"0","Kill 5 green bacteria","5","0"},
+        new List<string>{"1","kill 5 bats","5","0"},
+        new List<string>{"2","Kill 10 green bacteria","10","0"},
+        new List<string>{"3","Kill 10 bats","10","0"},
+        new List<string>{"4","Kill 20 green bacteria","20","0"}
         };
 
     public void AddRow(string id,string request,string reward,string status){
@@ -24,6 +25,7 @@ public class Request : MonoBehaviour
         tmp.Add(request);
         tmp.Add(reward);
         tmp.Add(status);
+        tmp.Add(""+table_requests.Count);
         // tableRequestsHash[val]=1;
         table_requests.Add(tmp);
     }
