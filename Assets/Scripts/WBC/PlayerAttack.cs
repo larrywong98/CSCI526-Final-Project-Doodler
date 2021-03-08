@@ -29,6 +29,12 @@ public class PlayerAttack : MonoBehaviour
             VAim.isAttackButtionUp = 0;
             VAim.attackDirection=new Vector2(0f,0f);
         }
+        if(Input.GetMouseButtonDown(0) && FullControl.buttonNum==0){
+            //working on
+            // if()
+            VAim.attackDirection=Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position;
+            Attack();
+        }
 
 
     }
@@ -39,6 +45,7 @@ public class PlayerAttack : MonoBehaviour
         // calculate the angle between mouse click and arrow(to right)
         // Mouse Direction = mouse Pos - current player pos 鼠标位置「目标点位置」-当前位置「人物所在位置」
         Vector2 difference = VAim.attackDirection;
+
         // Vector2 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;//Radius -> Degree 弧度转角度
         transform.rotation = Quaternion.Euler(0, 0, rotZ);

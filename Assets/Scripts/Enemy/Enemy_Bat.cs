@@ -73,13 +73,9 @@ public class Enemy_Bat : MonoBehaviour
         } // 血条为0则销毁            
     }
 
-
-
     private void HurtShader(){
-
         sp.material.SetFloat("_FlashAmount", 1);
         hurtCounter = hurtLength;
-        
     }
 
     IEnumerator isAttackCo(){
