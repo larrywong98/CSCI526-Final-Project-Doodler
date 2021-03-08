@@ -51,7 +51,7 @@ public class TreasureChest : MonoBehaviour
         // for(int i=0;i<transform.childCount;i++){
         if(enterOnce==0){
             for(int i=0;i<transform.childCount;i++){
-                if(canOpen[i]==1){
+                if(canOpen[i]==1 && isOpen[i]==0){
                     int y=i;
                     chestOpen[i].onClick.AddListener(()=>ChangeToOpen(y));
                     int spriteid=i*3+2;
