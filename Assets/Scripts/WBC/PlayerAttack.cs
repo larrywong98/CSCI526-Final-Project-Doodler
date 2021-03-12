@@ -13,12 +13,8 @@ public class PlayerAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-
         // 正式运行时需要被注释的
         // if(Input.GetMouseButtonDown(0)){
-
         //     Attack();
         // }
 
@@ -29,7 +25,7 @@ public class PlayerAttack : MonoBehaviour
             VAim.isAttackButtionUp = 0;
             VAim.attackDirection=new Vector2(0f,0f);
         }
-        if(Input.GetMouseButtonDown(0) && FullControl.buttonNum==0){
+        if(Input.GetMouseButtonDown(0) && DentriticTrigger.isTriggered==0){
             //working on
             // if()
             VAim.attackDirection=Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position;

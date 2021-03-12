@@ -21,7 +21,7 @@ public class missionbtn : MonoBehaviour
         missionTransform.GetChild(2).gameObject.SetActive(true);
         canvasTransform.GetChild(0).gameObject.SetActive(false);
         canvasTransform.GetChild(1).gameObject.SetActive(false);
-        
+        DentriticTrigger.isTriggered=1;
          
         for (int i = 0; i < Request.table_requests.Count; i++)
         // if(Request.table_requests.Count>0)

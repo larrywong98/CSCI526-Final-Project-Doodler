@@ -86,7 +86,6 @@
      <Compile Include="Assets\Shaders\Dissove\Teleporter.cs" />
      <Compile Include="Assets\Shaders\Dissove\Testing_Dissolve.cs" />
      <Compile Include="Assets\Shaders\Magma\FlowEffect.cs" />
-     <None Include="Assets\Shaders\DefaultColorFlash.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
