@@ -864,7 +864,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 112381378}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -2737,7 +2737,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 432084037}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -3056,7 +3056,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 446003933}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -44226,7 +44226,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 634807346}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -58795,7 +58795,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 759581340}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -59796,7 +59796,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 885662018}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -64846,7 +64846,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 967628779}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -74911,7 +74911,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1100647814}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -75153,7 +75153,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1104443880}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -76193,7 +76193,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1213352212}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -76806,7 +76806,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1276979731}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -77048,7 +77048,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1297307476}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -77290,7 +77290,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1304238457}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -78367,7 +78367,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1354379154}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -78609,7 +78609,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1355110133}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -79441,7 +79441,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1469925622}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -79882,7 +79882,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1493838139}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -80440,7 +80440,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1555864880}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -81112,7 +81112,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1682845230}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -81532,7 +81532,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1762431228}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -83123,7 +83123,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1910174677}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -83960,7 +83960,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 1977089425}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -84428,7 +84428,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 2035913983}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -85079,7 +85079,7 @@ MonoBehaviour:
   moveSpeed: 1
   maxHp: 1
   rb: {fileID: 2089238683}
-  hp: 10000
+  hp: 50
   hurtLength: 0.2
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
@@ -86206,6 +86206,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1915506675}
     m_Modifications:
+    - target: {fileID: 5233629515046513302, guid: eee0959bb363cf14a9bb4a1593e05552,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5233629515046513302, guid: eee0959bb363cf14a9bb4a1593e05552,
         type: 3}
       propertyPath: m_AnchorMax.y
