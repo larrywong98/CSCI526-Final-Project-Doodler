@@ -47,6 +47,11 @@ public class PlayerAttack : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
 
         transform.GetChild(0).gameObject.SetActive(true);
+
+
+        if(VAim.attackDirection.x > 0){ //如果朝着反方向挥舞，那么挥刀时转向
+            transform.parent.GetChild(1).eulerAngles = new Vector3(0, 180, 0);
+        }
         transform.parent.GetChild(1).gameObject.SetActive(true); // 手挥舞刀光更新
 
 
