@@ -73,6 +73,6 @@ public class DialogueManager : MonoBehaviour
 		// dialogueTransform.GetChild(1).gameObject.SetActive(false);
     	// animator.SetBool("IsOpen", false);
 		dentriticTrigger.AddRequest();
-		DentriticTrigger.isTriggered=0;
+		FullControl.isTriggered=0;
     }
 }

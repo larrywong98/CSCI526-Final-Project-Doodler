@@ -37,7 +37,7 @@ public class Stay : MonoBehaviour
         transClose.GetChild(1).gameObject.SetActive(false);
         transClose.GetChild(2).gameObject.SetActive(false);
         FullControl.buttonNum=0;
-        DentriticTrigger.isTriggered=0;
+        FullControl.isTriggered=0;
         
         // Loader.Load(Loader.Scene.Level1);
     }

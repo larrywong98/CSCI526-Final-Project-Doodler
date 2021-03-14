@@ -25,7 +25,7 @@ public class PlayerAttack : MonoBehaviour
             VAim.isAttackButtionUp = 0;
             VAim.attackDirection=new Vector2(0f,0f);
         }
-        if(Input.GetMouseButtonDown(0) && DentriticTrigger.isTriggered==0){
+        if(Input.GetMouseButtonDown(0) && FullControl.isTriggered==0){
             //working on
             // if()
             VAim.attackDirection=Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position;
