@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NpcFollow : MonoBehaviour
+public class BossSkill : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -13,6 +13,11 @@ public class NpcFollow : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        // StartCoroutine(wait());
     }
+    // private IEnumerator wait()
+    // {
+    //    yield return null;
+    //    WaitForSeconds(3);
+    // }
 }

@@ -12,24 +12,30 @@ public class MissionStatus : MonoBehaviour
     //51-100 main
     public static int[] expectedNum=new int [100];
     private void Start(){
-        for(int i=0;i<2;i++){
-            expectedNum[i]=5;
-        }
-        for(int i=2;i<4;i++){
-            expectedNum[i]=10;
-        }
-        for(int i=4;i<50;i++){
-            expectedNum[i]=20;
-        }
+        //deliver oxygen
+        expectedNum[0]=5;
+
+        // for(int i=0;i<2;i++){
+        //     expectedNum[i]=5;
+        // }
+        // for(int i=2;i<4;i++){
+        //     expectedNum[i]=10;
+        // }
+        // for(int i=4;i<50;i++){
+        //     expectedNum[i]=20;
+        // }
     }
     public static int TaskMap(int expect){
-        //green
-        if(expect==0 || expect==2 || expect==4){
+        // //green
+        // if(expect==0 || expect==2 || expect==4){
+        //     return 0;
+        // }
+        // //bat
+        // if(expect==1 || expect==3){
+        //     return 1;
+        // }
+        if(expect==0){
             return 0;
-        }
-        //bat
-        if(expect==1 || expect==3){
-            return 1;
         }
         return -1;
     }
@@ -41,16 +47,24 @@ public class MissionStatus : MonoBehaviour
         // new List<string>{"4","Kill 20 green bacteria","20","0"}
 
         //killed index reference
-        //0  green bacteria
-        //1  bat
+        ////0  green bacteria
+        ////1  bat
+        //0 oxygen
+        // if(Request.table_requests.Count==0) return;
+        // if(FullControl.collectOxygen==expectedNum[0]){
+        //     TreasureChest.canOpen[int.Parse(Request.table_requests[0][4])]=1;
+        // }
+        killed[0]=FullControl.collectOxygen;
+        // Debug.Log(FullControl.collectOxygen);
+        // Debug.Log(expectedNum[0]);
         for(int i=0;i<Request.table_requests.Count;i++){
             if(killed[TaskMap(i)]>=expectedNum[i]){
                 TreasureChest.canOpen[int.Parse(Request.table_requests[i][4])]=1;
             }
         }
     }
-    private void Update() {
-        CheckComplete();
-    }
+    // private void Update() {
+    //     CheckComplete();
+    // }
 
 }

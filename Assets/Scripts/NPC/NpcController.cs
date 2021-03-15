@@ -5,9 +5,9 @@ using UnityEngine;
 public class NpcController : MonoBehaviour
 {
 
-    public Animator animator;
+    // public Animator animator;
     
-    public GameObject arrowPrefab;
+    // public GameObject arrowPrefab;
 
     public float speed;
     public float stoppingDistance;
@@ -37,22 +37,22 @@ public class NpcController : MonoBehaviour
     }
 
 
-    private void SetAnimationAttr(Vector3 movement){ // 单独进行动画参数设置
-        // rgd = GetComponent<Rigidbody>();
+    // private void SetAnimationAttr(Vector3 movement){ // 单独进行动画参数设置
+    //     // rgd = GetComponent<Rigidbody>();
 
-        animator.SetFloat("Horizontal", movement.x);
-        animator.SetFloat("Vertical", movement.y);
+    //     animator.SetFloat("Horizontal", movement.x);
+    //     animator.SetFloat("Vertical", movement.y);
 
-        if(movement.magnitude > 0.2){
-            animator.SetFloat("Magnitude", movement.magnitude);
-        }else{
-            animator.SetFloat("Magnitude", 0.0f);
-        }
+    //     if(movement.magnitude > 0.2){
+    //         animator.SetFloat("Magnitude", movement.magnitude);
+    //     }else{
+    //         animator.SetFloat("Magnitude", 0.0f);
+    //     }
         
         
-        // transform.position = transform.position + movement* speed * Time.deltaTime;
-        // rb.velocity=new Vector2(movement.x,movement.y)*speed;
-    }
+    //     // transform.position = transform.position + movement* speed * Time.deltaTime;
+    //     // rb.velocity=new Vector2(movement.x,movement.y)*speed;
+    // }
 
     private void Follow(){ //跟随功能
 
@@ -65,7 +65,7 @@ public class NpcController : MonoBehaviour
             Vector3 movement = Vector3.MoveTowards(transform.position, target.position, Vector2.Distance(transform.position, target.position) - stoppingDistance) 
                                 - transform.position;
 
-            SetAnimationAttr(movement);
+            // SetAnimationAttr(movement);
 
             
             // transform.position = transform.position + movement* speed * Time.deltaTime;

@@ -10,7 +10,7 @@ public class Request : MonoBehaviour
     public static List<List<string>> table_requests=new List<List<string>>();
     // public static int[] tableRequestsHash=new int[100];
     // public static int prevCount=0;
-    //  awaitingreqeust id, 任务内容, 进度, 状态， table request id,
+    //  awaitingreqeust id, 任务内容, 进度, 状态， //table request id,
     public static List<List<string>> awaitingRequest=new List<List<string>>{
         new List<string>{"0","Kill 5 green bacteria","5","0"},
         new List<string>{"1","kill 5 bats","5","0"},

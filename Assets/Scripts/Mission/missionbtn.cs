@@ -22,6 +22,7 @@ public class missionbtn : MonoBehaviour
         canvasTransform.GetChild(0).gameObject.SetActive(false);
         canvasTransform.GetChild(1).gameObject.SetActive(false);
         FullControl.isTriggered=1;
+        MissionStatus.CheckComplete();
          
         for (int i = 0; i < Request.table_requests.Count; i++)
         // if(Request.table_requests.Count>0)

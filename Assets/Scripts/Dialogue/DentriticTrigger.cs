@@ -14,7 +14,8 @@ public class DentriticTrigger : MonoBehaviour
     // public static int isTriggered=0;
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Space) && Vector2.Distance(transform.position,player.position)<1.5f){
+        if(Input.GetKeyDown(KeyCode.Space) && 
+           Vector2.Distance(transform.position,player.position)<1.5f){
             dialogueTransform.GetChild(0).gameObject.SetActive(true);
             transformCanvas.GetChild(0).gameObject.SetActive(false);
             transformCanvas.GetChild(1).gameObject.SetActive(false);
@@ -26,7 +27,7 @@ public class DentriticTrigger : MonoBehaviour
     public void TriggerDialogue ()
     {
         FullControl.isTriggered=1;
-    	FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+    	FindObjectOfType<DialogueManager>().StartDialogue(dialogue,2);
     }
     public void AddRequest(){
         if(Request.awaitingRequest.Count==0){

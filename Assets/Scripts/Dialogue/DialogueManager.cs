@@ -14,19 +14,20 @@ public class DialogueManager : MonoBehaviour
 	public Queue<string> sentences;
 	public Transform transformCanvas;
 	public DentriticTrigger dentriticTrigger;
+	public NPC1Trigger npc1Trigger;
     // Start is called before the first frame update
     void Start()
     {
         sentences = new Queue<string>();
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    public void StartDialogue (Dialogue dialogue,int id)
     {
     	// animator.SetBool("IsOpen", true);
 
     	// Debug.Log("Start dialogue with " + dialogue.name);
     	nameText.text = dialogue.name;
-
+		FullControl.id=id;
     	sentences.Clear();
 
     	foreach (string sentence in dialogue.sentences)
@@ -72,7 +73,15 @@ public class DialogueManager : MonoBehaviour
 		transformCanvas.GetChild(1).gameObject.SetActive(true);
 		// dialogueTransform.GetChild(1).gameObject.SetActive(false);
     	// animator.SetBool("IsOpen", false);
-		dentriticTrigger.AddRequest();
+		if(FullControl.id==2){
+			dentriticTrigger.AddRequest();
+		}
+		
+
+		if(FullControl.id==1){
+			npc1Trigger.AddRequest();
+			FullControl.dialogueRBCEnd=1;
+		}
 		FullControl.isTriggered=0;
     }
 }
