@@ -5,7 +5,7 @@ using UnityEngine;
 public class PickOxygen : MonoBehaviour
 {
     // [SerializeField]private Transform playerTransform;
-    [SerializeField] private Collider2D selfcollider;
+    // [SerializeField] private Collider2D selfcollider;
     private int isfirstcollide=0;
   
     private void OnTriggerEnter2D(Collider2D other)

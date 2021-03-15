@@ -13,7 +13,10 @@ public static class Loader
     public enum Scene{
         MainMenu,
         Level1,
-        Level2,
+        Level1Scene1,
+        Level1Scene2,
+        Level1Scene3,
+        FinalBossScene,
         EndScene,
         Loading
     }
