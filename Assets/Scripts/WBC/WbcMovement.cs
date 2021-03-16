@@ -43,7 +43,7 @@ public class WbcMovement : MonoBehaviour
         rb.velocity = new Vector2(moveH, moveV);
 
         // IDLE时若有attackdirection则转向并清零
-        if(movement.x == 20 || movement.x == -20){
+        if(movement.x == moveSpeed || movement.x == -moveSpeed){
 
             animator.SetFloat("LastMoveX", movement.x);
         }

@@ -7,7 +7,7 @@ public class Enemy_GreenBacteria : MonoBehaviour
     // [SerializeField] private float moveSpeed;
     private Transform target;
     [SerializeField] private float maxHp;
-    // [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private Rigidbody2D rb;
     public float hp;
     [Header("Hurt")]
     private SpriteRenderer sp; // 材质
@@ -15,12 +15,18 @@ public class Enemy_GreenBacteria : MonoBehaviour
     private float hurtCounter; // 被击中的计数器
     public bool isAttacked;
     public GameObject explosionEffect;
+
+    Vector3 lastPostion;
+    Vector3 localVelocity;
     // Start is called before the first frame update
     void Start()
     {
         hp = maxHp; // 初始化生命值
         target = GameObject.FindGameObjectWithTag("character").GetComponent<Transform>(); // 寻找玩家
         sp = GetComponent<SpriteRenderer>(); // 获取材质
+
+        lastPostion = transform.position;
+
     }
     // Update is called once per frame
     void Update()
@@ -31,6 +37,11 @@ public class Enemy_GreenBacteria : MonoBehaviour
         }else{
             hurtCounter -= Time.deltaTime; // 若大于0则每帧减少
         }
+
+        // Flip at each frame
+        Flip();
+        lastPostion = transform.position;
+
     }
     // private void FollowPlayer(){
     //     // transform.position = Vector2.MoveTowards(transform.position, target.position, moveSpeed * Time.deltaTime);  
@@ -60,5 +71,17 @@ public class Enemy_GreenBacteria : MonoBehaviour
     IEnumerator isAttackCo(){
         yield return new WaitForSeconds(0.2f);
         isAttacked = false;
+    }
+
+    private void Flip()
+    {
+        localVelocity = transform.position - lastPostion;
+        if(localVelocity.x > 0){
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        }
+        if(localVelocity.x < 0){
+            transform.eulerAngles = new Vector3(0, 0, 0);
+        }
+
     }
 }

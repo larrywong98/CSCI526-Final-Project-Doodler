@@ -15,6 +15,10 @@ public class EnemyAI_1 : MonoBehaviour
     private float attackRange=2f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
+
+    // public Animator fade;
+    // private float transitionTime=1f;
+
     public enum EnemyState
     {
         idle,
@@ -25,17 +29,12 @@ public class EnemyAI_1 : MonoBehaviour
     void Start()
     {
         startPos=transform.position;
-        // player=GameObject.FindGameObjectWithTag("character").transform;
-        // playerTransform = player.GetComponent<Player>().transform;
         enemyState=EnemyState.roam;
         roamingPos=Roaming();
     }
     void MoveTo(Vector2 endPos){
         Vector3 movement=(Vector3)endPos-transform.position;
-        // Debug.Log(movement);
         rb.velocity=new Vector2(movement.normalized.x,movement.normalized.y)*speed;
-        //  Vector2 tmp=new Vector2(Vector3.Normalize(movement).x,Vector3.Normalize(movement).y);
-        // rb.velocity=tmp*speed;
     }
     public Vector3 RandomDirection(){
         return new Vector3(UnityEngine.Random.Range(-1f,1f),
@@ -70,16 +69,16 @@ public class EnemyAI_1 : MonoBehaviour
                 
             case EnemyState.chase:
                 MoveTo(playerTransform.position);
-                attackRange=2f;
+                attackRange=1f;
                 if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
                     enemyState=EnemyState.attack;
                 }
                 break;
             case EnemyState.attack:
                 MoveTo(playerTransform.position);
-                attackRange=2f;
+                attackRange=1f;
                 if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
-                    player.TakeDamage(1f);
+                    player.TakeDamage(0.05f);
                 }else{
                     enemyState=EnemyState.chase;
                 }
@@ -91,8 +90,10 @@ public class EnemyAI_1 : MonoBehaviour
                 break;
         }
         // Debug.Log(player.currentHealth);
-        if(player.currentHealth==0){
-            Loader.Load(Loader.Scene.MainMenu);
-        }
+        // if(player.currentHealth<=0){
+        //     fade.SetTrigger("out");
+        //     StartCoroutine(waitLoad());
+        // }
     }
+    
 }

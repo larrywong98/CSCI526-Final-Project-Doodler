@@ -186,6 +186,7 @@ GameObject:
   - component: {fileID: 393630000}
   - component: {fileID: 1442513799}
   - component: {fileID: 1508009456}
+  - component: {fileID: 4221332212586387527}
   m_Layer: 5
   m_Name: ultimate skill
   m_TagString: Untagged
@@ -292,7 +293,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1508009456}
+      - m_Target: {fileID: 4221332212586387527}
         m_MethodName: UtimateSkill
         m_Mode: 1
         m_Arguments:
@@ -340,6 +341,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1508009456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3165070417723255904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7415be29f9cadd48b83e718ec895bca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4221332212586387527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -437,6 +450,7 @@ GameObject:
   - component: {fileID: 7559058989828595326}
   - component: {fileID: 3454013732791004775}
   - component: {fileID: 5260844881490175739}
+  - component: {fileID: 1254037894}
   m_Layer: 5
   m_Name: dash
   m_TagString: Untagged
@@ -543,8 +557,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1254037894}
+        m_MethodName: dash
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -554,3 +568,15 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1254037894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4751156723601657960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1ed3e25c3e8efd41b476bd82a2380eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

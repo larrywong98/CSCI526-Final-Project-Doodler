@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4751058927193722474}
   - component: {fileID: 4751058927193722475}
   - component: {fileID: 4765589901321302096}
-  - component: {fileID: 6478448886461886782}
   - component: {fileID: 6374278025274675324}
   - component: {fileID: 4751058927193722479}
   - component: {fileID: 4751058927193722478}
@@ -122,24 +121,7 @@ MonoBehaviour:
   player: {fileID: 0}
   rb: {fileID: 4751058927193722479}
   speed: 1
---- !u!114 &6478448886461886782
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4751058927193722472}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d5820e0d3cb7cf47a483962066f353a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHp: 100
-  hp: 0
-  hurtLength: 0.2
-  isAttacked: 0
-  explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
-    type: 3}
+  fade: {fileID: 0}
 --- !u!114 &6374278025274675324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -153,8 +135,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 100
+  rb: {fileID: 4751058927193722479}
   hp: 0
-  hurtLength: 0.2
+  hurtLength: 0.1
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
     type: 3}
