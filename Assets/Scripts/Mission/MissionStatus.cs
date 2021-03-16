@@ -14,7 +14,7 @@ public class MissionStatus : MonoBehaviour
     private void Start(){
         //deliver oxygen
         expectedNum[0]=5;
-
+        expectedNum[1]=10;
         // for(int i=0;i<2;i++){
         //     expectedNum[i]=5;
         // }
@@ -37,6 +37,9 @@ public class MissionStatus : MonoBehaviour
         if(expect==0){
             return 0;
         }
+        if(expect==1){
+            return 1;
+        }
         return -1;
     }
     public static void CheckComplete() {
@@ -55,6 +58,7 @@ public class MissionStatus : MonoBehaviour
         //     TreasureChest.canOpen[int.Parse(Request.table_requests[0][4])]=1;
         // }
         killed[0]=FullControl.collectOxygen;
+        killed[1]=FullControl.deadGreenBacteria;
         // Debug.Log(FullControl.collectOxygen);
         // Debug.Log(expectedNum[0]);
         for(int i=0;i<Request.table_requests.Count;i++){

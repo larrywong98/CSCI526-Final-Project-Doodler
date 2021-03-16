@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy_Bat : MonoBehaviour
+public class Enemy_GreenBacteria : MonoBehaviour
 {
     // [SerializeField] private float moveSpeed;
     private Transform target;
@@ -44,11 +44,13 @@ public class Enemy_Bat : MonoBehaviour
         hp -= _amount; // 扣血
         HurtShader(); // 伤害贴图
         // Instantiate(explosionEffect, transform.position, Quaternion.identity);
+        Debug.Log(hp);
         if (hp <= 0){
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
-            MissionStatus.killed[0]=MissionStatus.killed[0]+1;
-            MissionStatus.CheckComplete();
+            FullControl.deadGreenBacteria=FullControl.deadGreenBacteria+1;
+            Debug.Log(FullControl.deadGreenBacteria);
+            // MissionStatus.CheckComplete();
         } // 血条为0则销毁            
     }
     private void HurtShader(){

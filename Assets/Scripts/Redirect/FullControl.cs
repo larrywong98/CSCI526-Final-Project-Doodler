@@ -9,4 +9,5 @@ public class FullControl : MonoBehaviour
     public static int dialogueRBCEnd=0;
     public static int id=0;
     public static int collectOxygen=0;
+    public static int deadGreenBacteria=0;
 }

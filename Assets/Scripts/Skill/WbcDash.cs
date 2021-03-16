@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-public class Dash : MonoBehaviour
-{
+// public class WbcDash : MonoBehaviour
+// {
 //     [SerializeField] private float dashDistance = 5f;
 //     [SerializeField] private float dashDuration = 0.5f;
 
@@ -12,17 +12,28 @@ public class Dash : MonoBehaviour
 //     private Vector2 dashOrigin;
 //     private Vector2 dashDestination;
 //     private Vector2 newPosition;
-//     [SerializeField]private Transform playertransform;
 
-//     public WbcMovement wbcMovement;
+//     protected WbcMovement wbcMovement;
     
-
-//     public void HandleAbility()
+//     // Start is called before the first frame update
+//     void Start()
 //     {
-//         // if (Input.GetKeyDown(KeyCode.Space))
-//         // {
-//         dash();
-//         // }
+//         wbcMovement = GetComponent<WbcMovement>();
+//     }
+
+//     // Update is called once per frame
+//     void FixedUpdate()
+//     {
+//         HandleAbility();
+//     }
+
+//     protected void HandleAbility()
+//     {
+//         if (Input.GetKeyDown(KeyCode.Space))
+//         {
+//             Dash();
+//         }
+
 //         if (isDashing)
 //         {
 //             if (dashTimer < dashDuration)
@@ -37,18 +48,22 @@ public class Dash : MonoBehaviour
 //             }
 //         }
 //     }
-//     private void dash()
+
+    
+//     private void Dash()
 //     {
 //         isDashing = true;
 //         dashTimer = 0f;
 //         wbcMovement.NormalMovement = false;
-//         dashOrigin = playertransform.position;
+//         dashOrigin = transform.position;
 
 //         dashDestination = (Vector3) dashOrigin + (Vector3) wbcMovement.CurrentMovement.normalized * dashDistance;
 //     }
+
 //     private void StopDash()
 //     {
 //         isDashing = false;
 //         wbcMovement.NormalMovement = true;
 //     }
-}
+    
+// }

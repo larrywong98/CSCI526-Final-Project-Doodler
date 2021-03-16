@@ -126,53 +126,53 @@
 // }
 
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+// using System.Collections;
+// using System.Collections.Generic;
+// using UnityEngine;
 
-public class PlayerController : MonoBehaviour
-{
+// public class PlayerController : MonoBehaviour
+// {
 
-    // public Animator animator;
-    // public int playerId = 0;
-    // public GameObject crossHair;
+//     // public Animator animator;
+//     // public int playerId = 0;
+//     // public GameObject crossHair;
 
-    // public GameObject arrowPrefab;
+//     // public GameObject arrowPrefab;
 
-    public float speed;
+//     public float speed;
 
-    public Rigidbody2D rb;
-    // private Player player;
+//     public Rigidbody2D rb;
+//     // private Player player;
 
-    // Start is called before the first frame update
+//     // Start is called before the first frame update
     
-    // void Awake()
+//     // void Awake()
+//     // {
+//     //     player = ReInput.players.GetPlayer(playerId);
+//     // }
+
+    // private void Flip()
     // {
-    //     player = ReInput.players.GetPlayer(playerId);
+    //     if (VJoystick.joystickpos.x > 0)
+    //         transform.eulerAngles = new Vector3(0, 0, 0);
+    //     if (VJoystick.joystickpos.x < 0)
+    //         transform.eulerAngles = new Vector3(0, 180, 0);
+
+    // }
+    // void Update()
+    // {
+    //     Flip();
     // }
 
-    private void Flip()
-    {
-        if (VJoystick.joystickpos.x > 0)
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        if (VJoystick.joystickpos.x < 0)
-            transform.eulerAngles = new Vector3(0, 180, 0);
-
-    }
-    void Update()
-    {
-        Flip();
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        // Move();
-        // AimAndShoot(0);
-        rb.velocity=new Vector2(VJoystick.joystickpos.x,VJoystick.joystickpos.y)*speed;
+    // // Update is called once per frame
+    // void FixedUpdate()
+    // {
+    //     // Move();
+    //     // AimAndShoot(0);
+    //     rb.velocity=new Vector2(VJoystick.joystickpos.x,VJoystick.joystickpos.y)*speed;
 
 
-    }
+    // }
 
     // private void Move(){
     //     // rgd = GetComponent<Rigidbody>();
@@ -228,4 +228,42 @@ public class PlayerController : MonoBehaviour
     //         }
     // }
    
-}
+// }
+
+
+   // private void LateUpdate(){
+
+        
+
+
+
+    //     VAim.attackDirection = new Vector2(0, 0);
+    // } 
+
+    // private void Flip()
+    // {
+        // if (VJoystick.joystickpos.x > 0)
+        //     transform.eulerAngles = new Vector3(0, 180, 0);
+        // if (VJoystick.joystickpos.x < 0)
+        //     transform.eulerAngles = new Vector3(0, 0, 0);
+        
+        
+        
+        // if (VAim.isAttackButtionUp == 1){
+        //     if(VAim.attackDirection.x >= 0){
+        //         transform.eulerAngles = new Vector3(0, 180, 0);
+        //     }
+        //     if(VAim.attackDirection.x < 0){
+        //         transform.eulerAngles = new Vector3(0, 0, 0);
+        //     }
+
+        // }else{
+
+        //     if (moveH > 0)
+        //         transform.eulerAngles = new Vector3(0, 180, 0);
+        //     if (moveH < 0)
+        //         transform.eulerAngles = new Vector3(0, 0, 0);
+        // }
+        
+
+    // }

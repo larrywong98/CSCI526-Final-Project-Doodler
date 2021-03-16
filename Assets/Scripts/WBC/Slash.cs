@@ -25,7 +25,8 @@ public class Slash : MonoBehaviour
 
             attackDamage = Random.Range(minDamage, maxDamage);
 
-            Enemy_Bat enemy = other.gameObject.GetComponent<Enemy_Bat>(); //获取敌人
+            // Enemy_Bat enemy = other.gameObject.GetComponent<Enemy_Bat>(); //获取敌人
+            Enemy_GreenBacteria enemy = other.gameObject.GetComponent<Enemy_GreenBacteria>(); 
 
             if(!enemy.isAttacked){ // 只有当敌人isAttacked为false时才能造成伤害
                 enemy.TakenDamage(attackDamage); //  给敌人造成伤害

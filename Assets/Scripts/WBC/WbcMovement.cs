@@ -11,6 +11,7 @@ public class WbcMovement : MonoBehaviour
     private float moveH, moveV;
     [SerializeField] private float moveSpeed;
     public Animator animator;
+    
 
 
     // Start is called before the first frame update
@@ -38,7 +39,7 @@ public class WbcMovement : MonoBehaviour
         animator.SetFloat("Horizontal", movement.x);
         animator.SetFloat("AttackDirection", VAim.attackDirection.x);
         animator.SetFloat("Magnitude", movement.magnitude);
-        Flip();
+        // Flip();
         rb.velocity = new Vector2(moveH, moveV);
 
         // IDLE时若有attackdirection则转向并清零
@@ -50,41 +51,6 @@ public class WbcMovement : MonoBehaviour
     }
 
 
-    private void LateUpdate(){
-
-        
-
-
-
-    //     VAim.attackDirection = new Vector2(0, 0);
-    } 
-
-    private void Flip()
-    {
-        // if (VJoystick.joystickpos.x > 0)
-        //     transform.eulerAngles = new Vector3(0, 180, 0);
-        // if (VJoystick.joystickpos.x < 0)
-        //     transform.eulerAngles = new Vector3(0, 0, 0);
-        
-        
-        
-        // if (VAim.isAttackButtionUp == 1){
-        //     if(VAim.attackDirection.x >= 0){
-        //         transform.eulerAngles = new Vector3(0, 180, 0);
-        //     }
-        //     if(VAim.attackDirection.x < 0){
-        //         transform.eulerAngles = new Vector3(0, 0, 0);
-        //     }
-
-        // }else{
-
-        //     if (moveH > 0)
-        //         transform.eulerAngles = new Vector3(0, 180, 0);
-        //     if (moveH < 0)
-        //         transform.eulerAngles = new Vector3(0, 0, 0);
-        // }
-        
-
-    }
+ 
 
 }

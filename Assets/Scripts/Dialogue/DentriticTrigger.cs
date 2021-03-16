@@ -30,10 +30,10 @@ public class DentriticTrigger : MonoBehaviour
     	FindObjectOfType<DialogueManager>().StartDialogue(dialogue,2);
     }
     public void AddRequest(){
-        if(Request.awaitingRequest.Count==0){
-            Debug.Log("print no more requests");
-            return ;
-        }
+        // if(Request.awaitingRequest.Count==0){
+        //     Debug.Log("print no more requests");
+        //     return ;
+        // }
         // int ranVal=Random.Range(0,Request.awaitingRequest.Count);
         // countNumRequests=countNumRequests+1;
         // if(request.tableRequestsHash[ranVal]==1) return;
@@ -41,11 +41,14 @@ public class DentriticTrigger : MonoBehaviour
         // while(countNumRequests<=Request.awaitingRequest.Count && Request.tableRequestsHash[ranVal]==1){
         //     ranVal=Random.Range(0,Request.awaitingRequest.Count);
         // }
-        request.AddRow(Request.awaitingRequest[Request.ranVal][0],
-                       Request.awaitingRequest[Request.ranVal][1],
-                       Request.awaitingRequest[Request.ranVal][2],
-                       Request.awaitingRequest[Request.ranVal][3]);
-        Request.awaitingRequest.Remove(Request.awaitingRequest[Request.ranVal]);
+        // request.AddRow(Request.awaitingRequest[Request.ranVal][0],
+        //                Request.awaitingRequest[Request.ranVal][1],
+        //                Request.awaitingRequest[Request.ranVal][2],
+        //                Request.awaitingRequest[Request.ranVal][3]);
+        // Request.awaitingRequest.Remove(Request.awaitingRequest[Request.ranVal]);
         // Request.ranVal=Request.ranVal+1;
+
+        int tmp=Request.table_requests.Count;
+        request.AddRow(""+tmp,"Kill 10 green bacteria","10","0");
     }
 }

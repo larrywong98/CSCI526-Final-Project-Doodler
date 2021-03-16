@@ -15,7 +15,7 @@ public class PickOxygen : MonoBehaviour
         { 
 
             FullControl.collectOxygen=FullControl.collectOxygen+1;
-            Destroy(gameObject,1f);
+            Destroy(gameObject,0f);
             // Debug.Log(FullControl.collectOxygen);
             isfirstcollide=1;
             

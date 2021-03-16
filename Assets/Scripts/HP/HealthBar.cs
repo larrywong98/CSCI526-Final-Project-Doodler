@@ -8,7 +8,7 @@ public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Image hpeffect;
-    public float hurtspeed=0.001f;
+    public float hurtspeed=10f;
     public void SetMaxHealth(float health){
         slider.maxValue=health;
         slider.value=health;
