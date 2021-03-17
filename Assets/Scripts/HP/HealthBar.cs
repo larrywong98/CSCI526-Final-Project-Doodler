@@ -8,7 +8,7 @@ public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Image hpeffect;
-    public float hurtspeed=10f;
+    public float hurtspeed;
     public Animator fade;
     private float transitionTime=1f;
     public void SetMaxHealth(float health){
@@ -25,6 +25,7 @@ public class HealthBar : MonoBehaviour
         }else{
             hpeffect.fillAmount=slider.value/100f;
         }
+        // Debug.Log(hpeffect.fillAmount);
         if(slider.value<=0){
             fade.SetTrigger("out");
             StartCoroutine(waitLoad());

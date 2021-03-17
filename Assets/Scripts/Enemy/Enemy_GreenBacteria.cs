@@ -55,12 +55,12 @@ public class Enemy_GreenBacteria : MonoBehaviour
         hp -= _amount; // 扣血
         HurtShader(); // 伤害贴图
         // Instantiate(explosionEffect, transform.position, Quaternion.identity);
-        Debug.Log(hp);
+        // Debug.Log(hp);
         if (hp <= 0){
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             FullControl.deadGreenBacteria=FullControl.deadGreenBacteria+1;
-            Debug.Log(FullControl.deadGreenBacteria);
+            // Debug.Log(FullControl.deadGreenBacteria);
             // MissionStatus.CheckComplete();
         } // 血条为0则销毁            
     }

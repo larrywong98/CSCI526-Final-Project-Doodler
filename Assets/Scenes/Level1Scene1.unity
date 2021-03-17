@@ -27900,6 +27900,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Skills
       objectReference: {fileID: 0}
+    - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfab346f3e635d4f9d3844b2f31391e, type: 3}
 --- !u!1 &1025625720
@@ -28709,9 +28719,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5233629515662103968, guid: eee0959bb363cf14a9bb4a1593e05552,
         type: 3}
+      propertyPath: fade
+      value: 
+      objectReference: {fileID: 762124789}
+    - target: {fileID: 5233629515662103968, guid: eee0959bb363cf14a9bb4a1593e05552,
+        type: 3}
       propertyPath: hpeffect
       value: 
       objectReference: {fileID: 2138554404}
+    - target: {fileID: 5233629515662103968, guid: eee0959bb363cf14a9bb4a1593e05552,
+        type: 3}
+      propertyPath: hurtspeed
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 5233629515662103969, guid: eee0959bb363cf14a9bb4a1593e05552,
         type: 3}
       propertyPath: m_Pivot.x
@@ -31678,6 +31698,7 @@ MonoBehaviour:
   transformCanvas: {fileID: 480194192}
   dentriticTrigger: {fileID: 0}
   npc1Trigger: {fileID: 7522961933285261733}
+  l1S3DendriticTrigger: {fileID: 0}
 --- !u!1 &2022160616
 GameObject:
   m_ObjectHideFlags: 0
@@ -32502,17 +32523,6 @@ MonoBehaviour:
       in the body and carbon dioxide to the lungs
     - The bottom left corner of the screen through the arrow keys can control the
       movement of the character, the lower right key can release skills
-    - The body we are in has been infected with the flu, and all the cells are in
-      overload
-    - But in order to survive, we have to work as hard as we can
-    - Now I need to get oxygen to my brain
-    - But even if I keep working, I can't change anything
-    - Why do we have to work endlessly to do this pointless work?
-    - Even so, we still have to work
-    - "The lower right key releases skills to attack bacteria/viruses\r"
-    - That red cell, is a newcomer?
-    - Although I thank White Blood Cell for just saving me, when will my pointless
-      work end?
   dialogueTransform: {fileID: 40991492}
   playerTransform: {fileID: 7522961933285261659}
   transformCanvas: {fileID: 480194192}

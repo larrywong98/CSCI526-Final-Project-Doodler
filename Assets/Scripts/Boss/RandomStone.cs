@@ -35,6 +35,18 @@ public class RandomStone : MonoBehaviour
         
 
     }
+    // private void OnTriggerEnter2D(Collider2D other)
+    // {
+    //     if(other.gameObject.tag == "character" && isfirstcollide==0)
+    //     { 
+    //         dissolveEffect.Dissolve(1f, disappearColor);
+    //         // Debug.Log("ok");
+    //         fade.SetTrigger("out");
+    //         StartCoroutine(waitLoad());
+    //         isfirstcollide=1;
+    //     }
+    // }
+    
     private IEnumerator waitStone(){
         yield return new WaitForSeconds(waitTime);
        

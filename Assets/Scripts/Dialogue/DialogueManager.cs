@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
 	public Transform transformCanvas;
 	public DentriticTrigger dentriticTrigger;
 	public NPC1Trigger npc1Trigger;
+	public L1S3Dendritic l1S3DendriticTrigger;
     // Start is called before the first frame update
     void Start()
     {
@@ -81,6 +82,11 @@ public class DialogueManager : MonoBehaviour
 		if(FullControl.id==1){
 			npc1Trigger.AddRequest();
 			FullControl.dialogueRBCEnd=1;
+		}
+
+		if(FullControl.id==8){
+			l1S3DendriticTrigger.AddRequest();
+			// FullControl.dialogueRBCEnd=1;
 		}
 		FullControl.isTriggered=0;
     }

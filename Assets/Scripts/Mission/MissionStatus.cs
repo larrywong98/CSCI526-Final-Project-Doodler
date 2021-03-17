@@ -15,6 +15,7 @@ public class MissionStatus : MonoBehaviour
         //deliver oxygen
         expectedNum[0]=5;
         expectedNum[1]=10;
+        expectedNum[2]=1;
         // for(int i=0;i<2;i++){
         //     expectedNum[i]=5;
         // }
@@ -40,6 +41,9 @@ public class MissionStatus : MonoBehaviour
         if(expect==1){
             return 1;
         }
+        if(expect==2){
+            return 2;
+        }
         return -1;
     }
     public static void CheckComplete() {
@@ -59,7 +63,9 @@ public class MissionStatus : MonoBehaviour
         // }
         killed[0]=FullControl.collectOxygen;
         killed[1]=FullControl.deadGreenBacteria;
-        // Debug.Log(FullControl.collectOxygen);
+        killed[2]=FullControl.deadboss;
+        // Debug.Log(killed[2]);
+        // Debug.Log(FullControl.deadboss);
         // Debug.Log(expectedNum[0]);
         for(int i=0;i<Request.table_requests.Count;i++){
             if(killed[TaskMap(i)]>=expectedNum[i]){

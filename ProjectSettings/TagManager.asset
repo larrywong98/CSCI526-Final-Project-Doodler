@@ -12,6 +12,7 @@ TagManager:
   - request
   - requestItem
   - requeststatus
+  - boss
   layers:
   - Default
   - TransparentFX
