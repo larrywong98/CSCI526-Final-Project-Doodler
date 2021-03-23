@@ -15,6 +15,8 @@ public class Enemy_GreenBacteria : MonoBehaviour
     private float hurtCounter; // 被击中的计数器
     public bool isAttacked;
     public GameObject explosionEffect;
+    public GameObject oxygenObj;
+    public GameObject glucoseObj;
 
     Vector3 lastPostion;
     Vector3 localVelocity;
@@ -60,6 +62,10 @@ public class Enemy_GreenBacteria : MonoBehaviour
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             FullControl.deadGreenBacteria=FullControl.deadGreenBacteria+1;
+            if(Random.Range(0,5)==1){
+                Instantiate(oxygenObj, transform.position, Quaternion.identity);
+            }
+            Instantiate(glucoseObj, transform.position, Quaternion.identity);
             // Debug.Log(FullControl.deadGreenBacteria);
             // MissionStatus.CheckComplete();
         } // 血条为0则销毁            

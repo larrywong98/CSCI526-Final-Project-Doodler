@@ -69,7 +69,7 @@ public class MissionStatus : MonoBehaviour
         // Debug.Log(expectedNum[0]);
         for(int i=0;i<Request.table_requests.Count;i++){
             if(killed[TaskMap(i)]>=expectedNum[i]){
-                TreasureChest.canOpen[int.Parse(Request.table_requests[i][4])]=1;
+                FullControl.canOpen[int.Parse(Request.table_requests[i][4])]=1;
             }
         }
     }

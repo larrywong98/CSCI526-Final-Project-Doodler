@@ -121,7 +121,6 @@ MonoBehaviour:
   player: {fileID: 0}
   rb: {fileID: 4751058927193722479}
   speed: 1
-  fade: {fileID: 0}
 --- !u!114 &6374278025274675324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -134,12 +133,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da936f2d298d23f41910fddee9737fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 100
+  maxHp: 1
   rb: {fileID: 4751058927193722479}
-  hp: 0
+  hp: 1
   hurtLength: 0.1
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
+    type: 3}
+  oxygenObj: {fileID: 7196988127911248381, guid: 1d5a1841ec98649cbbda4b08c3ee1948,
     type: 3}
 --- !u!50 &4751058927193722479
 Rigidbody2D:

@@ -18,7 +18,7 @@ public class BossStone : MonoBehaviour
         if(other.gameObject.tag == "character" && isfirstcollide==0)
         {
             player.TakeDamage(50f);
-            
         }
+        StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.2f, 1.3f));
     }
 }

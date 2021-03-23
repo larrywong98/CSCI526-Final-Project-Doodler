@@ -11,4 +11,7 @@ public class FullControl : MonoBehaviour
     public static int collectOxygen=0;
     public static int deadGreenBacteria=0;
     public static int deadboss=0;
+    public static int[] canOpen=new int[100]; 
+    public static int[] isOpen=new int[100];
+    public static int glucose=0;
 }

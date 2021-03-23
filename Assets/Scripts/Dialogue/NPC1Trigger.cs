@@ -11,7 +11,9 @@ public class NPC1Trigger : MonoBehaviour
     public Transform transformCanvas;
     public Request request;
     public GameObject quest;
+    public ShowDialogue showDialogue;
     public int triggeredOnce=0;
+
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.Space) && 
@@ -23,6 +25,12 @@ public class NPC1Trigger : MonoBehaviour
             transformCanvas.GetChild(1).gameObject.SetActive(false);
             // dialogueTransform.GetChild(1).gameObject.SetActive(true);
             TriggerDialogue();
+        }
+        if(Input.GetKeyDown(KeyCode.Space) && 
+           Vector2.Distance(transform.position,playerTransform.position)<1.5f && 
+           triggeredOnce!=0)
+        {
+            showDialogue.showD();
         }
     }
    

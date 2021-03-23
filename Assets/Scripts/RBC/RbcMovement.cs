@@ -38,7 +38,7 @@ public class RbcMovement : MonoBehaviour
         // animator.SetFloat("Horizontal", movement.x);
         // animator.SetFloat("AttackDirection", VAim.attackDirection.x);
         // animator.SetFloat("Magnitude", movement.magnitude);
-        // Flip();
+        Flip();
         rb.velocity = new Vector2(moveH, moveV);
 
         // // IDLE时若有attackdirection则转向并清零
@@ -68,21 +68,21 @@ public class RbcMovement : MonoBehaviour
         
         
         
-        // if (VAim.isAttackButtionUp == 1){
-        //     if(VAim.attackDirection.x >= 0){
-        //         transform.eulerAngles = new Vector3(0, 180, 0);
-        //     }
-        //     if(VAim.attackDirection.x < 0){
-        //         transform.eulerAngles = new Vector3(0, 0, 0);
-        //     }
+        if (VAim.isAttackButtionUp == 1){
+            if(VAim.attackDirection.x >= 0){
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            }
+            if(VAim.attackDirection.x < 0){
+                transform.eulerAngles = new Vector3(0, 0, 0);
+            }
 
-        // }else{
+        }else{
 
-        //     if (moveH > 0)
-        //         transform.eulerAngles = new Vector3(0, 180, 0);
-        //     if (moveH < 0)
-        //         transform.eulerAngles = new Vector3(0, 0, 0);
-        // }
+            if (moveH > 0)
+                transform.eulerAngles = new Vector3(0, 180, 0);
+            if (moveH < 0)
+                transform.eulerAngles = new Vector3(0, 0, 0);
+        }
         
 
     }
