@@ -65,7 +65,7 @@ public class Enemy_GreenBacteria : MonoBehaviour
             if(Random.Range(0,5)==1){
                 Instantiate(oxygenObj, transform.position, Quaternion.identity);
             }
-            Instantiate(glucoseObj, transform.position, Quaternion.identity);
+            Instantiate(glucoseObj, transform.position+new Vector3(Random.Range(-1f,1f),Random.Range(-1f,1f),transform.position.z), Quaternion.identity);
             // Debug.Log(FullControl.deadGreenBacteria);
             // MissionStatus.CheckComplete();
         } // 血条为0则销毁            

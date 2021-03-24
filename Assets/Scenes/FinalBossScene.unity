@@ -1449,7 +1449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87cd5c80b91de63469291a7069575dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 1
+  maxHp: 1000
   rb: {fileID: 344498709}
   hp: 0
   hurtLength: 0.2
@@ -56595,6 +56595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isfirst: 1
   initOnce: 0
+  glucoseText: {fileID: 0}
 --- !u!114 &772745329
 MonoBehaviour:
   m_ObjectHideFlags: 0
