@@ -14,4 +14,5 @@ public class FullControl : MonoBehaviour
     public static int[] canOpen=new int[100]; 
     public static int[] isOpen=new int[100];
     public static int glucose=0;
+    public static float mainCharacterMoveSpeed=10f;
 }

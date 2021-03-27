@@ -12,7 +12,7 @@ public class TreasureChest : MonoBehaviour
     // public int countChest=0;
     public int isfirst=1;
     private Button[] chestOpen=new Button[100];
-    public static int enterOnce=0;
+    public static int[] enterOnce=new int[100];
     public int initOnce;
     public Text glucoseText;
 
@@ -22,6 +22,9 @@ public class TreasureChest : MonoBehaviour
             for(int i=1;i<100;i++){
                 FullControl.canOpen[i]=0;
                 FullControl.isOpen[i]=0;
+            }
+            for(int i=1;i<100;i++){
+                enterOnce[i]=0;
             }
         }
         glucoseText=GameObject.FindGameObjectWithTag("showglucose").GetComponent<Text>();
@@ -53,35 +56,42 @@ public class TreasureChest : MonoBehaviour
     }
     private void Update() {
         // for(int i=0;i<transform.childCount;i++){
-        if(enterOnce==0){
+        
             for(int i=0;i<transform.childCount;i++){
                 if(FullControl.canOpen[i]==1 && FullControl.isOpen[i]==0){
-                    int y=i;
-                    chestOpen[i].onClick.AddListener(()=>ChangeToOpen(y));
-                    int spriteid=i*3+2;
-                    string path="mission/"+spriteid;
-                    chestSprite = Resources.Load(path,typeof(Sprite)) as Sprite;
-                    //改变图片
-                    image[i].sprite = chestSprite;
+                    if(enterOnce[i]==0){
+                        int y=i;
+                        chestOpen[i].onClick.AddListener(()=>ChangeToOpen(y));
+                        int spriteid=i*3+2;
+                        string path="mission/"+spriteid;
+                        chestSprite = Resources.Load(path,typeof(Sprite)) as Sprite;
+                        //改变图片
+                        image[i].sprite = chestSprite;
+                    }
                 }
             }
-            enterOnce=1;
-        }
+      
     }
     public void ChangeToOpen(int i){
             // Debug.Log(i);
         // if(FullControl.canOpen[i]==1){
+        
         int spriteid=i*3+3;
         string path="mission/"+spriteid;
-        // Debug.Log(path);
         chestSprite = Resources.Load(path,typeof(Sprite)) as Sprite;
         //改变图片
         image[i].sprite = chestSprite;
-        FullControl.glucose=FullControl.glucose+(i+1)*5;
-        glucoseText.text="  "+FullControl.glucose;
+        if(enterOnce[i]==0){
+            FullControl.glucose=FullControl.glucose+(i+1)*5;
+            glucoseText.text="  "+FullControl.glucose;
+            enterOnce[i]=1;
+        }
         FullControl.canOpen[i]=0;
         FullControl.isOpen[i]=1;
         chestOpen[i]=null;
+        
+        
+        
         // }
     }
 }

@@ -9,7 +9,7 @@ public class RbcMovement : MonoBehaviour
 {
     private Rigidbody2D rb;
     private float moveH, moveV;
-    [SerializeField] private float moveSpeed;
+    private float moveSpeed;
     public Animator animator;
 
 
@@ -17,6 +17,7 @@ public class RbcMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        moveSpeed=FullControl.mainCharacterMoveSpeed;
 
     }
 

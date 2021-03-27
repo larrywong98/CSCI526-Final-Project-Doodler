@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PickGlucose : MonoBehaviour
 {
     private int isfirstcollide=0;
-    public Text glucoseText;
+    private Text glucoseText;
     private void Start() {
         glucoseText=GameObject.FindGameObjectWithTag("showglucose").GetComponent<Text>();
     }
