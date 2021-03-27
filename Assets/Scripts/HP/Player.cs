@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public float maxHealth=100;
+    public float maxHealth=100f;
     public float currentHealth;
     public HealthBar healthBar;
     // [SerializeField] private DissolveEffect dissolveEffect;

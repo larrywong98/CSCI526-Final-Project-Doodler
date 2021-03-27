@@ -98,6 +98,7 @@
      <Compile Include="Assets\Shaders\Dissove\Testing_Dissolve.cs" />
      <Compile Include="Assets\Shaders\Magma\FlowEffect.cs" />
      <None Include="Assets\Shaders\Monster\DefaultColorFlash.shader" />
+     <None Include="Assets\Shaders\Monster\flashshader.shader" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

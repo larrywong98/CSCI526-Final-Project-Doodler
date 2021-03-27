@@ -7,25 +7,30 @@ public class HealthBar : MonoBehaviour
 {
     public Slider slider;
     public Image hpeffect;
+    public Image hpapeffect;
     public float hurtspeed;
     public Animator fade;
     private float transitionTime=1f;
+    private float maxlife=100f;
     public void SetMaxHealth(float health){
-        slider.maxValue=health;
-        slider.value=health;
+        // slider.maxValue=health;
+        // slider.value=health;
+        hpapeffect.fillAmount=health/maxlife;
     }
     public void SetHealth(float health){
-        slider.value=health;
+        // slider.value=health;
+        hpapeffect.fillAmount=health/maxlife;
     }
     
     void Update(){
-        if(hpeffect.fillAmount>slider.value/100f){
+        // if(hpeffect.fillAmount>slider.value/maxlife){
+        if(hpeffect.fillAmount>hpapeffect.fillAmount){
             hpeffect.fillAmount=hpeffect.fillAmount-hurtspeed;
         }else{
-            hpeffect.fillAmount=slider.value/100f;
+            hpeffect.fillAmount=hpapeffect.fillAmount;
         }
         // Debug.Log(hpeffect.fillAmount);
-        if(slider.value<=0){
+        if(hpapeffect.fillAmount<=0){
             fade.SetTrigger("out");
             StartCoroutine(waitLoad());
         }
