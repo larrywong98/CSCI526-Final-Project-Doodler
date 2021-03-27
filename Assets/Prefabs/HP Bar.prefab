@@ -250,7 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a57e9f34c3a7de046aad90e4de1067c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slider: {fileID: 5233629515662103971}
   hpeffect: {fileID: 8460011173667151340}
   hpapeffect: {fileID: 5233629515046513289}
   hurtspeed: 0.001

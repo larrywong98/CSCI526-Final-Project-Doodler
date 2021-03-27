@@ -79,6 +79,7 @@ public class EnemyAI_1 : MonoBehaviour
                 attackRange=1f;
                 if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
                     player.TakeDamage(0.05f);
+                    player.ConsumeSp(0.3f);
                 }else{
                     enemyState=EnemyState.chase;
                 }

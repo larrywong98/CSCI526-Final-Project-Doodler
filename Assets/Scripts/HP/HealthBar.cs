@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
-    public Slider slider;
+    // public Slider slider;
     public Image hpeffect;
     public Image hpapeffect;
     public float hurtspeed;

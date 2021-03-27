@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Enemy\Enemy_GreenBacteria.cs" />
      <Compile Include="Assets\Scripts\HP\HealthBar.cs" />
      <Compile Include="Assets\Scripts\HP\Player.cs" />
+     <Compile Include="Assets\Scripts\HP\SpBar.cs" />
      <Compile Include="Assets\Scripts\Items\FloatItem.cs" />
      <Compile Include="Assets\Scripts\Items\PickGlucose.cs" />
      <Compile Include="Assets\Scripts\Items\PickOxygen.cs" />
