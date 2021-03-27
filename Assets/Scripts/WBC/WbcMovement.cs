@@ -38,16 +38,7 @@ public class WbcMovement : MonoBehaviour
         {
             NormalMoveCharacter();
         }
-        HandleAbility();
         
-    }
-    private void HandleAbility()
-    {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            Dash();
-        }
-
         if (isDashing)
         {
             if (dashTimer < dashDuration)
@@ -61,6 +52,16 @@ public class WbcMovement : MonoBehaviour
                 StopDash();
             }
         }
+        
+    }
+    public void HandleAbility()
+    {
+        // if (Input.GetKeyDown(KeyCode.LeftShift))
+        // {
+        //     Dash();
+        // }
+        Dash();
+        
     }
 
     private void Dash()

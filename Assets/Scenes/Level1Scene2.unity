@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2013,6 +2013,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &393383711 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4456828522690191101, guid: e40f5289f5b4b71448cd49461daf034d,
+    type: 3}
+  m_PrefabInstance: {fileID: 4456828523944549564}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc9f083b3cc5ed94d9b1ba54e8aafbf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &412753340
 GameObject:
   m_ObjectHideFlags: 0
@@ -75835,6 +75847,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1709997472}
     m_Modifications:
+    - target: {fileID: 1254037894, guid: 2dfab346f3e635d4f9d3844b2f31391e, type: 3}
+      propertyPath: wbcmovement
+      value: 
+      objectReference: {fileID: 393383711}
     - target: {fileID: 2420655590448682981, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -75958,7 +75974,7 @@ PrefabInstance:
     - target: {fileID: 4751156723601657960, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
@@ -75973,7 +75989,7 @@ PrefabInstance:
     - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
+      value: StartDash
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfab346f3e635d4f9d3844b2f31391e, type: 3}
@@ -77732,19 +77748,13 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2050813441}
   m_CullTransparentMesh: 0
---- !u!1 &2072832864 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4751156723601657960, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+--- !u!114 &2072832866 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1254037894, guid: 2dfab346f3e635d4f9d3844b2f31391e,
     type: 3}
   m_PrefabInstance: {fileID: 1508009449}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2072832866
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2072832864}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a1ed3e25c3e8efd41b476bd82a2380eb, type: 3}

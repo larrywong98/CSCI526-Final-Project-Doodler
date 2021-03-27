@@ -27,8 +27,9 @@ public class PlayerAttack : MonoBehaviour
         }
         if(Input.GetMouseButtonDown(0) && FullControl.isTriggered==0){
             //working on
-            // if()
+            // if()(-124.8, -409.0, 0.0)
             VAim.attackDirection=Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position;
+            // Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
             Attack();
         }
 
