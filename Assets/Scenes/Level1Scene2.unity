@@ -75929,6 +75929,11 @@ PrefabInstance:
       objectReference: {fileID: 814152857}
     - target: {fileID: 883328331391338884, guid: f5b729d447d9a974899e723c388473c6,
         type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 98951031}
+    - target: {fileID: 883328331391338884, guid: f5b729d447d9a974899e723c388473c6,
+        type: 3}
       propertyPath: transformCanvas
       value: 
       objectReference: {fileID: 1709997472}

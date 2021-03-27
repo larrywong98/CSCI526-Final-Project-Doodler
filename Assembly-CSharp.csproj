@@ -74,6 +74,7 @@
      <Compile Include="Assets\Scripts\Redirect\FullControl.cs" />
      <Compile Include="Assets\Scripts\Redirect\OpenSettings.cs" />
      <Compile Include="Assets\Scripts\Redirect\Stay.cs" />
+     <Compile Include="Assets\Scripts\Redirect\ToL1S1.cs" />
      <Compile Include="Assets\Scripts\Redirect\ToStage.cs" />
      <Compile Include="Assets\Scripts\Redirect\toHome.cs" />
      <Compile Include="Assets\Scripts\Skill\Dash.cs" />

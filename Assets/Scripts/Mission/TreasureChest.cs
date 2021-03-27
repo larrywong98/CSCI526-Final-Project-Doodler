@@ -12,7 +12,7 @@ public class TreasureChest : MonoBehaviour
     // public int countChest=0;
     public int isfirst=1;
     private Button[] chestOpen=new Button[100];
-    public static int[] enterOnce=new int[100];
+   
     public int initOnce;
     public Text glucoseText;
 
@@ -24,7 +24,7 @@ public class TreasureChest : MonoBehaviour
                 FullControl.isOpen[i]=0;
             }
             for(int i=1;i<100;i++){
-                enterOnce[i]=0;
+                FullControl.enterOnce[i]=0;
             }
         }
         glucoseText=GameObject.FindGameObjectWithTag("showglucose").GetComponent<Text>();
@@ -59,7 +59,7 @@ public class TreasureChest : MonoBehaviour
         
             for(int i=0;i<transform.childCount;i++){
                 if(FullControl.canOpen[i]==1 && FullControl.isOpen[i]==0){
-                    if(enterOnce[i]==0){
+                    if(FullControl.enterOnce[i]==0){
                         int y=i;
                         chestOpen[i].onClick.AddListener(()=>ChangeToOpen(y));
                         int spriteid=i*3+2;
@@ -81,10 +81,10 @@ public class TreasureChest : MonoBehaviour
         chestSprite = Resources.Load(path,typeof(Sprite)) as Sprite;
         //改变图片
         image[i].sprite = chestSprite;
-        if(enterOnce[i]==0){
+        if(FullControl.enterOnce[i]==0){
             FullControl.glucose=FullControl.glucose+(i+1)*5;
             glucoseText.text="  "+FullControl.glucose;
-            enterOnce[i]=1;
+            FullControl.enterOnce[i]=1;
         }
         FullControl.canOpen[i]=0;
         FullControl.isOpen[i]=1;
