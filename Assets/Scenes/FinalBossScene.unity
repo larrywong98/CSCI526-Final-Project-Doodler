@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -556,8 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a26abc9ea88dd4a9ac4e67006509d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isfirst: 1
-  initOnce: 0
+  initOnce: 1
   glucoseText: {fileID: 0}
 --- !u!114 &148696736
 MonoBehaviour:
@@ -56824,7 +56823,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Btn: {fileID: 924750252}
   missionTransform: {fileID: 1464422876}
-  canvasTransform: {fileID: 0}
+  canvasTransform: {fileID: 1236551242}
   quest: {fileID: 4184604311474564151, guid: ae7df4de538a1f14fb1f558799bc69df, type: 3}
   treasureChestObj: {fileID: 148696735}
 --- !u!114 &924750252
