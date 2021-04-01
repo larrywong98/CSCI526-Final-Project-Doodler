@@ -10,7 +10,7 @@ public class TreasureChest : MonoBehaviour
     // public static int[] FullControl.canOpen=new int[100]; 
     // public static int[] FullControl.isOpen=new int[100];
     // public int countChest=0;
-    private int isfirst=1;
+    // private int isfirst=1;
     private Button[] chestOpen=new Button[100];
    
     public int initOnce;

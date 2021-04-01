@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -74817,6 +74817,50 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!1 &1332526848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1332526850}
+  - component: {fileID: 1332526849}
+  m_Layer: 0
+  m_Name: startscene
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1332526849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332526848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d87f61584b5fac48965baf39823f070, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spot: 2
+--- !u!4 &1332526850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332526848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8.207561, y: -10.589651, z: -20.365463}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1333159397
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -75993,6 +76037,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_Colors.m_SelectedColor.a
+      value: 0.64705884
+      objectReference: {fileID: 0}
+    - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.a
+      value: 0.64705884
       objectReference: {fileID: 0}
     - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
@@ -78525,6 +78579,16 @@ PrefabInstance:
       propertyPath: canvasTransform
       value: 
       objectReference: {fileID: 1709997472}
+    - target: {fileID: 8837882317927137668, guid: c7652ea06adefb441b6b7963692f679c,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 957.2772
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837882317927137668, guid: c7652ea06adefb441b6b7963692f679c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 11.6
+      objectReference: {fileID: 0}
     - target: {fileID: 8837882317974360984, guid: c7652ea06adefb441b6b7963692f679c,
         type: 3}
       propertyPath: canvasTransform
@@ -78535,6 +78599,16 @@ PrefabInstance:
       propertyPath: canvasTransform
       value: 
       objectReference: {fileID: 1709997472}
+    - target: {fileID: 8837882318991125331, guid: c7652ea06adefb441b6b7963692f679c,
+        type: 3}
+      propertyPath: m_FontData.m_MinSize
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837882318991125331, guid: c7652ea06adefb441b6b7963692f679c,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8837882319022629810, guid: c7652ea06adefb441b6b7963692f679c,
         type: 3}
       propertyPath: m_Name
@@ -78644,6 +78718,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8837882319198201025, guid: c7652ea06adefb441b6b7963692f679c,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 291
       objectReference: {fileID: 0}
     - target: {fileID: 8837882319210826564, guid: c7652ea06adefb441b6b7963692f679c,
         type: 3}
