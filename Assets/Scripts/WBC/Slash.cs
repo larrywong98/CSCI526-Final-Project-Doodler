@@ -18,17 +18,10 @@ public class Slash : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other){
-
         if(other.gameObject.tag == "Enemy"){ // we hit enemy
-
-            // Debug.Log("We Hit the enemy !!!!!");
-
             attackDamage = Random.Range(minDamage, maxDamage);
-
             // Enemy_Bat enemy = other.gameObject.GetComponent<Enemy_Bat>(); //获取敌人
             Enemy_GreenBacteria enemy = other.gameObject.GetComponent<Enemy_GreenBacteria>();
-       
-           
             if(!enemy.isAttacked){ // 只有当敌人isAttacked为false时才能造成伤害
                 enemy.TakenDamage(attackDamage); //  给敌人造成伤害
                 // Vector2 showposition=Camera.main.WorldToScreenPoint(other.transform.position);

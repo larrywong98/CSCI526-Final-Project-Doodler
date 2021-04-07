@@ -90,6 +90,7 @@
      <Compile Include="Assets\Scripts\UI\ShowDialogue.cs" />
      <Compile Include="Assets\Scripts\UI\TextFader.cs" />
      <Compile Include="Assets\Scripts\UI\glucoseinit.cs" />
+     <Compile Include="Assets\Scripts\WBC\HitWBC.cs" />
      <Compile Include="Assets\Scripts\WBC\PlayerAttack.cs" />
      <Compile Include="Assets\Scripts\WBC\Slash.cs" />
      <Compile Include="Assets\Scripts\WBC\WbcMovement.cs" />
