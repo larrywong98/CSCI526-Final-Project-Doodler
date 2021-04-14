@@ -30,6 +30,8 @@ public class EnemyAI_1 : MonoBehaviour
     {
         startPos=transform.position;
         enemyState=EnemyState.roam;
+        playerTransform=GameObject.FindGameObjectWithTag("character").GetComponent<Transform>(); 
+        player=GameObject.FindGameObjectWithTag("character").GetComponent<Player>(); 
         roamingPos=Roaming();
     }
     void MoveTo(Vector2 endPos){

@@ -15,7 +15,7 @@ public class FullControl : MonoBehaviour
     public static int[] isOpen=new int[100];
     public static int[] enterOnce=new int[100];
     public static int glucose=0;
-    public static float mainCharacterMoveSpeed=20f;
+    public static float mainCharacterMoveSpeed=3f;
     public static int savedSpot=1;
 
     public static float hp;

@@ -9,6 +9,7 @@ public class Enemy_Boss : MonoBehaviour
     [SerializeField] private float maxHp;
     [SerializeField] private Rigidbody2D rb;
     public float hp;
+    public Animator fade;
     [Header("Hurt")]
     private SpriteRenderer sp; // 材质
     public float hurtLength; // 被击中颜色变化的时间
@@ -37,7 +38,6 @@ public class Enemy_Boss : MonoBehaviour
         }else{
             hurtCounter -= Time.deltaTime; // 若大于0则每帧减少
         }
-
         // Flip at each frame
         Flip();
         lastPostion = transform.position;
@@ -60,6 +60,7 @@ public class Enemy_Boss : MonoBehaviour
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             FullControl.deadboss=FullControl.deadboss+1;
+            fade.SetTrigger("out");
             // Debug.Log(FullControl.deadGreenBacteria);
             // MissionStatus.CheckComplete();
         } // 血条为0则销毁            

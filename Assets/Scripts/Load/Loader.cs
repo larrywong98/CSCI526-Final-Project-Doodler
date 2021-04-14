@@ -16,6 +16,8 @@ public static class Loader
         Level1Scene1,
         Level1Scene2,
         Level1Scene3,
+        Level2,
+        Level3,
         FinalBossScene,
         EndScene,
         Loading

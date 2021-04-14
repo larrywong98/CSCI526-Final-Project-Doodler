@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8888452834568437935}
   m_Layer: 0
   m_Name: glucose
-  m_TagString: Untagged
+  m_TagString: glucose
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -109,7 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44109ed155abb04478f4a94f09859752, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  glucoseText: {fileID: 0}
 --- !u!61 &8888452834568437935
 BoxCollider2D:
   m_ObjectHideFlags: 0

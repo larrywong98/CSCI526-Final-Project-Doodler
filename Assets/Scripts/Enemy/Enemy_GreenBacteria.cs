@@ -17,6 +17,8 @@ public class Enemy_GreenBacteria : MonoBehaviour
     public GameObject explosionEffect;
     public GameObject oxygenObj;
     public GameObject glucoseObj;
+    public GameObject smallGreen;
+    public int big;
 
     Vector3 lastPostion;
     Vector3 localVelocity;
@@ -26,7 +28,7 @@ public class Enemy_GreenBacteria : MonoBehaviour
         hp = maxHp; // 初始化生命值
         target = GameObject.FindGameObjectWithTag("character").GetComponent<Transform>(); // 寻找玩家
         sp = GetComponent<SpriteRenderer>(); // 获取材质
-
+        glucoseObj=GameObject.FindGameObjectWithTag("glucose");
         lastPostion = transform.position;
 
     }
@@ -66,6 +68,11 @@ public class Enemy_GreenBacteria : MonoBehaviour
                 Instantiate(oxygenObj, transform.position, Quaternion.identity);
             }
             Instantiate(glucoseObj, transform.position+new Vector3(Random.Range(-1f,1f),Random.Range(-1f,1f),transform.position.z), Quaternion.identity);
+            if(big==1000){
+                Instantiate(smallGreen, 2*transform.position-target.position, Quaternion.identity);
+                Instantiate(smallGreen, 2*transform.position-target.position+new Vector3(Random.Range(0f,1f),Random.Range(0f,1f),transform.position.z), Quaternion.identity);
+                Instantiate(smallGreen, 2*transform.position-target.position+new Vector3(Random.Range(-1f,0f),Random.Range(-1f,0f),transform.position.z), Quaternion.identity);
+            }
             // Debug.Log(FullControl.deadGreenBacteria);
             // MissionStatus.CheckComplete();
         } // 血条为0则销毁            

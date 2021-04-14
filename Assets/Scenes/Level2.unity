@@ -41331,7 +41331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d87f61584b5fac48965baf39823f070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spot: 3
+  spot: 4
 --- !u!4 &773467549
 Transform:
   m_ObjectHideFlags: 0
@@ -49157,7 +49157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 2434603349066643745}
-  stageName: FinalBossScene
+  stageName: Level3
   dissolveEffect: {fileID: 928000381}
   disappearColor: {r: 1, g: 0.23921569, b: 0, a: 1}
 --- !u!61 &1403287362
@@ -50138,7 +50138,7 @@ PrefabInstance:
     - target: {fileID: 7945875582170566540, guid: a5641865a6efda146ae504a9a625ba65,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7945875582170566540, guid: a5641865a6efda146ae504a9a625ba65,
         type: 3}
@@ -50317,7 +50317,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lymphatic Tissue
+  m_Text: kidney
 --- !u!222 &1706730930
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -50493,8 +50493,8 @@ RectTransform:
   m_Children:
   - {fileID: 517197580}
   - {fileID: 393629994}
-  - {fileID: 1892494993}
   - {fileID: 700869184}
+  - {fileID: 1892494993}
   - {fileID: 1549608617}
   - {fileID: 204281167}
   - {fileID: 719164507}
@@ -50865,7 +50865,7 @@ RectTransform:
   - {fileID: 1984646147}
   - {fileID: 560943554}
   m_Father: {fileID: 1730954901}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}

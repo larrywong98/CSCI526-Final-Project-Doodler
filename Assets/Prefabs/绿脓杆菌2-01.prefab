@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: d024cf04a0928ab4e82a5bd70ae7f3b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -133,15 +133,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da936f2d298d23f41910fddee9737fcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 1
+  maxHp: 200
   rb: {fileID: 4751058927193722479}
-  hp: 1
+  hp: 200
   hurtLength: 0.1
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
     type: 3}
   oxygenObj: {fileID: 7196988127911248381, guid: 1d5a1841ec98649cbbda4b08c3ee1948,
     type: 3}
+  glucoseObj: {fileID: 560241703204991604, guid: 7a171cf2e5ca74341b6606a1cced1df7,
+    type: 3}
+  smallGreen: {fileID: 0}
+  big: 0
 --- !u!50 &4751058927193722479
 Rigidbody2D:
   serializedVersion: 4

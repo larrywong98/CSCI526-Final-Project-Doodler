@@ -18,6 +18,12 @@ public class LoadSaved : MonoBehaviour
         if(FullControl.savedSpot==3){
             stage=Loader.Scene.Level1Scene3;
         }
+        if(FullControl.savedSpot==4){
+            stage=Loader.Scene.Level2;
+        }
+        if(FullControl.savedSpot==5){
+            stage=Loader.Scene.Level3;
+        }
         if(FullControl.savedSpot==10){
             stage=Loader.Scene.FinalBossScene;
         }

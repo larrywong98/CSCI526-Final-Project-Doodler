@@ -19,6 +19,8 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
     // [SerializeField] private Collider2D col;
     // public GameObject slashObject;
     [SerializeField] private Transform transformBig;
+    private float margin=1f;
+    private Vector3 eventPos;
 
     // private Vector2 tmp;
     // [SerializeField] private float scaler;
@@ -73,16 +75,18 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
         // Debug.Log( imageBig.color);
         // Debug.Log(Camera.main.ScreenToWorldPoint(transform.position));
         // Debug.Log(transformBig.position);
-        Vector3 eventPos=Camera.main.ScreenToWorldPoint(eventData.position);
+        eventPos=Camera.main.ScreenToWorldPoint(eventData.position);
         // Debug.Log(eventData.position);
 
         // Bounds bound=col.bounds;
         // Debug.Log(bound);
         // Debug.Log(bound.Contains(eventData.position));
         // Debug.Log(onscreen);
-        // Debug.Log(onworldwide);
-        if(eventPos.x>=transformBig.position.x-1 && eventPos.x<=transformBig.position.x+1 && 
-            eventPos.y>=transformBig.position.y-1 && eventPos.y<=transformBig.position.y+1)
+        // Debug.Log(eventPos);
+        // Debug.Log(transformBig.position);
+        
+        if(eventPos.x>=transformBig.position.x-margin && eventPos.x<=transformBig.position.x+margin && 
+            eventPos.y>=transformBig.position.y-margin && eventPos.y<=transformBig.position.y+margin)
         {
             imageBig.color=new Color(1f,1f,1f,0.93f);
             imageSmall.color=new Color(1f,1f,1f,0.93f);
@@ -100,12 +104,17 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
     {
         // transform.GetChild(0).gameObject.SetActive(false);
         // slashObject.slashFunc();
-        imageBig.color=new Color(1f,1f,1f,0.549f);
-        imageSmall.color=new Color(1f,1f,1f,0.549f);
-        transformBig.GetChild(0).localPosition=Vector2.zero;
-        joystickpos=Vector2.zero;
-        flag=0;
-        // drag=0;
-        isAttackButtionUp = 1;
+        // Vector3 eventPos=Camera.main.ScreenToWorldPoint(eventData.position);
+        if(eventPos.x>=transformBig.position.x-margin && eventPos.x<=transformBig.position.x+margin && 
+            eventPos.y>=transformBig.position.y-margin && eventPos.y<=transformBig.position.y+margin)
+        {
+            imageBig.color=new Color(1f,1f,1f,0.549f);
+            imageSmall.color=new Color(1f,1f,1f,0.549f);
+            transformBig.GetChild(0).localPosition=Vector2.zero;
+            joystickpos=Vector2.zero;
+            flag=0;
+            // drag=0;
+            isAttackButtionUp = 1;
+        }
     }
 }

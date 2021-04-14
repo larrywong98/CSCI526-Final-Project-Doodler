@@ -25,13 +25,12 @@ public class PlayerAttack : MonoBehaviour
             VAim.isAttackButtionUp = 0;
             VAim.attackDirection=new Vector2(0f,0f);
         }
-        if(Input.GetMouseButtonDown(0) && FullControl.isTriggered==0){
-            //working on
-            // if()(-124.8, -409.0, 0.0)
-            VAim.attackDirection=Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position;
+        // if(Input.GetMouseButtonDown(0) && FullControl.isTriggered==0){
+        // {
+            // VAim.attackDirection=Camera.main.ScreenToWorldPoint(Input.mousePosition)-transform.position;
             // Debug.Log(Camera.main.ScreenToWorldPoint(Input.mousePosition));
-            Attack();
-        }
+            // Attack();
+        // }
 
 
     }

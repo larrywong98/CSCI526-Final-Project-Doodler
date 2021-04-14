@@ -15,6 +15,7 @@ TagManager:
   - boss
   - oxygen
   - showglucose
+  - glucose
   layers:
   - Default
   - TransparentFX
