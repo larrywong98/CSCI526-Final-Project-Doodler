@@ -42,7 +42,7 @@ public class PlayerAttack : MonoBehaviour
         // Vector2 difference = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         float rotZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;//Radius -> Degree 弧度转角度
         transform.rotation = Quaternion.Euler(0, 0, rotZ);
-        Debug.Log("ok");
+        // Debug.Log("ok");
 
         //普通攻击
         if(FullControl.normalorultimate==0){

@@ -11,7 +11,8 @@ public class Slash : MonoBehaviour
     // [SerializeField] private Transform parentTransform;
     public GameObject damageCanvas;
     // public Enemy_Boss enemy;
-    // public GameObject damagedText;
+    public GameObject thrust2;
+    public GameObject thrust3;
 
     public void EndAttack(){
         gameObject.SetActive(false);
@@ -26,7 +27,17 @@ public class Slash : MonoBehaviour
                 enemy.TakenDamage(attackDamage); //  给敌人造成伤害
                 DamageNum damagable = Instantiate(damageCanvas, other.transform.position, Quaternion.identity).GetComponent<DamageNum>(); //如果需要旋转的话就是quaternion.rotation 
                 damagable.ShowUIDamage(Mathf.RoundToInt(attackDamage)); // show damage
-                displayEnemyHittedEffect(enemy.GetComponent<Transform>().position); // 显示敌人被击中时的刀光特效
+                // displayEnemyHittedEffect(enemy.GetComponent<Transform>().position); // 显示敌人被击中时的刀光特效
+                if(FullControl.normalorultimate==0)
+                {
+                    Instantiate(thrust2,other.transform.position,Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
+                }
+                
+                
                 StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
                 // 击退效果
                 #region 
@@ -50,7 +61,6 @@ public class Slash : MonoBehaviour
                 DamageNum damagable = Instantiate(damageCanvas, other.transform.position, Quaternion.identity).GetComponent<DamageNum>(); //如果需要旋转的话就是quaternion.rotation 
                 damagable.ShowUIDamage(Mathf.RoundToInt(attackDamage)); // show damage  
                 StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
-
                 #region 
                 Vector2 difference = other.transform.position - transform.position;
                 difference.Normalize();
@@ -63,15 +73,15 @@ public class Slash : MonoBehaviour
         }
     }
 
-    private void displayEnemyHittedEffect(Vector3 target){ // 在怪物被击中时，在怪物的位置生成刀光爆炸特效
+    // private void displayEnemyHittedEffect(Vector3 target){ // 在怪物被击中时，在怪物的位置生成刀光爆炸特效
 
-        Transform par = gameObject.transform.parent;
+    //     Transform par = gameObject.transform.parent;
 
-        GameObject enemyHittedEffect = par.gameObject.transform.GetChild(1).gameObject;
+    //     GameObject enemyHittedEffect = par.gameObject.transform.GetChild(1).gameObject;
 
-        enemyHittedEffect.GetComponent<Transform>().position = target;
+    //     enemyHittedEffect.GetComponent<Transform>().position = target;
         
-        enemyHittedEffect.SetActive(true);
+    //     enemyHittedEffect.SetActive(true);
 
-    }
+    // }
 }

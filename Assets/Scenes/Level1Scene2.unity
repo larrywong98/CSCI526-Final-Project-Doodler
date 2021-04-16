@@ -75449,6 +75449,11 @@ PrefabInstance:
       propertyPath: wbcmovement
       value: 
       objectReference: {fileID: 393383711}
+    - target: {fileID: 326718554411180441, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2420655590448682981, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -75567,7 +75572,7 @@ PrefabInstance:
     - target: {fileID: 3165070417723255904, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4751156723601657960, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
@@ -76987,7 +76992,7 @@ PrefabInstance:
     - target: {fileID: 1161230073013032162, guid: 2324c9974f33d7f47abb75d9d1fc7c5a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1161230073013032163, guid: 2324c9974f33d7f47abb75d9d1fc7c5a,
         type: 3}

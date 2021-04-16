@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8243445654498636813}
   - component: {fileID: 4139429662398917773}
   - component: {fileID: 7958348839631400261}
+  - component: {fileID: 8921954496003565208}
   m_Layer: 0
   m_Name: Thrusts 3
   m_TagString: Untagged
@@ -71,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 4
   m_Sprite: {fileID: -8721432773681634264, guid: d710339145acd0d43b4d88882dc2a78a,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -103,6 +104,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8921954496003565208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4122252676271394182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99315f5455a9e2b4db6ccf9a4fd04e58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7543275336136832431
 GameObject:
   m_ObjectHideFlags: 0
