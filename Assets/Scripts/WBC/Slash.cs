@@ -26,6 +26,7 @@ public class Slash : MonoBehaviour
                 enemy.TakenDamage(attackDamage); //  给敌人造成伤害
                 DamageNum damagable = Instantiate(damageCanvas, other.transform.position, Quaternion.identity).GetComponent<DamageNum>(); //如果需要旋转的话就是quaternion.rotation 
                 damagable.ShowUIDamage(Mathf.RoundToInt(attackDamage)); // show damage
+                displayEnemyHittedEffect(enemy.GetComponent<Transform>().position); // 显示敌人被击中时的刀光特效
                 StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
                 // 击退效果
                 #region 
@@ -60,5 +61,17 @@ public class Slash : MonoBehaviour
                 #endregion
             }
         }
+    }
+
+    private void displayEnemyHittedEffect(Vector3 target){ // 在怪物被击中时，在怪物的位置生成刀光爆炸特效
+
+        Transform par = gameObject.transform.parent;
+
+        GameObject enemyHittedEffect = par.gameObject.transform.GetChild(1).gameObject;
+
+        enemyHittedEffect.GetComponent<Transform>().position = target;
+        
+        enemyHittedEffect.SetActive(true);
+
     }
 }

@@ -97,4 +97,13 @@ public class Enemy_GreenBacteria : MonoBehaviour
         }
 
     }
+
+    public void ShowHittedEffect(GameObject hittedEffect){
+
+        
+
+        Instantiate(hittedEffect, transform.position, Quaternion.identity);
+        // hittedEffect.SetActive(true);
+
+    }
 }

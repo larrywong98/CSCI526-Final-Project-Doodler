@@ -9,6 +9,7 @@ public class PlayerAttack : MonoBehaviour
     public Transform slashTransform;
     // public Transform slashUltimateTransform;
 
+
     // Update is called once per frame
     void Update()
     {
@@ -46,7 +47,7 @@ public class PlayerAttack : MonoBehaviour
         //普通攻击
         if(FullControl.normalorultimate==0){
             slashTransform.gameObject.SetActive(true);
-            if(VAim.attackDirection.x > 0){ //如果朝着反方向挥舞，那么挥刀时转向
+            if(VAim.attackDirection.x > 0){ //如果朝着反方向挥舞，那么挥刀时人物转向
                 wbcWaveTransform.eulerAngles = new Vector3(0, 180, 0);
             }
             wbcWaveTransform.gameObject.SetActive(true); // 手挥舞刀光更新
@@ -63,7 +64,7 @@ public class PlayerAttack : MonoBehaviour
         //     wbcWaveUltimateTransform.gameObject.SetActive(true); // 手挥舞刀光更新
 
         // }
-     
 
     }
+
 }
