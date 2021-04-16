@@ -115,6 +115,7 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
             flag=0;
             // drag=0;
             isAttackButtionUp = 1;
+            
         }
     }
 }

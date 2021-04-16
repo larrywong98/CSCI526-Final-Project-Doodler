@@ -17,6 +17,7 @@ public class FullControl : MonoBehaviour
     public static int glucose=0;
     public static float mainCharacterMoveSpeed=3f;
     public static int savedSpot=1;
+    public static int normalorultimate=0;
 
     public static float hp;
     public static float sp;

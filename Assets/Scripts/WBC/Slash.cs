@@ -24,20 +24,9 @@ public class Slash : MonoBehaviour
             Enemy_GreenBacteria enemy = other.gameObject.GetComponent<Enemy_GreenBacteria>();
             if(!enemy.isAttacked){ // 只有当敌人isAttacked为false时才能造成伤害
                 enemy.TakenDamage(attackDamage); //  给敌人造成伤害
-                // Vector2 showposition=Camera.main.WorldToScreenPoint(other.transform.position);
-                // Vector3 showposition=new Vector3(Camera.main.WorldToScreenPoint(other.transform.position).x,
-                //                         Camera.main.WorldToScreenPoint(other.transform.position).y,0);
-                // Debug.Log(other.transform.position);
-                // Debug.Log(showposition);
                 DamageNum damagable = Instantiate(damageCanvas, other.transform.position, Quaternion.identity).GetComponent<DamageNum>(); //如果需要旋转的话就是quaternion.rotation 
                 damagable.ShowUIDamage(Mathf.RoundToInt(attackDamage)); // show damage
-                // damagedText
-                // DamageNum damagable = Instantiate(damagedText, other.transform.position, Quaternion.identity).GetComponent<DamageNum>(); //如果需要旋转的话就是quaternion.rotation 
-                // damagable.transform.parent=parentTransform.transform;
-                // damagable.ShowUIDamage(Mathf.RoundToInt(attackDamage)); // show damage
-                
                 StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
-
                 // 击退效果
                 #region 
                 Vector2 difference = other.transform.position - transform.position;
@@ -51,6 +40,7 @@ public class Slash : MonoBehaviour
             }
             
         }
+    
         if(other.gameObject.tag == "boss"){ // we hit enemy
             attackDamage = Random.Range(minDamage, maxDamage);
             Enemy_Boss enemy=other.gameObject.GetComponent<Enemy_Boss>();

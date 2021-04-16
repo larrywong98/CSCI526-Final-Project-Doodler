@@ -6,6 +6,7 @@ public class utimate : MonoBehaviour
 {
     // Start is called before the first frame update
     public void UtimateSkill(){
-        Debug.Log("utimate");
+        FullControl.normalorultimate=1;
+        SpBar.spupflag=0;
     }
 }
