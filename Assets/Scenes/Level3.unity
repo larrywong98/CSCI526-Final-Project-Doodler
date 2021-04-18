@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -1666,11 +1666,6 @@ PrefabInstance:
       propertyPath: wbcmovement
       value: 
       objectReference: {fileID: 535762681}
-    - target: {fileID: 326718554411180441, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2420655590448682981, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1780,41 +1775,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Skills
-      objectReference: {fileID: 0}
-    - target: {fileID: 2420655590448682982, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5260844881490175739, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: StartDash
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154331497840143028, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_Interactable
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154331497840143028, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_Colors.m_NormalColor.a
-      value: 0.40392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154331497840143028, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_Colors.m_DisabledColor.a
-      value: 0.54509807
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154331497840143028, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1322753676}
-    - target: {fileID: 9154331497840143028, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UtimateSkill
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2dfab346f3e635d4f9d3844b2f31391e, type: 3}
@@ -44100,18 +44060,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 568593030}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1322753676 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 482620875, guid: 2dfab346f3e635d4f9d3844b2f31391e,
-    type: 3}
-  m_PrefabInstance: {fileID: 393629993}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7415be29f9cadd48b83e718ec895bca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1326857585
 GameObject:
   m_ObjectHideFlags: 0
@@ -66136,18 +66084,6 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1374236407}
-    - target: {fileID: 4054209100738607844, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: thrust2
-      value: 
-      objectReference: {fileID: 8973804185519625191, guid: 808e366159d7c8c4c8ab55f59548feca,
-        type: 3}
-    - target: {fileID: 4054209100738607844, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: thrust3
-      value: 
-      objectReference: {fileID: 4122252676271394182, guid: 25e4baa3302f0314a9f89c83fc49ed5e,
-        type: 3}
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
       propertyPath: m_RootOrder
@@ -66207,34 +66143,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WhiteBloodCell
-      objectReference: {fileID: 0}
-    - target: {fileID: 4456828523417979266, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: thrust1
-      value: 
-      objectReference: {fileID: 8973804185519625191, guid: 808e366159d7c8c4c8ab55f59548feca,
-        type: 3}
-    - target: {fileID: 4456828523417979266, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: thrust2
-      value: 
-      objectReference: {fileID: 8973804185519625191, guid: 808e366159d7c8c4c8ab55f59548feca,
-        type: 3}
-    - target: {fileID: 4456828523417979266, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: thrust3
-      value: 
-      objectReference: {fileID: 4122252676271394182, guid: 25e4baa3302f0314a9f89c83fc49ed5e,
-        type: 3}
-    - target: {fileID: 4658869247965347899, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4674942343746986288, guid: e40f5289f5b4b71448cd49461daf034d,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e40f5289f5b4b71448cd49461daf034d, type: 3}

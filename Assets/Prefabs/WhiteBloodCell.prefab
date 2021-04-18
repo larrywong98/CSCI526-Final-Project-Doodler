@@ -239,7 +239,8 @@ MonoBehaviour:
   apDamage: 0
   damageCanvas: {fileID: 4921988587516973254, guid: 65d6dbf4e17020b43a6f06087fae36c5,
     type: 3}
-  thrust2: {fileID: 0}
+  thrust2: {fileID: 8973804185519625191, guid: 808e366159d7c8c4c8ab55f59548feca, type: 3}
+  thrust3: {fileID: 4122252676271394182, guid: 25e4baa3302f0314a9f89c83fc49ed5e, type: 3}
 --- !u!61 &2004639513423615434
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -705,7 +706,8 @@ MonoBehaviour:
   apDamage: 0
   damageCanvas: {fileID: 4921988587516973254, guid: 65d6dbf4e17020b43a6f06087fae36c5,
     type: 3}
-  thrust2: {fileID: 0}
+  thrust2: {fileID: 8973804185519625191, guid: 808e366159d7c8c4c8ab55f59548feca, type: 3}
+  thrust3: {fileID: 4122252676271394182, guid: 25e4baa3302f0314a9f89c83fc49ed5e, type: 3}
 --- !u!61 &4456828523417979265
 BoxCollider2D:
   m_ObjectHideFlags: 0
