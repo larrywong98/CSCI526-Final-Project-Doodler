@@ -17,6 +17,7 @@ TagManager:
   - showglucose
   - glucose
   - enemyHittedEffect
+  - spbar
   layers:
   - Default
   - TransparentFX

@@ -70,8 +70,8 @@ public class DialogueManager : MonoBehaviour
     {
     	// Debug.Log("End");
 		dialogueTransform.GetChild(0).gameObject.SetActive(false);
-		// transformCanvas.GetChild(0).gameObject.SetActive(true);
-		// transformCanvas.GetChild(1).gameObject.SetActive(true);
+		transformCanvas.GetChild(0).gameObject.SetActive(true);
+		transformCanvas.GetChild(1).gameObject.SetActive(true);
 		// dialogueTransform.GetChild(1).gameObject.SetActive(false);
     	// animator.SetBool("IsOpen", false);
 		if(FullControl.id==2){

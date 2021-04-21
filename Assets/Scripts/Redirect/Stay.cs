@@ -35,8 +35,8 @@ public class Stay : MonoBehaviour
         // TreasureChest.enterOnce=0;
        
         // Debug.Log("to loading");
-        // canvasTransform.GetChild(0).gameObject.SetActive(true);
-        // canvasTransform.GetChild(1).gameObject.SetActive(true);
+        canvasTransform.GetChild(0).gameObject.SetActive(true);
+        canvasTransform.GetChild(1).gameObject.SetActive(true);
         transClose.GetChild(1).gameObject.SetActive(false);
         transClose.GetChild(2).gameObject.SetActive(false);
         FullControl.buttonNum=0;

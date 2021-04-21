@@ -146,6 +146,7 @@ MonoBehaviour:
     type: 3}
   smallGreen: {fileID: 0}
   big: 0
+  spBar: {fileID: 0}
 --- !u!50 &4751058927193722479
 Rigidbody2D:
   serializedVersion: 4

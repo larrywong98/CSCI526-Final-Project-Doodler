@@ -22,6 +22,7 @@ public class Enemy_GreenBacteria : MonoBehaviour
 
     Vector3 lastPostion;
     Vector3 localVelocity;
+    private SpBar spBar;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +31,7 @@ public class Enemy_GreenBacteria : MonoBehaviour
         sp = GetComponent<SpriteRenderer>(); // 获取材质
         glucoseObj=GameObject.FindGameObjectWithTag("glucose");
         lastPostion = transform.position;
+        spBar=GameObject.FindGameObjectWithTag("spbar").GetComponent<SpBar>();
 
     }
     // Update is called once per frame
@@ -73,6 +75,8 @@ public class Enemy_GreenBacteria : MonoBehaviour
                 Instantiate(smallGreen, 2*transform.position-target.position+new Vector3(Random.Range(0f,1f),Random.Range(0f,1f),transform.position.z), Quaternion.identity);
                 Instantiate(smallGreen, 2*transform.position-target.position+new Vector3(Random.Range(-1f,0f),Random.Range(-1f,0f),transform.position.z), Quaternion.identity);
             }
+            FullControl.sp=FullControl.sp+10;
+            spBar.SetSp(FullControl.sp);
             // Debug.Log(FullControl.deadGreenBacteria);
             // MissionStatus.CheckComplete();
         } // 血条为0则销毁            

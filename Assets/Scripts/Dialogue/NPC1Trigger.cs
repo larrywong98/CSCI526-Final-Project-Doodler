@@ -16,7 +16,7 @@ public class NPC1Trigger : MonoBehaviour
 
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Space) && 
+        if(VAim.isAttackButtionUp==1 && 
            Vector2.Distance(transform.position,playerTransform.position)<1.5f && 
            triggeredOnce==0)
         {
@@ -26,7 +26,7 @@ public class NPC1Trigger : MonoBehaviour
             // dialogueTransform.GetChild(1).gameObject.SetActive(true);
             TriggerDialogue();
         }
-        if(Input.GetKeyDown(KeyCode.Space) && 
+        if(VAim.isAttackButtionUp==1 && 
            Vector2.Distance(transform.position,playerTransform.position)<1.5f && 
            triggeredOnce!=0)
         {

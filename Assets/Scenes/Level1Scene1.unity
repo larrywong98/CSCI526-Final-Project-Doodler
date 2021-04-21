@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -27000,6 +27000,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 480194192}
     m_Modifications:
+    - target: {fileID: 326718554411180441, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2420655590448682981, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_Pivot.x
@@ -27116,6 +27121,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3165070417723255904, guid: 2dfab346f3e635d4f9d3844b2f31391e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4751156723601657960, guid: 2dfab346f3e635d4f9d3844b2f31391e,
         type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -31283,7 +31293,7 @@ MonoBehaviour:
     - The bottom left corner of the screen through the arrow keys can control the
       movement of the character, the lower right key can release skills
   dialogueTransform: {fileID: 40991492}
-  playerTransform: {fileID: 7522961933285261659}
+  playerTransform: {fileID: 8303457645378548234}
   transformCanvas: {fileID: 480194192}
   request: {fileID: 1164919685}
   quest: {fileID: 4184604311474564151, guid: ae7df4de538a1f14fb1f558799bc69df, type: 3}
