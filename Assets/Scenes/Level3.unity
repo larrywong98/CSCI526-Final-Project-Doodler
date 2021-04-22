@@ -78779,6 +78779,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6683331724611623286, guid: 8dc3ec759e1219640b202f3467611339,
         type: 3}
+      propertyPath: wind
+      value: 
+      objectReference: {fileID: 4099053430279462708, guid: f0946070af06d4c4b95d1b24a6637dcf,
+        type: 3}
+    - target: {fileID: 6683331724611623286, guid: 8dc3ec759e1219640b202f3467611339,
+        type: 3}
       propertyPath: speed
       value: 1.5
       objectReference: {fileID: 0}
@@ -80035,6 +80041,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1730954901}
     m_Modifications:
+    - target: {fileID: 1740900777306440274, guid: a5641865a6efda146ae504a9a625ba65,
+        type: 3}
+      propertyPath: m_TagString
+      value: hpbar
+      objectReference: {fileID: 0}
     - target: {fileID: 1740900777306440284, guid: a5641865a6efda146ae504a9a625ba65,
         type: 3}
       propertyPath: fade
@@ -81993,15 +82004,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6014120382167202170, guid: f0946070af06d4c4b95d1b24a6637dcf,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 151156614}
     - target: {fileID: 4099053430279462705, guid: f0946070af06d4c4b95d1b24a6637dcf,
         type: 3}
       propertyPath: m_RootOrder
       value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4099053430279462705, guid: f0946070af06d4c4b95d1b24a6637dcf,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.50545603
       objectReference: {fileID: 0}
     - target: {fileID: 4099053430279462705, guid: f0946070af06d4c4b95d1b24a6637dcf,
         type: 3}

@@ -10,7 +10,7 @@ public class purpledefender1 : MonoBehaviour
     // public HealthBar healthBar;
     private EnemyState enemyState;
     // public Player player;
-    private float attackRange=2f;
+    // private float attackRange=2f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
 
@@ -74,26 +74,7 @@ public class purpledefender1 : MonoBehaviour
                 // FindPlayer();
                 break;
                 
-            // case EnemyState.chase:
-            //     MoveTo(playerTransform.position);
-            //     attackRange=1f;
-            //     if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
-            //         enemyState=EnemyState.attack;
-            //     }
-            //     break;
-            // case EnemyState.attack:
-            //     MoveTo(playerTransform.position);
-            //     attackRange=1f;
-            //     if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
-            //         player.TakeDamage(0f);
-            //         // player.ConsumeSp(0.3f);
-            //     }else{
-            //         enemyState=EnemyState.chase;
-            //     }
-            //     break;
-            // case EnemyState.idle:
-            //     transform.position=transform.position;
-            //     break;
+           
             default:
                 break;
         }

@@ -10,10 +10,12 @@ public class Enemy_AI2 : MonoBehaviour
     // public HealthBar healthBar;
     private EnemyState enemyState;
     public Player player;
-    private float attackRange=1f;
+    private float attackRange=2f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
     private float detectRange=4f;
+    public GameObject wind;
+    private int attacking=0;
 
     public enum EnemyState
     {
@@ -50,7 +52,13 @@ public class Enemy_AI2 : MonoBehaviour
             enemyState=EnemyState.chase;
         }
     }
-
+    private IEnumerator isAttacking(){
+        attacking=1;
+        yield return new WaitForSeconds(0.5f);
+        Instantiate(wind, transform.position+new Vector3(1.5f,0f,transform.position.z), Quaternion.identity);
+        yield return new WaitForSeconds(2f);
+        attacking=0;
+    }
     private void Update()
     {
         // Debug.Log(enemyState);
@@ -77,8 +85,12 @@ public class Enemy_AI2 : MonoBehaviour
             case EnemyState.attack:
                 MoveTo(playerTransform.position);
                 if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
-                    player.TakeDamage(0.05f);
+                    // player.TakeDamage(0.05f);
                     // player.ConsumeSp(0.3f);
+                    if(attacking==0){
+                        StartCoroutine(isAttacking());
+                    }
+                        
                 }else{
                     enemyState=EnemyState.chase;
                 }
