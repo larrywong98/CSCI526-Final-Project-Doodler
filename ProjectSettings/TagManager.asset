@@ -18,6 +18,7 @@ TagManager:
   - glucose
   - enemyHittedEffect
   - spbar
+  - meatshield
   layers:
   - Default
   - TransparentFX

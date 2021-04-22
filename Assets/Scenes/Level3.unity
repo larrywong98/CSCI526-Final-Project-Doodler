@@ -53835,10 +53835,12 @@ GameObject:
   - component: {fileID: 1094269838}
   - component: {fileID: 1094269837}
   - component: {fileID: 1094269836}
+  - component: {fileID: 1094269840}
   - component: {fileID: 1094269839}
+  - component: {fileID: 1094269841}
   m_Layer: 0
   m_Name: purpledefender
-  m_TagString: Untagged
+  m_TagString: meatshield
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -53926,7 +53928,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1094269839
+--- !u!61 &1094269839
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094269835}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.0045907944, y: -0.014656156}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.16, y: 0.16}
+    newSize: {x: 0.16, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.14469707, y: 0.13068768}
+  m_EdgeRadius: 0
+--- !u!50 &1094269840
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1094269835}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &1094269841
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -53935,10 +53984,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1094269835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e8e5be30cf47b34fa99771fc071dd58, type: 3}
+  m_Script: {fileID: 11500000, guid: 54e55fc5cbcf2453fac74ad8e3a23897, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitted: {fileID: 1094269836}
+  maxHp: 1000
+  rb: {fileID: 1094269840}
+  hp: 1000
+  hurtLength: 0
+  isAttacked: 0
+  explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
+    type: 3}
 --- !u!1 &1100114411
 GameObject:
   m_ObjectHideFlags: 0
@@ -81962,6 +82017,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WhiteBloodCell
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456828523417979265, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e40f5289f5b4b71448cd49461daf034d, type: 3}

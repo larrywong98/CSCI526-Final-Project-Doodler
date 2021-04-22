@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class purpledefender : MonoBehaviour
 {
-    public Animator hitted;
+    // public Animator hitted;
     
     private void OnTriggerEnter2D(Collider2D other){
         
