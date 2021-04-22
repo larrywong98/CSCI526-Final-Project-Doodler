@@ -5,7 +5,7 @@ using UnityEngine;
 public class purpledefender1 : MonoBehaviour
 {
     private Vector3 startPos;
-    private Vector3 roamingPos;
+    public static Vector3 roamingPos;
     // [SerializeField]private Transform playerTransform;
     // public HealthBar healthBar;
     private EnemyState enemyState;
@@ -13,6 +13,7 @@ public class purpledefender1 : MonoBehaviour
     // private float attackRange=2f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
+    public static int purpleid;
 
     // public Animator fade;
     // private float transitionTime=1f;
@@ -55,7 +56,7 @@ public class purpledefender1 : MonoBehaviour
     private IEnumerator isAttacked(){
         roamingPos=transform.position;
         yield return new WaitForSeconds(1f);
-        FullControl.meatShield=0;
+        FullControl.meatShield[purpleid]=0;
     }
     private void Update()
     {
@@ -68,7 +69,7 @@ public class purpledefender1 : MonoBehaviour
                 if(Vector2.Distance(transform.position,roamingPos)<closedistance){
                     roamingPos=Roaming();
                 }
-                if(FullControl.meatShield==1){
+                if(FullControl.meatShield[purpleid]==1){
                     StartCoroutine(isAttacked());
                 }
                 // FindPlayer();

@@ -13,6 +13,7 @@ public class Slash : MonoBehaviour
     // public Enemy_Boss enemy;
     public GameObject thrust2;
     public GameObject thrust3;
+    // public purpledefender1 purpledefender;
 
 
 
@@ -39,7 +40,7 @@ public class Slash : MonoBehaviour
                 {
                     Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
                 }
-                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
+                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.12f, 0.4f)); // camera shake
                 // 击退效果
                 #region 
                 Vector2 difference = other.transform.position - transform.position;
@@ -67,7 +68,7 @@ public class Slash : MonoBehaviour
                 {
                     Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
                 }
-                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
+                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.12f, 0.4f)); // camera shake
                 #region 
                 Vector2 difference = other.transform.position - transform.position;
                 difference.Normalize();
@@ -94,8 +95,8 @@ public class Slash : MonoBehaviour
                 {
                     Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
                 }
-                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
-                FullControl.meatShield=1;
+                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.12f, 0.4f)); // camera shake
+                FullControl.meatShield[purpledefender1.purpleid]=1;
             }
         }
         if(other.gameObject.tag == "purplebacteria"){ // we hit enemy
@@ -113,7 +114,7 @@ public class Slash : MonoBehaviour
                 {
                     Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
                 }
-                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
+                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.12f, 0.4f)); // camera shake
                 #region 
                 Vector2 difference = other.transform.position - transform.position;
                 difference.Normalize();

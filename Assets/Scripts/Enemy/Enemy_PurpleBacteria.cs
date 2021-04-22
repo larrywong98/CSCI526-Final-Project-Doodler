@@ -92,7 +92,7 @@ public class Enemy_PurpleBacteria : MonoBehaviour
 
     private void Flip()
     {
-        localVelocity = transform.position - lastPostion;
+        localVelocity = target.position-transform.position;
         if(localVelocity.x > 0){
             transform.eulerAngles = new Vector3(0, 180, 0);
         }

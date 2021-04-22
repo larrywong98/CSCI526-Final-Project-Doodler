@@ -75,11 +75,11 @@ public class MeatShield : MonoBehaviour
 
     private void Flip()
     {
-        localVelocity = transform.position - lastPostion;
-        if(localVelocity.x > 0){
+        localVelocity =  purpledefender1.roamingPos-transform.position ;
+        if(localVelocity.x < 0){
             transform.eulerAngles = new Vector3(0, 180, 0);
         }
-        if(localVelocity.x < 0){
+        if(localVelocity.x > 0){
             transform.eulerAngles = new Vector3(0, 0, 0);
         }
 

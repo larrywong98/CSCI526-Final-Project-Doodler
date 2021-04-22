@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8973804185519625188}
   - component: {fileID: 8973804185519625189}
+  - component: {fileID: 6413997331302809333}
   - component: {fileID: 8973804185519625190}
   - component: {fileID: 1729007671720935876}
-  - component: {fileID: -2686536879435349208}
   m_Layer: 5
   m_Name: Thrust 2
   m_TagString: Untagged
@@ -86,6 +86,19 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6413997331302809333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973804185519625191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e78a592ee403da409170ca4bbb969c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTimer: 1
 --- !u!95 &8973804185519625190
 Animator:
   serializedVersion: 3
@@ -117,19 +130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99315f5455a9e2b4db6ccf9a4fd04e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-2686536879435349208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8973804185519625191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e78a592ee403da409170ca4bbb969c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  lifeTimer: 1
 --- !u!1 &8973804187344587275
 GameObject:
   m_ObjectHideFlags: 0

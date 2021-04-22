@@ -14,8 +14,8 @@ public class CollideWithWBC : MonoBehaviour
     }
    private void OnTriggerEnter2D(Collider2D other){
        if(other.gameObject.tag=="character"){
-           player.TakeDamage(10f);
-           #region 
+            player.TakeDamage(10f);
+            #region 
             Vector2 difference = other.transform.position-enemyTransform.position ;
             difference.Normalize();
             // difference = (difference / 10.0f) * hitBackDistance;

@@ -18,7 +18,7 @@ public class FullControl : MonoBehaviour
     public static float mainCharacterMoveSpeed=3f;
     public static int savedSpot=1;
     public static int normalorultimate=0;
-    public static int meatShield=0;
+    public static int[] meatShield=new int[100];
 
     public static float hp;
     public static float sp;

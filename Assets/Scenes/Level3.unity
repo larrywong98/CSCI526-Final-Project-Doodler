@@ -81731,11 +81731,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: purpledefender
       objectReference: {fileID: 0}
-    - target: {fileID: 1182733640211154977, guid: 803dd49facc5f423ab44244c083aa2df,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1182733640211154980, guid: 803dd49facc5f423ab44244c083aa2df,
         type: 3}
       propertyPath: m_RootOrder
@@ -82145,6 +82140,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: WhiteBloodCell
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456828523417979264, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.37912586
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456828523417979264, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.25525433
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456828523417979264, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.0167
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456828523417979266, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: hitBackDistance
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456828523417979271, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4456828523417979388, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e40f5289f5b4b71448cd49461daf034d, type: 3}
