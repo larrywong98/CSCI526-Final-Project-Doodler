@@ -95,28 +95,35 @@ public class Slash : MonoBehaviour
                     Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
                 }
                 StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
-                
-                // #region 
-                // Vector2 difference = other.transform.position - transform.position;
-                // difference.Normalize();
-                // // difference = (difference / 10.0f) * hitBackDistance;
-                // difference = difference * hitBackDistance;
-                // other.transform.position = new Vector2(other.transform.position.x + difference.x,
-                //                                         other.transform.position.y + difference.y);
-                // #endregion
+                FullControl.meatShield=1;
+            }
+        }
+        if(other.gameObject.tag == "purplebacteria"){ // we hit enemy
+            attackDamage = Random.Range(minDamage, maxDamage);
+            Enemy_PurpleBacteria enemy=other.gameObject.GetComponent<Enemy_PurpleBacteria>();
+            if(!enemy.isAttacked){ // 只有当敌人isAttacked为false时才能造成伤害
+                enemy.TakenDamage(attackDamage); //  给敌人造成伤害
+                DamageNum damagable = Instantiate(damageCanvas, other.transform.position, Quaternion.identity).GetComponent<DamageNum>(); //如果需要旋转的话就是quaternion.rotation 
+                damagable.ShowUIDamage(Mathf.RoundToInt(attackDamage)); // show damage  
+                if(FullControl.normalorultimate==0)
+                {
+                    Instantiate(thrust2,other.transform.position,Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
+                }
+                StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.1f, 0.4f)); // camera shake
+                #region 
+                Vector2 difference = other.transform.position - transform.position;
+                difference.Normalize();
+                // difference = (difference / 10.0f) * hitBackDistance;
+                difference = difference * hitBackDistance;
+                other.transform.position = new Vector2(other.transform.position.x + difference.x,
+                                                        other.transform.position.y + difference.y);
+                #endregion
             }
         }
     }
 
-    // private void displayEnemyHittedEffect(Vector3 target){ // 在怪物被击中时，在怪物的位置生成刀光爆炸特效
-
-    //     Transform par = gameObject.transform.parent;
-
-    //     GameObject enemyHittedEffect = par.gameObject.transform.GetChild(1).gameObject;
-
-    //     enemyHittedEffect.GetComponent<Transform>().position = target;
-        
-    //     enemyHittedEffect.SetActive(true);
-
-    // }
 }

@@ -50,11 +50,12 @@
      <Compile Include="Assets\Scripts\Enemy\DamageNum.cs" />
      <Compile Include="Assets\Scripts\Enemy\Destroyer.cs" />
      <Compile Include="Assets\Scripts\Enemy\EnemyAI_1.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy_AI2.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy_Bat.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy_Boss.cs" />
      <Compile Include="Assets\Scripts\Enemy\Enemy_GreenBacteria.cs" />
+     <Compile Include="Assets\Scripts\Enemy\Enemy_PurpleBacteria.cs" />
      <Compile Include="Assets\Scripts\Enemy\MeatShield.cs" />
-     <Compile Include="Assets\Scripts\Enemy\purpledefender.cs" />
      <Compile Include="Assets\Scripts\Enemy\purpledefender1.cs" />
      <Compile Include="Assets\Scripts\FullControl.cs" />
      <Compile Include="Assets\Scripts\HP\HealthBar.cs" />

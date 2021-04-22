@@ -19,6 +19,7 @@ TagManager:
   - enemyHittedEffect
   - spbar
   - meatshield
+  - purplebacteria
   layers:
   - Default
   - TransparentFX

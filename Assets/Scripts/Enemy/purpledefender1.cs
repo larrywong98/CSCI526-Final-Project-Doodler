@@ -52,7 +52,11 @@ public class purpledefender1 : MonoBehaviour
     //         enemyState=EnemyState.chase;
     //     }
     // }
-
+    private IEnumerator isAttacked(){
+        roamingPos=transform.position;
+        yield return new WaitForSeconds(1f);
+        FullControl.meatShield=0;
+    }
     private void Update()
     {
         // Debug.Log(enemyState);
@@ -63,6 +67,9 @@ public class purpledefender1 : MonoBehaviour
                 float closedistance=5f;
                 if(Vector2.Distance(transform.position,roamingPos)<closedistance){
                     roamingPos=Roaming();
+                }
+                if(FullControl.meatShield==1){
+                    StartCoroutine(isAttacked());
                 }
                 // FindPlayer();
                 break;

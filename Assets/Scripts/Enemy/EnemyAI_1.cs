@@ -15,6 +15,7 @@ public class EnemyAI_1 : MonoBehaviour
     private float attackRange=2f;
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private float speed;
+    private float detectRange=5f;
 
     // public Animator fade;
     // private float transitionTime=1f;
@@ -48,7 +49,7 @@ public class EnemyAI_1 : MonoBehaviour
     }
 
     public void FindPlayer(){
-        float detectRange=5f;
+        
         // Debug.Log(Vector2.Distance(transform.position,playerTransform.position));
         if(Vector2.Distance(transform.position,playerTransform.position)<detectRange){
             enemyState=EnemyState.chase;
@@ -71,14 +72,15 @@ public class EnemyAI_1 : MonoBehaviour
                 
             case EnemyState.chase:
                 MoveTo(playerTransform.position);
-                attackRange=1f;
                 if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
                     enemyState=EnemyState.attack;
+                }
+                if(Vector2.Distance(transform.position,playerTransform.position)>detectRange){
+                    enemyState=EnemyState.roam;
                 }
                 break;
             case EnemyState.attack:
                 MoveTo(playerTransform.position);
-                attackRange=1f;
                 if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
                     player.TakeDamage(0.05f);
                     // player.ConsumeSp(0.3f);

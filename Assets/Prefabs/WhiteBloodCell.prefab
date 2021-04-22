@@ -234,8 +234,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackDamage: 20
   hitBackDistance: 1.6
-  minDamage: 5
-  maxDamage: 70
+  minDamage: 50
+  maxDamage: 150
   apDamage: 0
   damageCanvas: {fileID: 4921988587516973254, guid: 65d6dbf4e17020b43a6f06087fae36c5,
     type: 3}
@@ -719,7 +719,7 @@ BoxCollider2D:
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
   m_Offset: {x: 1, y: 0}
   m_SpriteTilingProperty:

@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1666760566465190503}
   - component: {fileID: 1666760566465190498}
   - component: {fileID: 1666760566465190499}
+  - component: {fileID: 7034208574250205331}
+  - component: {fileID: 6683331724611623286}
   m_Layer: 0
   m_Name: purplebacteria_0
   m_TagString: Untagged
@@ -29,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1666760566465190502}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -26.068, y: -78.035, z: 0}
-  m_LocalScale: {x: 4, y: 4, z: 1}
+  m_LocalScale: {x: 0.58823526, y: 0.56338024, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -161,4 +163,45 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &7034208574250205331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666760566465190502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257898d75c8b44bf880b8c0783bb4484, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 2000
+  rb: {fileID: 1666760566465190499}
+  hp: 2000
+  hurtLength: 0.1
+  isAttacked: 0
+  explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
+    type: 3}
+  oxygenObj: {fileID: 7196988127911248381, guid: 1d5a1841ec98649cbbda4b08c3ee1948,
+    type: 3}
+  glucoseObj: {fileID: 560241703204991604, guid: 7a171cf2e5ca74341b6606a1cced1df7,
+    type: 3}
+  smallGreen: {fileID: 0}
+  big: 0
+--- !u!114 &6683331724611623286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666760566465190502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5edf3b9f2f0aa4b32a783a417ffb959a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  player: {fileID: 0}
+  rb: {fileID: 1666760566465190499}
+  speed: 2
