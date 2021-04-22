@@ -21,6 +21,7 @@ public class Slash : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other){
+    // private void OnCollisionEnter2D(Collision collision){
         if(other.gameObject.tag == "Enemy"){ // we hit enemy
             attackDamage = Random.Range(minDamage, maxDamage);
             // Enemy_Bat enemy = other.gameObject.GetComponent<Enemy_Bat>(); //获取敌人
