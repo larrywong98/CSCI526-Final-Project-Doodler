@@ -53,7 +53,5 @@ public class PlayerAttack : MonoBehaviour
             transform.parent.GetChild(1).eulerAngles = new Vector3(0, 180, 0);
         }
         transform.parent.GetChild(1).gameObject.SetActive(true); // 手挥舞刀光更新
-
-
     }
 }

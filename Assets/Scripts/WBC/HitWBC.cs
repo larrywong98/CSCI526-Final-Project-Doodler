@@ -16,6 +16,7 @@ public class HitWBC : MonoBehaviour
             transform.parent.position = new Vector2(transform.parent.position.x + difference.x,
                                              transform.parent.position.y + difference.y);
             // #endregion
+            SoundManager.Instance.PlaySound(SoundManager.Instance.AttackClip, volume: 0.8f);
         }
     }
     
