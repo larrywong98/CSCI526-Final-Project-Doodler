@@ -15,6 +15,7 @@ public class MeatShield : MonoBehaviour
     private float hurtCounter; // 被击中的计数器
     public bool isAttacked;
     public GameObject explosionEffect;
+    public Animator animator;
     // public GameObject oxygenObj;
     // public GameObject glucoseObj;
     // public GameObject smallGreen;
@@ -57,6 +58,7 @@ public class MeatShield : MonoBehaviour
     // }
     public void TakenDamage(float _amount){
         isAttacked = true; // only be hitted once per slash
+        animator.SetInteger("isHitted", 1); //更新meatshield的受伤动画
         StartCoroutine(isAttackCo());
         hp -= _amount; // 扣血
         HurtShader(); // 伤害贴图
@@ -68,6 +70,7 @@ public class MeatShield : MonoBehaviour
     IEnumerator isAttackCo(){
         yield return new WaitForSeconds(0.2f);
         isAttacked = false;
+        animator.SetInteger("isHitted", 0); // meatshield受伤动画停止，传给animator的参数
     }
 
     private void Flip()

@@ -53994,6 +53994,7 @@ MonoBehaviour:
   isAttacked: 0
   explosionEffect: {fileID: 4687661739164838542, guid: bc6f15cda66fa6347baf8ef9a7ba5229,
     type: 3}
+  animator: {fileID: 1094269836}
 --- !u!1 &1100114411
 GameObject:
   m_ObjectHideFlags: 0
@@ -81948,6 +81949,11 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 1374236407}
+    - target: {fileID: 2004639513423615434, guid: e40f5289f5b4b71448cd49461daf034d,
+        type: 3}
+      propertyPath: m_UsedByEffector
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4054209100738607844, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
       propertyPath: maxDamage

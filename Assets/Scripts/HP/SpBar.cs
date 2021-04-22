@@ -12,7 +12,7 @@ public class SpBar : MonoBehaviour
     // public Animator fade;
     // private float transitionTime=1f;
     private float maxSp=100f;
-    private float ultimateSpeed=0.2f;
+    private float ultimateSpeed=0.01f;
     private float ultimateResetSpeed=0.02f;
     public static int spupflag=0;
     // private void Start() {
