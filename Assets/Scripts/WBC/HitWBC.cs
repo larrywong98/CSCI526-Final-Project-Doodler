@@ -9,7 +9,8 @@ public class HitWBC : MonoBehaviour
         if(other.gameObject.tag == "Enemy"){ // we hit enemy
             // 击退效果
             // Debug.Log( other.transform.position - transform.position);
-            // #region 
+            // #region
+            WbcMovement.crashes=1;
             Vector2 difference =transform.parent.position-other.transform.position;
             difference.Normalize();
             difference = difference * hitBackDistance;

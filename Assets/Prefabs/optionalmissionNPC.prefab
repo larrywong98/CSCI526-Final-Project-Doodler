@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 883328331391338885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 52.24, y: -20.72, z: -1}
-  m_LocalScale: {x: 0.2484579, y: 0.24351294, z: 1}
+  m_LocalScale: {x: 0.24358737, y: 0.23197943, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 11522dafaa2119247ba0dc758770a0fc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -170,7 +170,8 @@ MonoBehaviour:
     - Hello adventurer,  I am Dendritic Cell
     - I am here to offer you some jobs, please take a look
   dialogueTransform: {fileID: 0}
-  player: {fileID: 0}
+  playerTransform: {fileID: 0}
   transformCanvas: {fileID: 0}
   request: {fileID: 0}
   quest: {fileID: 4184604311474564151, guid: ae7df4de538a1f14fb1f558799bc69df, type: 3}
+  triggeredOnce: 0

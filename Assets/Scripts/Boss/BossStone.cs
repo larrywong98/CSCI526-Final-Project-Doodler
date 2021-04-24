@@ -19,6 +19,6 @@ public class BossStone : MonoBehaviour
         {
             player.TakeDamage(50f);
         }
-        StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.2f, 1.3f));
+        StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.05f, 1.3f));
     }
 }

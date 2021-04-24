@@ -16,21 +16,19 @@ public class DentriticTrigger : MonoBehaviour
     // public static int isTriggered=0;
 
     void Update(){
-        if(Input.GetKeyDown(KeyCode.Space) && 
+        if(VAim.isAttackButtionUp==1)
+        Debug.Log("ok");
+        if(VAim.isAttackButtionUp==1 && 
            Vector2.Distance(transform.position,playerTransform.position)<1.5f &&
            triggeredOnce==0){
+            
             dialogueTransform.GetChild(0).gameObject.SetActive(true);
             transformCanvas.GetChild(0).gameObject.SetActive(false);
             transformCanvas.GetChild(1).gameObject.SetActive(false);
             // dialogueTransform.GetChild(1).gameObject.SetActive(true);
             TriggerDialogue();
         }
-        if(Input.GetKeyDown(KeyCode.Space) && 
-           Vector2.Distance(transform.position,playerTransform.position)<1.5f && 
-           triggeredOnce!=0)
-        {
-            // showDialogue.showD();
-        }
+        
     }
    
     public void TriggerDialogue ()

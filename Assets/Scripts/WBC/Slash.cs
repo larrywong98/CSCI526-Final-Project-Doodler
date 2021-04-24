@@ -13,9 +13,6 @@ public class Slash : MonoBehaviour
     // public Enemy_Boss enemy;
     public GameObject thrust2;
     public GameObject thrust3;
-    // public purpledefender1 purpledefender;
-
-
 
     public void EndAttack(){
         gameObject.SetActive(false);

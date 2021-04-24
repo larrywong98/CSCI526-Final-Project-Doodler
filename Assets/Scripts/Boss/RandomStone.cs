@@ -27,7 +27,7 @@ public class RandomStone : MonoBehaviour
         
         
         // StartCoroutine(waitStone());
-        if(count%50==0){
+        if(count%100==0){
             Vector2 createPos=new Vector2(playerTransform.position.x-35.78f+UnityEngine.Random.Range(-stoneRange,stoneRange),playerTransform.position.y+33f+UnityEngine.Random.Range(-stoneRange,stoneRange));
             tmp=Instantiate(stone, createPos, Quaternion.identity);
         }

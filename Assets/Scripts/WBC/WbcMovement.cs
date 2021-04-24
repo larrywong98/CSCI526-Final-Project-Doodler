@@ -22,6 +22,7 @@ public class WbcMovement : MonoBehaviour
     private Vector2 dashOrigin;
     private Vector2 dashDestination;
     private Vector2 newPosition;
+    public static int crashes=0;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,12 @@ public class WbcMovement : MonoBehaviour
         
         if (isDashing)
         {
+            if(crashes==1){
+                isDashing=false;
+                NormalMovement =true;
+                crashes=0;
+                return;
+            }
             if (dashTimer < dashDuration)
             {
                 newPosition = Vector2.Lerp(dashOrigin, dashDestination, dashTimer / dashDuration);
@@ -56,12 +63,7 @@ public class WbcMovement : MonoBehaviour
     }
     public void HandleAbility()
     {
-        // if (Input.GetKeyDown(KeyCode.LeftShift))
-        // {
-        //     Dash();
-        // }
         Dash();
-        
     }
 
     private void Dash()
