@@ -46,6 +46,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7945875582170566540}
     m_Modifications:
+    - target: {fileID: 5501733963289568763, guid: 2bdf2bcaaa752624e8e4a4d5e1ffe2c2,
+        type: 3}
+      propertyPath: consumeSpeed
+      value: 0.006
+      objectReference: {fileID: 0}
     - target: {fileID: 5501733963289568764, guid: 2bdf2bcaaa752624e8e4a4d5e1ffe2c2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -156,6 +161,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sp Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 5501733963289568765, guid: 2bdf2bcaaa752624e8e4a4d5e1ffe2c2,
+        type: 3}
+      propertyPath: m_TagString
+      value: spbar
+      objectReference: {fileID: 0}
     - target: {fileID: 5501733963448628918, guid: 2bdf2bcaaa752624e8e4a4d5e1ffe2c2,
         type: 3}
       propertyPath: m_Color.b
@@ -200,6 +210,11 @@ PrefabInstance:
         type: 3}
       propertyPath: fade
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5233629515662103968, guid: eee0959bb363cf14a9bb4a1593e05552,
+        type: 3}
+      propertyPath: hurtspeed
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 5233629515662103969, guid: eee0959bb363cf14a9bb4a1593e05552,
         type: 3}
@@ -325,6 +340,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HP Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 5233629515662103982, guid: eee0959bb363cf14a9bb4a1593e05552,
+        type: 3}
+      propertyPath: m_TagString
+      value: hpbar
       objectReference: {fileID: 0}
     - target: {fileID: 7650525550237591630, guid: eee0959bb363cf14a9bb4a1593e05552,
         type: 3}
@@ -460,6 +480,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: showglucose
+      objectReference: {fileID: 0}
+    - target: {fileID: 8148503958019426519, guid: cb7f841296f5b65429534c7b09486e54,
+        type: 3}
+      propertyPath: m_Text
+      value: '  '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb7f841296f5b65429534c7b09486e54, type: 3}

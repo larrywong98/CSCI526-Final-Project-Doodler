@@ -31,11 +31,13 @@ public class HealthBar : MonoBehaviour
         }
         // Debug.Log(hpeffect.fillAmount);
         if(hpapeffect.fillAmount<=0){
+            SoundManager.Instance.PlaySound(SoundManager.Instance.DeadClip, volume: 0.05f);
             fade.SetTrigger("out");
             StartCoroutine(waitLoad());
         }
     }
     private IEnumerator waitLoad(){
+        yield return new WaitForSeconds(1f);
         yield return new WaitForSeconds(transitionTime);
         Loader.Load(Loader.Scene.MainMenu);
     }

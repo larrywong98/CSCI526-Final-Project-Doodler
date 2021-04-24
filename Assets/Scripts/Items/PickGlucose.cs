@@ -14,8 +14,11 @@ public class PickGlucose : MonoBehaviour
     {
         if(other.gameObject.tag == "character" && isfirstcollide==0)
         {
+            SoundManager.Instance.PlaySound(SoundManager.Instance.CoinClip, volume: 0.8f);
             FullControl.glucose=FullControl.glucose+1;
+            // Debug.Log(FullControl.glucose);
             glucoseText.text="  "+FullControl.glucose;
+            // Debug.Log(glucoseText.text);
             Destroy(gameObject,0f);
             // Debug.Log(FullControl.collectOxygen);
             isfirstcollide=1;

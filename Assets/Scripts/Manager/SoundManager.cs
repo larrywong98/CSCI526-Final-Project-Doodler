@@ -14,6 +14,8 @@ public class SoundManager : Singleton<SoundManager>
     [SerializeField] private AudioClip impactClip;
     [SerializeField] private AudioClip coinClip;
     [SerializeField] private AudioClip itemClip;
+    public AudioClip DeadClip;
+    public StartScene startScene;
     
     // public AudioClip MusicClip => musicClip;
     public AudioClip AttackClip => attackClip;
@@ -36,6 +38,24 @@ public class SoundManager : Singleton<SoundManager>
     private void PlayMusic()
     {
         musicAudioSource.loop = true;
+        if(startScene.spot==1){
+            musicClip=Resources.Load("Sound/bgm/l1s1",typeof(AudioClip)) as AudioClip;
+        }
+        if(startScene.spot==2){
+            musicClip=Resources.Load("Sound/bgm/l1s2",typeof(AudioClip)) as AudioClip;
+        }
+        if(startScene.spot==3){
+            musicClip=Resources.Load("Sound/bgm/l1s3",typeof(AudioClip)) as AudioClip;
+        }
+        if(startScene.spot==4){
+            musicClip=Resources.Load("Sound/bgm/l2",typeof(AudioClip)) as AudioClip;
+        }
+        if(startScene.spot==5){
+            musicClip=Resources.Load("Sound/bgm/l3",typeof(AudioClip)) as AudioClip;
+        }
+        if(startScene.spot==6){
+            musicClip=Resources.Load("Sound/bgm/finalboss",typeof(AudioClip)) as AudioClip;
+        }
         musicAudioSource.clip = musicClip;
         musicAudioSource.volume = 0.2f;
         musicAudioSource.Play();

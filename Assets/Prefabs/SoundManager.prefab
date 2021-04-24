@@ -51,6 +51,8 @@ MonoBehaviour:
   impactClip: {fileID: 8300000, guid: 127f860039379449a9bab2f0891ac15f, type: 3}
   coinClip: {fileID: 8300000, guid: e44e7c3e2dec343a6beeedc5016c426f, type: 3}
   itemClip: {fileID: 8300000, guid: f0de44193d85544abb78c7c1c2c65d5e, type: 3}
+  DeadClip: {fileID: 8300000, guid: 297fbee4c0fde8145a7dbf6d44c7b4be, type: 3}
+  startScene: {fileID: 0}
 --- !u!114 &6347479868127197022
 MonoBehaviour:
   m_ObjectHideFlags: 0
