@@ -62,10 +62,10 @@ public class RbcMovement : MonoBehaviour
 
     private void Flip()
     {
-        // if (VJoystick.joystickpos.x > 0)
-        //     transform.eulerAngles = new Vector3(0, 180, 0);
-        // if (VJoystick.joystickpos.x < 0)
-        //     transform.eulerAngles = new Vector3(0, 0, 0);
+        if (VJoystick.joystickpos.x > 0)
+            transform.eulerAngles = new Vector3(0, 180, 0);
+        if (VJoystick.joystickpos.x < 0)
+            transform.eulerAngles = new Vector3(0, 0, 0);
         
         
         

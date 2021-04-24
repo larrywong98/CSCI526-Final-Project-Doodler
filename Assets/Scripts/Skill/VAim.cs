@@ -115,7 +115,7 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
             flag=0;
             // drag=0;
             isAttackButtionUp = 1;
-            
+            SoundManager.Instance.PlaySound(SoundManager.Instance.AttackClip, volume: 0.8f);
         }
     }
 }

@@ -9,5 +9,6 @@ public class StartScene : MonoBehaviour
     void Start()
     {
         FullControl.savedSpot=spot;
+        // SoundManager.Instance.PlaySound(SoundManager.Instance.MusicClip, volume: 0.8f);
     }
 }

@@ -22,7 +22,9 @@ public class Slash : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other){
-    // private void OnCollisionEnter2D(Collision collision){
+        if(other.gameObject.tag == "Enemy"||other.gameObject.tag == "boss"||other.gameObject.tag == "meatshield"||other.gameObject.tag == "purplebacteria"){
+            SoundManager.Instance.PlaySound(SoundManager.Instance.ImpactClip, volume: 0.8f);
+        }
         if(other.gameObject.tag == "Enemy"){ // we hit enemy
             attackDamage = Random.Range(minDamage, maxDamage);
             // Enemy_Bat enemy = other.gameObject.GetComponent<Enemy_Bat>(); //获取敌人
@@ -40,6 +42,7 @@ public class Slash : MonoBehaviour
                 {
                     Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
                 }
+                
                 StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.12f, 0.4f)); // camera shake
                 // 击退效果
                 #region 

@@ -72,6 +72,9 @@
      <Compile Include="Assets\Scripts\Load\Loader.cs" />
      <Compile Include="Assets\Scripts\Load\LoaderFunc.cs" />
      <Compile Include="Assets\Scripts\Load\LoadingProgress.cs" />
+     <Compile Include="Assets\Scripts\Manager\ObjectPooler.cs" />
+     <Compile Include="Assets\Scripts\Manager\Singleton.cs" />
+     <Compile Include="Assets\Scripts\Manager\SoundManager.cs" />
      <Compile Include="Assets\Scripts\Mission\MissionStatus.cs" />
      <Compile Include="Assets\Scripts\Mission\Request.cs" />
      <Compile Include="Assets\Scripts\Mission\TreasureChest.cs" />
