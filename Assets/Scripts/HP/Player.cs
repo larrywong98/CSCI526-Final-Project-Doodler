@@ -19,8 +19,8 @@ public class Player : MonoBehaviour
     public void Start()
     {
         // currentHealth=maxHealth;
-        FullControl.hp=maxHealth;
-        FullControl.sp=maxSp;
+        // FullControl.hp=maxHealth;
+        // FullControl.sp=maxSp;
         healthBar.SetMaxHealth(FullControl.hp);
         spBar.SetMaxSp(FullControl.sp);
         // dissolveEffect.AntiDissolve(1f, disappearColor);

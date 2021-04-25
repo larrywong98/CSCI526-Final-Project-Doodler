@@ -117,7 +117,14 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
             flag=0;
             // drag=0;
             isAttackButtionUp = 1;
-            isChoosingButtonUp=1;
+            StartCoroutine(choose());
+            
         }
     }
+    public IEnumerator choose(){
+        isChoosingButtonUp=1;
+        yield return new WaitForSeconds(0.2f);
+        isChoosingButtonUp=0;
+    }
+
 }

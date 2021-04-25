@@ -23,6 +23,6 @@ public class FullControl : MonoBehaviour
     public static float soundFx=0.8f;
     public static int isWin=0;
 
-    public static float hp;
-    public static float sp;
+    public static float hp=100;
+    public static float sp=100;
 }
