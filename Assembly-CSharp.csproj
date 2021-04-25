@@ -105,6 +105,7 @@
      <Compile Include="Assets\Scripts\UI\ShowDialogue.cs" />
      <Compile Include="Assets\Scripts\UI\TextFader.cs" />
      <Compile Include="Assets\Scripts\UI\glucoseinit.cs" />
+     <Compile Include="Assets\Scripts\Video\PlayVideo.cs" />
      <Compile Include="Assets\Scripts\WBC\CollideWithWBC.cs" />
      <Compile Include="Assets\Scripts\WBC\HitWBC.cs" />
      <Compile Include="Assets\Scripts\WBC\PlayerAttack.cs" />

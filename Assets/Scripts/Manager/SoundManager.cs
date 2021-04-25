@@ -44,6 +44,9 @@ public class SoundManager : Singleton<SoundManager>
     private void PlayMusic()
     {
         musicAudioSource.loop = true;
+        if(startScene.spot==0){
+            musicClip=Resources.Load("Sound/bgm/l1s1",typeof(AudioClip)) as AudioClip;
+        }
         if(startScene.spot==1){
             musicClip=Resources.Load("Sound/bgm/l1s1",typeof(AudioClip)) as AudioClip;
         }

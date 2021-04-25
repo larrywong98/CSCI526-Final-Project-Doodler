@@ -19,6 +19,8 @@ public class Enemy_Boss : MonoBehaviour
 
     Vector3 lastPostion;
     Vector3 localVelocity;
+    public GameObject winVideo;
+    public GameObject enemies;
     // Start is called before the first frame update
     void Start()
     {
@@ -60,7 +62,11 @@ public class Enemy_Boss : MonoBehaviour
             Instantiate(explosionEffect, transform.position, Quaternion.identity);
             Destroy(gameObject);
             FullControl.deadboss=FullControl.deadboss+1;
-            fade.SetTrigger("out");
+            // fade.SetTrigger("out");
+            
+            winVideo.SetActive(true);
+            enemies.SetActive(false);
+            
             // Debug.Log(FullControl.deadGreenBacteria);
             // MissionStatus.CheckComplete();
         } // 血条为0则销毁            
