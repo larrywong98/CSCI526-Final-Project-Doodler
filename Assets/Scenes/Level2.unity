@@ -86068,6 +86068,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6347479868127197017, guid: 0a036b0301f367049a8c44ee89b7f4cf,
         type: 3}
+      propertyPath: musicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 03c757286ff9c4d44a51ab5f155288cb, type: 3}
+    - target: {fileID: 6347479868127197017, guid: 0a036b0301f367049a8c44ee89b7f4cf,
+        type: 3}
       propertyPath: startScene
       value: 
       objectReference: {fileID: 773467548}
