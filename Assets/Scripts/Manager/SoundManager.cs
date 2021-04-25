@@ -6,23 +6,29 @@ using UnityEngine;
 public class SoundManager : Singleton<SoundManager>
 {
     [Header("Music")]
-    [SerializeField] private AudioClip musicClip;
+    public AudioClip musicClip;
     
     [Header("Sounds")]
-    [SerializeField] private AudioClip attackClip;
-    [SerializeField] private AudioClip dashClip;
-    [SerializeField] private AudioClip impactClip;
-    [SerializeField] private AudioClip coinClip;
-    [SerializeField] private AudioClip itemClip;
+    public AudioClip AttackClip;
+    public AudioClip DashClip;
+    public AudioClip ImpactClip;
+    public AudioClip CoinClip;
+    public AudioClip ItemClip;
     public AudioClip DeadClip;
+    public AudioClip ClickClip;
+    public AudioClip SlashMissClip;
+    public AudioClip SlashClip;
+    public AudioClip SlashUltimateMissClip;
+    public AudioClip SlashUltimateClip;
+
     public StartScene startScene;
     
     // public AudioClip MusicClip => musicClip;
-    public AudioClip AttackClip => attackClip;
-    public AudioClip ImpactClip => impactClip;
-    public AudioClip CoinClip => coinClip;
-    public AudioClip ItemClip => itemClip;
-    public AudioClip DashClip => dashClip;
+    // public AudioClip AttackClip => attackClip;
+    // public AudioClip ImpactClip => impactClip;
+    // public AudioClip CoinClip => coinClip;
+    // public AudioClip ItemClip => itemClip;
+    // public AudioClip DashClip => dashClip;
 
     private AudioSource musicAudioSource;
     private ObjectPooler soundObjectPooler;

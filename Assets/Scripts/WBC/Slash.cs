@@ -15,12 +15,23 @@ public class Slash : MonoBehaviour
     public GameObject thrust3;
 
     public void EndAttack(){
+        // if(FullControl.effective==0){
+        //     if(FullControl.normalorultimate==0)
+        //         SoundManager.Instance.PlaySound(SoundManager.Instance.SlashClip, volume: 0.8f);
+        //     else
+        //         SoundManager.Instance.PlaySound(SoundManager.Instance.SlashUltimateClip, volume: 0.8f);
+        //     FullControl.effective=0;
+        // }
         gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other){
+        // FullControl.effective=1;
         if(other.gameObject.tag == "Enemy"||other.gameObject.tag == "boss"||other.gameObject.tag == "meatshield"||other.gameObject.tag == "purplebacteria"){
-            SoundManager.Instance.PlaySound(SoundManager.Instance.ImpactClip, volume: 0.8f);
+            if(FullControl.normalorultimate==0)
+                SoundManager.Instance.PlaySound(SoundManager.Instance.SlashClip, volume: 0.8f);
+            else
+                SoundManager.Instance.PlaySound(SoundManager.Instance.SlashUltimateClip, volume: 0.8f);
         }
         if(other.gameObject.tag == "Enemy"){ // we hit enemy
             attackDamage = Random.Range(minDamage, maxDamage);
@@ -37,7 +48,11 @@ public class Slash : MonoBehaviour
                 }
                 else
                 {
+                    // GameObject tmp= 
                     Instantiate(thrust3,other.transform.position+new Vector3(2.5f,0f,other.transform.position.z),Quaternion.identity);
+                    // transform
+                    // tmp.transform.rotation=Quaternion.Euler(0, 0, 90);
+                    // tmp.transform.position=tmp.transform.position+new Vector3(2.5f*,0f,other.transform.position.z);
                 }
                 
                 StartCoroutine(FindObjectOfType<camcontroller>().CameraShakeCo(0.12f, 0.4f)); // camera shake

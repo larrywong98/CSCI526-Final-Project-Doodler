@@ -11,13 +11,14 @@ public class BuyHealth : MonoBehaviour
     public Text glucoseAmount;
     public Text result;
     private Text glucoseText;
+    public Text buyText;
 
     void Start()
     {
-        hpBar.fillAmount=0.2f;
-        hpEffectBar.fillAmount=hpBar.fillAmount;
-        FullControl.hp=20;
-        FullControl.glucose=10;
+        // hpBar.fillAmount=0.2f;
+        // hpEffectBar.fillAmount=hpBar.fillAmount;
+        // FullControl.hp=20;
+        // FullControl.glucose=10;
         glucoseText=GameObject.FindGameObjectWithTag("showglucose").GetComponent<Text>();
         glucoseText.text="  "+FullControl.glucose;
     }
@@ -31,16 +32,29 @@ public class BuyHealth : MonoBehaviour
         hpEffectBar.fillAmount=FullControl.hp/100;
     }
 
+    public IEnumerator colortimer(){
+        buyText.color=new Color(0,1,0);
+        yield return new WaitForSeconds(0.2f);
+        buyText.color=new Color(0,0,0);
+    }
+    public IEnumerator colortimer1(){
+        buyText.color=new Color(1,0,0);
+        yield return new WaitForSeconds(0.2f);
+        buyText.color=new Color(0,0,0);
+    }
     public void TakeGlucose(){
+        
     	int amount = int.Parse(glucoseAmount.text);
     	if(FullControl.glucose>=amount){
     		FullControl.glucose=FullControl.glucose-amount;
     		AddHealth(amount*10);
     		glucoseText.text="  "+FullControl.glucose;
-    		result.text = "Success!";
+            StartCoroutine(colortimer());
+            if(amount!=0)
+    		result.text = "HP restored!";
     	} else {
-    		result.text = "Don't have enough glucose";
+            StartCoroutine(colortimer1());
+    		result.text = "Insufficient glucose";
     	}
-    	
     }
 }
