@@ -16,6 +16,7 @@ public class Enemy_AI2 : MonoBehaviour
     private float detectRange=4f;
     public GameObject wind;
     private int attacking=0;
+    private GameObject tmp1,tmp2,tmp3,tmp4;
 
     public enum EnemyState
     {
@@ -33,8 +34,12 @@ public class Enemy_AI2 : MonoBehaviour
         roamingPos=Roaming();
     }
     void MoveTo(Vector2 endPos){
-        Vector3 movement=(Vector3)endPos-transform.position;
-        rb.velocity=new Vector2(movement.normalized.x,movement.normalized.y)*speed;
+        if(attacking==1){
+            rb.velocity=Vector2.zero;
+        }else{
+            Vector3 movement=(Vector3)endPos-transform.position;
+            rb.velocity=new Vector2(movement.normalized.x,movement.normalized.y)*speed;
+        }
     }
     public Vector3 RandomDirection(){
         return new Vector3(UnityEngine.Random.Range(-1f,1f),
@@ -54,9 +59,14 @@ public class Enemy_AI2 : MonoBehaviour
     }
     private IEnumerator isAttacking(){
         attacking=1;
-        yield return new WaitForSeconds(0.5f);
-        Instantiate(wind, transform.position+new Vector3(1.5f,0f,transform.position.z), Quaternion.identity);
-        yield return new WaitForSeconds(2f);
+        // enemyState=EnemyState.idle;
+        yield return new WaitForSeconds(1f);
+        tmp1=Instantiate(wind, transform.position+new Vector3(1.5f,0f,transform.position.z), Quaternion.identity);
+        tmp2=Instantiate(wind, transform.position+new Vector3(0f,1.5f,transform.position.z), Quaternion.Euler(0,0,90));
+        tmp3=Instantiate(wind, transform.position+new Vector3(-1.5f,0f,transform.position.z), Quaternion.Euler(0,0,180));
+        tmp4=Instantiate(wind, transform.position+new Vector3(0f,-1.5f,transform.position.z), Quaternion.Euler(0,0,270));
+        yield return new WaitForSeconds(1f);
+        // enemyState=EnemyState.chase;
         attacking=0;
     }
     private void Update()
@@ -83,21 +93,21 @@ public class Enemy_AI2 : MonoBehaviour
                 }
                 break;
             case EnemyState.attack:
-                MoveTo(playerTransform.position);
+                if(attacking==0)
+                    MoveTo(playerTransform.position);
                 if(Vector2.Distance(transform.position,playerTransform.position)<attackRange){
                     // player.TakeDamage(0.05f);
                     // player.ConsumeSp(0.3f);
                     if(attacking==0){
                         StartCoroutine(isAttacking());
                     }
-                        
                 }else{
                     enemyState=EnemyState.chase;
                 }
                 break;
-            // case EnemyState.idle:
-            //     transform.position=transform.position;
-            //     break;
+            case EnemyState.idle:
+                // transform.position=transform.position;
+                break;
             default:
                 break;
         }

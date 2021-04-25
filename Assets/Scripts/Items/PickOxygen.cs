@@ -14,7 +14,7 @@ public class PickOxygen : MonoBehaviour
     {
         if(other.gameObject.tag == "character" && isfirstcollide==0)
         { 
-            SoundManager.Instance.PlaySound(SoundManager.Instance.ItemClip, volume: 0.8f);
+            SoundManager.Instance.PlaySound(SoundManager.Instance.ItemClip, volume: 0.4f);
             FullControl.collectOxygen=FullControl.collectOxygen+1;
             Destroy(gameObject,0f);
             // Debug.Log(FullControl.collectOxygen);

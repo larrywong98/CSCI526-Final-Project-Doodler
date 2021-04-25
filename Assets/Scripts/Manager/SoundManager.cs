@@ -63,7 +63,7 @@ public class SoundManager : Singleton<SoundManager>
             musicClip=Resources.Load("Sound/bgm/finalboss",typeof(AudioClip)) as AudioClip;
         }
         musicAudioSource.clip = musicClip;
-        musicAudioSource.volume = 0.2f;
+        musicAudioSource.volume = 0.1f;
         musicAudioSource.Play();
     }
     
