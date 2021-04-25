@@ -14,7 +14,7 @@ public class PickGlucose : MonoBehaviour
     {
         if(other.gameObject.tag == "character" && isfirstcollide==0)
         {
-            SoundManager.Instance.PlaySound(SoundManager.Instance.CoinClip, volume: 0.4f);
+            SoundManager.Instance.PlaySound(SoundManager.Instance.CoinClip, volume: FullControl.soundFx);
             FullControl.glucose=FullControl.glucose+1;
             // Debug.Log(FullControl.glucose);
             glucoseText.text="  "+FullControl.glucose;

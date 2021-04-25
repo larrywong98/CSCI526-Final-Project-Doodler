@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6347479868127197023}
   m_Layer: 0
   m_Name: SoundManager
-  m_TagString: Untagged
+  m_TagString: audiomanager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 572267919db0c4828a9fb674d77538bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicClip: {fileID: 0}
+  musicClip: {fileID: 8300000, guid: 03c757286ff9c4d44a51ab5f155288cb, type: 3}
   AttackClip: {fileID: 8300000, guid: 17eb49dc0f0e54bdea355e6e3ecf6ab3, type: 3}
   DashClip: {fileID: 8300000, guid: 5cca6b08507304d11b0be2fc0fbd621d, type: 3}
   ImpactClip: {fileID: 8300000, guid: 127f860039379449a9bab2f0891ac15f, type: 3}

@@ -21,6 +21,7 @@ TagManager:
   - meatshield
   - purplebacteria
   - hpbar
+  - audiomanager
   layers:
   - Default
   - TransparentFX

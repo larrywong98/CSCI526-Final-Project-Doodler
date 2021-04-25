@@ -29,9 +29,9 @@ public class Slash : MonoBehaviour
         // FullControl.effective=1;
         if(other.gameObject.tag == "Enemy"||other.gameObject.tag == "boss"||other.gameObject.tag == "meatshield"||other.gameObject.tag == "purplebacteria"){
             if(FullControl.normalorultimate==0)
-                SoundManager.Instance.PlaySound(SoundManager.Instance.SlashClip, volume: 0.6f);
+                SoundManager.Instance.PlaySound(SoundManager.Instance.SlashClip, volume: FullControl.soundFx);
             else
-                SoundManager.Instance.PlaySound(SoundManager.Instance.SlashUltimateClip, volume: 0.7f);
+                SoundManager.Instance.PlaySound(SoundManager.Instance.SlashUltimateClip, volume: FullControl.soundFx);
         }
         if(other.gameObject.tag == "Enemy"){ // we hit enemy
             attackDamage = Random.Range(minDamage, maxDamage);
