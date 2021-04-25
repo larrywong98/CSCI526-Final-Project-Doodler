@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class PlayVideo : MonoBehaviour {
 
     //定义参数获取VideoPlayer组件和RawImage组件
-
     private VideoPlayer videoPlayer;
     public Animator fade;
     private RawImage rawImage;
@@ -17,7 +16,7 @@ public class PlayVideo : MonoBehaviour {
     void Start () {
 
         //获取场景中对应的组件
-
+        FullControl.isWin=1;
         videoPlayer = this.GetComponent <VideoPlayer> ();
 
         rawImage = this.GetComponent <RawImage> ();

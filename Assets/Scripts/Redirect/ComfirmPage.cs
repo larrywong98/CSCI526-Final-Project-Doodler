@@ -12,6 +12,7 @@ public class ComfirmPage : MonoBehaviour
     }
     public void showConfirm()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.ClickClip, volume: FullControl.soundFx);
         if(FullControl.buttonNum!=0)return ;
         FullControl.buttonNum=2;
         // Debug.Log("to loading");

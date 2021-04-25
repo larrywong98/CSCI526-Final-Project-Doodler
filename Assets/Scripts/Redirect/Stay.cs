@@ -14,6 +14,7 @@ public class Stay : MonoBehaviour
     }
     public void Close()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.ClickClip, volume: FullControl.soundFx);
         if(FullControl.buttonNum==3){
             //清除任务
             GameObject tableRequestObj = GameObject.FindGameObjectWithTag("request");

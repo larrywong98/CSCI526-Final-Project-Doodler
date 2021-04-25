@@ -44,9 +44,10 @@ public class BuyHealth : MonoBehaviour
     }
     public void TakeGlucose(){
         
-    	int amount = int.Parse(glucoseAmount.text);
+    	int amount = int.Parse(glucoseAmount.text)*10;
     	if(FullControl.glucose>=amount){
     		FullControl.glucose=FullControl.glucose-amount;
+            SoundManager.Instance.PlaySound(SoundManager.Instance.AddHealthClip, volume: FullControl.soundFx);
     		AddHealth(amount*10);
     		glucoseText.text="  "+FullControl.glucose;
             StartCoroutine(colortimer());

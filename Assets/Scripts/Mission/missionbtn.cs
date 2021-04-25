@@ -15,6 +15,7 @@ public class missionbtn : MonoBehaviour
     }
     public void ShowMission()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.ClickClip, volume: FullControl.soundFx);
         if(FullControl.buttonNum!=0)return ;
         FullControl.buttonNum=3;
         missionTransform.GetChild(1).gameObject.SetActive(true);

@@ -20,7 +20,9 @@ public class SoundManager : Singleton<SoundManager>
     public AudioClip SlashClip;
     public AudioClip SlashUltimateMissClip;
     public AudioClip SlashUltimateClip;
-
+    public AudioClip ExplodeClip;
+    public AudioClip AddHealthClip;
+    public AudioClip WindClip;
     public StartScene startScene;
     
     // public AudioClip MusicClip => musicClip;
@@ -68,6 +70,14 @@ public class SoundManager : Singleton<SoundManager>
         musicAudioSource.clip = musicClip;
         musicAudioSource.volume = 0.8f;
         musicAudioSource.Play();
+    }
+    void Update() {
+        if(FullControl.isWin==1){
+            musicAudioSource.clip=Resources.Load("Sound/bgm/win",typeof(AudioClip)) as AudioClip;
+            musicAudioSource.volume = 0.8f;
+            musicAudioSource.Play();
+            FullControl.isWin=0;
+        }
     }
     
     public void PlaySound(AudioClip clipToPlay, float volume)

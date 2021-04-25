@@ -50,7 +50,7 @@ MonoBehaviour:
   DashClip: {fileID: 8300000, guid: 5cca6b08507304d11b0be2fc0fbd621d, type: 3}
   ImpactClip: {fileID: 8300000, guid: 127f860039379449a9bab2f0891ac15f, type: 3}
   CoinClip: {fileID: 8300000, guid: e44e7c3e2dec343a6beeedc5016c426f, type: 3}
-  ItemClip: {fileID: 8300000, guid: f0de44193d85544abb78c7c1c2c65d5e, type: 3}
+  ItemClip: {fileID: 8300000, guid: a4ca4adda496cd24dad7878ed3f3d888, type: 3}
   DeadClip: {fileID: 8300000, guid: 297fbee4c0fde8145a7dbf6d44c7b4be, type: 3}
   ClickClip: {fileID: 8300000, guid: 49085ee391b9fde479b07f2fc92c82ed, type: 3}
   SlashMissClip: {fileID: 8300000, guid: 90b5a2a6228925948aa6cbe3c0a16e23, type: 3}
@@ -58,6 +58,9 @@ MonoBehaviour:
   SlashUltimateMissClip: {fileID: 8300000, guid: 66377563ba283874cb47c779b621e844,
     type: 3}
   SlashUltimateClip: {fileID: 8300000, guid: 30420513224459540a8bcaef28df65ac, type: 3}
+  ExplodeClip: {fileID: 8300000, guid: 43b73afb199ae43468c2e382740f3889, type: 3}
+  AddHealthClip: {fileID: 8300000, guid: 0a19d97864af9ac4bbd5d17b4950ad08, type: 3}
+  WindClip: {fileID: 8300000, guid: 6c66bae9144831f4c8ffc5d015f7b70e, type: 3}
   startScene: {fileID: 0}
 --- !u!114 &6347479868127197022
 MonoBehaviour:

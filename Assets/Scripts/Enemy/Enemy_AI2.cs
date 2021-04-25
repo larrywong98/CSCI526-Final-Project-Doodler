@@ -61,6 +61,7 @@ public class Enemy_AI2 : MonoBehaviour
         attacking=1;
         // enemyState=EnemyState.idle;
         yield return new WaitForSeconds(1f);
+        SoundManager.Instance.PlaySound(SoundManager.Instance.WindClip, volume: FullControl.soundFx);
         tmp1=Instantiate(wind, transform.position+new Vector3(1.5f,0f,transform.position.z), Quaternion.identity);
         tmp2=Instantiate(wind, transform.position+new Vector3(0f,1.5f,transform.position.z), Quaternion.Euler(0,0,90));
         tmp3=Instantiate(wind, transform.position+new Vector3(-1.5f,0f,transform.position.z), Quaternion.Euler(0,0,180));

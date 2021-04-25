@@ -12,6 +12,7 @@ public class btnBodypedia : MonoBehaviour
     }
     public void showConfirm()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.ClickClip, volume: FullControl.soundFx);
         if(FullControl.buttonNum!=0)return ;
         FullControl.buttonNum=4;
         // Debug.Log("to loading");

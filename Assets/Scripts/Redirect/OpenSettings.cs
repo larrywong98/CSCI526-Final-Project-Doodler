@@ -16,6 +16,7 @@ public class OpenSettings : MonoBehaviour
 
     void SettingsFunc()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Instance.ClickClip, volume: FullControl.soundFx);
         if(FullControl.buttonNum!=0)return ;
         FullControl.buttonNum=1;
         transClose.parent.parent.GetChild(0).gameObject.SetActive(false);

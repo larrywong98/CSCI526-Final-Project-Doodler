@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1666760566465190498}
   - component: {fileID: 1666760566465190499}
   - component: {fileID: 7034208574250205331}
-  - component: {fileID: 1995744163047865612}
+  - component: {fileID: 276933105}
   m_Layer: 0
   m_Name: purplebacteria_0
   m_TagString: Untagged
@@ -189,7 +189,7 @@ MonoBehaviour:
     type: 3}
   smallGreen: {fileID: 0}
   big: 0
---- !u!114 &1995744163047865612
+--- !u!114 &276933105
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -201,9 +201,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42adf2cd0682d5645b734da75bca47bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
-    type: 3}
-  player: {fileID: 1967915591, guid: e40f5289f5b4b71448cd49461daf034d, type: 3}
+  playerTransform: {fileID: 0}
+  player: {fileID: 0}
   rb: {fileID: 1666760566465190499}
   speed: 1.5
   wind: {fileID: 4099053430279462708, guid: f0946070af06d4c4b95d1b24a6637dcf, type: 3}
