@@ -10,6 +10,7 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
     public static Vector2 joystickpos;
     public static Vector2 attackDirection;
     public static int isAttackButtionUp = 0; // 为1则进行攻击，为0则表示不攻击
+    public static int isChoosingButtonUp=0;
     private Vector2 circlebPos,circlesPos;
     private Vector2 startPos,endPos;
 
@@ -88,6 +89,7 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
         if(eventPos.x>=transformBig.position.x-margin && eventPos.x<=transformBig.position.x+margin && 
             eventPos.y>=transformBig.position.y-margin && eventPos.y<=transformBig.position.y+margin)
         {
+
             imageBig.color=new Color(1f,1f,1f,0.93f);
             imageSmall.color=new Color(1f,1f,1f,0.93f);
             startPos=eventData.position;
@@ -115,6 +117,7 @@ public class VAim : MonoBehaviour,IPointerDownHandler,IDragHandler,IPointerUpHan
             flag=0;
             // drag=0;
             isAttackButtionUp = 1;
+            isChoosingButtonUp=1;
         }
     }
 }

@@ -53,8 +53,8 @@ MonoBehaviour:
   ItemClip: {fileID: 8300000, guid: f0de44193d85544abb78c7c1c2c65d5e, type: 3}
   DeadClip: {fileID: 8300000, guid: 297fbee4c0fde8145a7dbf6d44c7b4be, type: 3}
   ClickClip: {fileID: 8300000, guid: 49085ee391b9fde479b07f2fc92c82ed, type: 3}
-  SlashMissClip: {fileID: 8300000, guid: 62d74031f85f2ae46acbe6fdcc6da145, type: 3}
-  SlashClip: {fileID: 8300000, guid: 90b5a2a6228925948aa6cbe3c0a16e23, type: 3}
+  SlashMissClip: {fileID: 8300000, guid: 90b5a2a6228925948aa6cbe3c0a16e23, type: 3}
+  SlashClip: {fileID: 8300000, guid: 430c88766904dff49b2f65dfa494f8fc, type: 3}
   SlashUltimateMissClip: {fileID: 8300000, guid: 66377563ba283874cb47c779b621e844,
     type: 3}
   SlashUltimateClip: {fileID: 8300000, guid: 30420513224459540a8bcaef28df65ac, type: 3}

@@ -20,7 +20,7 @@ public class FullControl : MonoBehaviour
     public static int normalorultimate=0;
     public static int[] meatShield=new int[100];
     public static int effective=0;
-    public static float soundFx=0;
+    public static float soundFx=0.8f;
 
     public static float hp;
     public static float sp;

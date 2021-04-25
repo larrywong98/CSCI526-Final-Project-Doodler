@@ -36022,7 +36022,7 @@ PrefabInstance:
         type: 3}
       propertyPath: canvasTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1709997472}
     - target: {fileID: 2294444428923927298, guid: de80563f89f9ceb4695b3fd59f3f0f17,
         type: 3}
       propertyPath: m_Pivot.x
@@ -36152,17 +36152,17 @@ PrefabInstance:
         type: 3}
       propertyPath: canvasTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1709997472}
     - target: {fileID: 2294444429681977815, guid: de80563f89f9ceb4695b3fd59f3f0f17,
         type: 3}
       propertyPath: canvasTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1709997472}
     - target: {fileID: 2294444430021247783, guid: de80563f89f9ceb4695b3fd59f3f0f17,
         type: 3}
       propertyPath: canvasTransform
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1709997472}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de80563f89f9ceb4695b3fd59f3f0f17, type: 3}
 --- !u!114 &714449666 stripped
@@ -73033,7 +73033,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Btn: {fileID: 1136606033}
   transClose: {fileID: 1769401795}
-  canvasTransform: {fileID: 0}
+  canvasTransform: {fileID: 1709997472}
 --- !u!114 &1136606033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73167,7 +73167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Btn: {fileID: 1206994874}
   transClose: {fileID: 1769401795}
-  canvasTransform: {fileID: 0}
+  canvasTransform: {fileID: 1709997472}
 --- !u!114 &1206994874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73680,7 +73680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Btn: {fileID: 1257671267}
   transClose: {fileID: 1769401795}
-  canvasTransform: {fileID: 0}
+  canvasTransform: {fileID: 1709997472}
 --- !u!114 &1257671267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74363,7 +74363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Btn: {fileID: 1452571693}
   transClose: {fileID: 1769401795}
-  canvasTransform: {fileID: 0}
+  canvasTransform: {fileID: 1709997472}
 --- !u!114 &1452571693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75392,7 +75392,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 9
   m_TargetDisplay: 0
 --- !u!1 &1722475892
 GameObject:

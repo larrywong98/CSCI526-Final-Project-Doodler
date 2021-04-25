@@ -14,7 +14,7 @@ public class L1S3Dendritic : MonoBehaviour
     // public static int isTriggered=0;
 
     void Update(){
-        if(VAim.isAttackButtionUp==1 && 
+        if(VAim.isChoosingButtonUp==1 && 
            Vector2.Distance(transform.position,player.position)<3f){
             dialogueTransform.GetChild(0).gameObject.SetActive(true);
             transformCanvas.GetChild(0).gameObject.SetActive(false);

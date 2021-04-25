@@ -11,8 +11,10 @@ public class showstore : MonoBehaviour
     }
     void Update()
     {
-        if(VAim.isAttackButtionUp==1 && wbc.position.x>54 && wbc.position.x<56 && wbc.position.y>-26 && wbc.position.y<-25){
+        // Debug.Log(VAim.isAttackButtionUp);
+        if(VAim.isChoosingButtonUp==1 && wbc.position.x>54 && wbc.position.x<56 && wbc.position.y>-26 && wbc.position.y<-25){
             storepanel.SetActive(true);
+            VAim.isChoosingButtonUp=0;
         }
     }
 }

@@ -16,9 +16,7 @@ public class DentriticTrigger : MonoBehaviour
     // public static int isTriggered=0;
 
     void Update(){
-        if(VAim.isAttackButtionUp==1)
-        Debug.Log("ok");
-        if(VAim.isAttackButtionUp==1 && 
+        if(VAim.isChoosingButtonUp==1 && 
            Vector2.Distance(transform.position,playerTransform.position)<1.5f &&
            triggeredOnce==0){
             
