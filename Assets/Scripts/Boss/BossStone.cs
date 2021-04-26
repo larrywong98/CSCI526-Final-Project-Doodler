@@ -11,15 +11,16 @@ public class BossStone : MonoBehaviour
     
     private void Start() {
         player=GameObject.FindGameObjectWithTag("character").GetComponent<Player>();
-        StartCoroutine(explode());
+        
     }
     public IEnumerator explode(){
-        yield return new WaitForSeconds(10f);
+        yield return null;
         SoundManager.Instance.PlaySound(SoundManager.Instance.ExplodeClip, volume: FullControl.soundFx);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        StartCoroutine(explode());
         if(other.gameObject.tag == "character" && isfirstcollide==0)
         {
             player.TakeDamage(37f);

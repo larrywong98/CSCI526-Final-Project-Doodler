@@ -1250,7 +1250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87cd5c80b91de63469291a7069575dda, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 2000
+  maxHp: 2300
   rb: {fileID: 344498709}
   hp: 0
   fade: {fileID: 350742734}
