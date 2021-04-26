@@ -10,6 +10,7 @@ public class PlayVideo : MonoBehaviour {
     private VideoPlayer videoPlayer;
     public Animator fade;
     private RawImage rawImage;
+    // private MeshRenderer mesh;
 
     // Use this for initialization
 
@@ -20,7 +21,7 @@ public class PlayVideo : MonoBehaviour {
         videoPlayer = this.GetComponent <VideoPlayer> ();
 
         rawImage = this.GetComponent <RawImage> ();
-
+        // mesh = this.GetComponent <MeshRenderer> ();
     }
 
     
@@ -28,7 +29,7 @@ public class PlayVideo : MonoBehaviour {
     private IEnumerator wait(){
         yield return new WaitForSeconds(13f);
         fade.SetTrigger("out");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         Loader.Load(Loader.Scene.MainMenu);
     }
 
@@ -45,7 +46,7 @@ public class PlayVideo : MonoBehaviour {
         //把VideoPlayerd的视频渲染到UGUI的RawImage
 
         rawImage.texture = videoPlayer.texture;
-
+        // mesh.texture = videoPlayer.texture;
     }
 
 }

@@ -22,6 +22,8 @@ public class ToL1S1  : MonoBehaviour
         FullControl.deadboss=0;
         FullControl.glucose=0;
         FullControl.savedSpot=1;
+        FullControl.hp=100;
+        FullControl.sp=100;
         for( int i=0;i<100;i++){
             FullControl.canOpen[i]=0;
             FullControl.isOpen[i]=0;

@@ -18,7 +18,7 @@ public class BuyHealth : MonoBehaviour
         // hpBar.fillAmount=0.2f;
         // hpEffectBar.fillAmount=hpBar.fillAmount;
         // FullControl.hp=20;
-        // FullControl.glucose=10;
+        // FullControl.glucose=20;
         glucoseText=GameObject.FindGameObjectWithTag("showglucose").GetComponent<Text>();
         glucoseText.text="  "+FullControl.glucose;
     }
@@ -44,11 +44,12 @@ public class BuyHealth : MonoBehaviour
     }
     public void TakeGlucose(){
         
-    	int amount = int.Parse(glucoseAmount.text)*10;
-    	if(FullControl.glucose>=amount){
-    		FullControl.glucose=FullControl.glucose-amount;
+    	int amount = int.Parse(glucoseAmount.text);
+    	if(FullControl.glucose>=amount*10){
+    		FullControl.glucose=FullControl.glucose-amount*10;
             SoundManager.Instance.PlaySound(SoundManager.Instance.AddHealthClip, volume: FullControl.soundFx);
-    		AddHealth(amount*10);
+
+    		AddHealth(amount*50);
     		glucoseText.text="  "+FullControl.glucose;
             StartCoroutine(colortimer());
             if(amount!=0)

@@ -9,6 +9,9 @@ public class LoadSaved : MonoBehaviour
     private float transitionTime=1f;
     private Loader.Scene stage;
     public void LoadLastPosition(){
+        FullControl.hp=100;
+        FullControl.sp=100;
+
         if(FullControl.savedSpot==1){
             stage=Loader.Scene.Level1Scene1;
         }

@@ -85320,11 +85320,6 @@ PrefabInstance:
       propertyPath: canvasTransform
       value: 
       objectReference: {fileID: 1730954901}
-    - target: {fileID: 1806276250555458596, guid: 538f38d0909dd974eaa3319c77c42e38,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3096076163636318731, guid: 538f38d0909dd974eaa3319c77c42e38,
         type: 3}
       propertyPath: canvasTransform
