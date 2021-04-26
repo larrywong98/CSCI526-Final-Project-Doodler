@@ -69,21 +69,21 @@ public class RbcMovement : MonoBehaviour
         
         
         
-        if (VAim.isAttackButtionUp == 1){
-            if(VAim.attackDirection.x >= 0){
-                transform.eulerAngles = new Vector3(0, 180, 0);
-            }
-            if(VAim.attackDirection.x < 0){
-                transform.eulerAngles = new Vector3(0, 0, 0);
-            }
+        // if (VAim.isAttackButtionUp == 1){
+        //     if(VAim.attackDirection.x >= 0){
+        //         transform.eulerAngles = new Vector3(0, 180, 0);
+        //     }
+        //     if(VAim.attackDirection.x < 0){
+        //         transform.eulerAngles = new Vector3(0, 0, 0);
+        //     }
 
-        }else{
+        // }else{
 
-            if (moveH > 0)
-                transform.eulerAngles = new Vector3(0, 180, 0);
-            if (moveH < 0)
-                transform.eulerAngles = new Vector3(0, 0, 0);
-        }
+        //     if (moveH > 0)
+        //         transform.eulerAngles = new Vector3(0, 180, 0);
+        //     if (moveH < 0)
+        //         transform.eulerAngles = new Vector3(0, 0, 0);
+        // }
         
 
     }

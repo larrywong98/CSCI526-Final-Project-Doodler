@@ -34,6 +34,7 @@ public class DialogueManager : MonoBehaviour
     	foreach (string sentence in dialogue.sentences)
     	{
     		sentences.Enqueue(sentence);
+			// Debug.Log(sentence);
     	}
 
     	DisplayNextSentence();

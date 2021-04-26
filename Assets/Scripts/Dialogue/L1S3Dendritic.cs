@@ -21,6 +21,7 @@ public class L1S3Dendritic : MonoBehaviour
             transformCanvas.GetChild(1).gameObject.SetActive(false);
             // dialogueTransform.GetChild(1).gameObject.SetActive(true);
             TriggerDialogue();
+            VAim.isChoosingButtonUp=0;
         }
     }
    
