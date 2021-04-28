@@ -10,6 +10,7 @@ public class MainNav: MonoBehaviour
 
     public void page1()
     {
+        FullControl.panelid=1;
     	panel1.SetActive(true);
     	panel2.SetActive(false);
     	panel3.SetActive(false);
@@ -17,6 +18,7 @@ public class MainNav: MonoBehaviour
 
     public void page2()
     {
+        FullControl.panelid=2;
     	panel1.SetActive(false);
     	panel2.SetActive(true);
     	panel3.SetActive(false);
@@ -24,6 +26,7 @@ public class MainNav: MonoBehaviour
 
     public void page3()
     {
+        FullControl.panelid=3;
     	panel1.SetActive(false);
     	panel2.SetActive(false);
     	panel3.SetActive(true);

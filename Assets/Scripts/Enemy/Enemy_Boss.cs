@@ -84,10 +84,10 @@ public class Enemy_Boss : MonoBehaviour
     {
         localVelocity = target.position-transform.position;
         if(localVelocity.x > 0){
-            transform.eulerAngles = new Vector3(0, 180, 0);
+            transform.eulerAngles = new Vector3(0, 0, 0);
         }
         if(localVelocity.x < 0){
-            transform.eulerAngles = new Vector3(0, 0, 0);
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
 
     }

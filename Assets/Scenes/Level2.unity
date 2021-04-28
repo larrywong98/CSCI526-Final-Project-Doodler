@@ -747,6 +747,11 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 151156621}
+    - target: {fileID: 7034208574250205331, guid: 8dc3ec759e1219640b202f3467611339,
+        type: 3}
+      propertyPath: maxHp
+      value: 700
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6683331724611623286, guid: 8dc3ec759e1219640b202f3467611339, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8dc3ec759e1219640b202f3467611339, type: 3}
@@ -39401,6 +39406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spot: 4
+  request: {fileID: 0}
 --- !u!4 &773467549
 Transform:
   m_ObjectHideFlags: 0
@@ -39601,7 +39607,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -36.899902}
+  m_AnchoredPosition: {x: 0, y: -1.7186279}
   m_SizeDelta: {x: 0, y: 73.946396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &828188710
@@ -77502,6 +77508,11 @@ PrefabInstance:
       propertyPath: playerTransform
       value: 
       objectReference: {fileID: 151156621}
+    - target: {fileID: 7034208574250205331, guid: 8dc3ec759e1219640b202f3467611339,
+        type: 3}
+      propertyPath: maxHp
+      value: 700
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6683331724611623286, guid: 8dc3ec759e1219640b202f3467611339, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8dc3ec759e1219640b202f3467611339, type: 3}
@@ -80503,12 +80514,12 @@ PrefabInstance:
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.2
+      value: 12.7
       objectReference: {fileID: 0}
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.6
+      value: -14.6
       objectReference: {fileID: 0}
     - target: {fileID: 4456828522690191098, guid: e40f5289f5b4b71448cd49461daf034d,
         type: 3}

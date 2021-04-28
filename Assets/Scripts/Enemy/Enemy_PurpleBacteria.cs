@@ -75,6 +75,7 @@ public class Enemy_PurpleBacteria : MonoBehaviour
                 Instantiate(smallGreen, 2*transform.position-target.position+new Vector3(Random.Range(0f,1f),Random.Range(0f,1f),transform.position.z), Quaternion.identity);
                 Instantiate(smallGreen, 2*transform.position-target.position+new Vector3(Random.Range(-1f,0f),Random.Range(-1f,0f),transform.position.z), Quaternion.identity);
             }
+            if(FullControl.sp<100)
             FullControl.sp=FullControl.sp+10;
             spBar.SetSp(FullControl.sp);
             // Debug.Log(FullControl.deadGreenBacteria);

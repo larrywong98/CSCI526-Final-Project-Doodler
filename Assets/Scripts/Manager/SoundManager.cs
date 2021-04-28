@@ -64,7 +64,7 @@ public class SoundManager : Singleton<SoundManager>
         if(startScene.spot==5){
             musicClip=Resources.Load("Sound/bgm/l3",typeof(AudioClip)) as AudioClip;
         }
-        if(startScene.spot==6){
+        if(startScene.spot==10){
             musicClip=Resources.Load("Sound/bgm/finalboss",typeof(AudioClip)) as AudioClip;
         }
         musicAudioSource.clip = musicClip;

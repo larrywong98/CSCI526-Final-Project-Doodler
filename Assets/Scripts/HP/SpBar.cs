@@ -12,8 +12,8 @@ public class SpBar : MonoBehaviour
     // public Animator fade;
     // private float transitionTime=1f;
     private float maxSp=100f;
-    private float ultimateSpeed=0.07f;
-    private float ultimateResetSpeed=0.01f;
+    private float ultimateSpeed=0.15f;
+    private float ultimateResetSpeed=0.03f;
     public static int spupflag=0;
     // private void Start() {
     //     spapeffect.fillAmount=FullControl.sp/maxSp;
@@ -36,11 +36,13 @@ public class SpBar : MonoBehaviour
             speffect.fillAmount=spapeffect.fillAmount;
         }
         if(FullControl.normalorultimate==1){
-            SetSp(FullControl.sp-ultimateSpeed);
-            FullControl.sp=FullControl.sp-ultimateSpeed;
-            if(FullControl.sp<=0){
-                FullControl.normalorultimate=0;
-                spupflag=1;
+            if(spupflag==0){
+                SetSp(FullControl.sp-ultimateSpeed);
+                FullControl.sp=FullControl.sp-ultimateSpeed;
+                if(FullControl.sp<=0){
+                    FullControl.normalorultimate=0;
+                    spupflag=1;
+                }
             }
         }
         if(spupflag==1){

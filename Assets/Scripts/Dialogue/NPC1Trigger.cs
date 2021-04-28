@@ -16,7 +16,7 @@ public class NPC1Trigger : MonoBehaviour
 
 
     void Update(){
-        if(VAim.isAttackButtionUp==1 && 
+        if(VAim.isChoosingButtonUp==1 && 
            Vector2.Distance(transform.position,playerTransform.position)<1.5f && 
            triggeredOnce==0)
         {
@@ -25,13 +25,14 @@ public class NPC1Trigger : MonoBehaviour
             transformCanvas.GetChild(1).gameObject.SetActive(false);
             // dialogueTransform.GetChild(1).gameObject.SetActive(true);
             TriggerDialogue();
+            VAim.isChoosingButtonUp=0;
         }
-        if(VAim.isAttackButtionUp==1 && 
-           Vector2.Distance(transform.position,playerTransform.position)<1.5f && 
-           triggeredOnce!=0)
-        {
-            showDialogue.showD();
-        }
+        // if(VAim.isChoosingButtonUp==1 && 
+        //    Vector2.Distance(transform.position,playerTransform.position)<1.5f && 
+        //    triggeredOnce!=0)
+        // {
+        //     showDialogue.showD();
+        // }
     }
    
     public void TriggerDialogue ()
