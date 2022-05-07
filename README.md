@@ -1,6 +1,6 @@
 # CSCI526 Final project
 
-# Tools
+## Tools
 
 
 # What is the game about
