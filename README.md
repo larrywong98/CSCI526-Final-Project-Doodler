@@ -1,7 +1,9 @@
-# CSCI 526 Final project
+# CSCI526 Final project
+
+# Tools
 
 
+# What is the game about
 
-工作细胞
+# What we have achieved
 
-Unity 2019.4.18f1c1
