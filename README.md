@@ -5,46 +5,46 @@ In this game, we act as Red/White Blood Cell to fight against bacteria.
 Our demo video is here: https://www.youtube.com/watch?v=3BqcONV1I_E
 
 ## Tools
-Unity
-Git
-AE
-Photoshop
-iMovie
+Unity<br />
+Git<br />
+AE<br />
+Photoshop<br />
+iMovie<br />
 
 ## Game system control
-Request System
-Battle System
-Dialogue System
-Scene Control System
-Music System
+Request System<br />
+Battle System<br />
+Dialogue System<br />
+Scene Control System<br />
+Music System<br />
 Animation System
 
 ## Characters
-Enemy:
-green bacteria
-purple bacteria(stronger bacteria with powerful skills)
-split bacteria
-final boss
+Enemy:<br />
+green bacteria<br />
+purple bacteria(stronger bacteria with powerful skills)<br />
+split bacteria<br />
+final boss<br />
 
-Player:
-Red blood cell
-White blood cell
+Player:<br />
+Red blood cell<br />
+White blood cell<br />
 
-NPC:
-dendritic cell
-weapon test NPC
+NPC:<br />
+dendritic cell<br />
+weapon test NPC<br />
 
 ## Weapons
-White blood cell blade
-Hellish Slasher
+White blood cell blade<br />
+Hellish Slasher<br />
 
 ## Maps
-level1 Blood Vessel
-level2 Blood Vessel
-level3 Lymphatic tissue
-level4 Intestines
-level5 kidney
-level6 Stomach
+level1 Blood Vessel<br />
+level2 Blood Vessel<br />
+level3 Lymphatic tissue<br />
+level4 Intestines<br />
+level5 kidney<br />
+level6 Stomach<br />
 
 ## Storyline
 developing...
