@@ -47,7 +47,7 @@ level5 kidney<br />
 level6 Stomach<br />
 
 ## Storyline
-developing...
 
+Our design document: https://docs.google.com/document/d/127biS7GQ6CUa7HsD6-Txt2no9tvOyGcewFa_Gl8mSnQ/edit?usp=sharing
 
 
