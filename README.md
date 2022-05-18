@@ -5,11 +5,7 @@ In this game, we act as Red/White Blood Cell to fight against bacteria.
 Our demo video is here: https://www.youtube.com/watch?v=3BqcONV1I_E
 
 ## Tools
-Unity<br />
-Git<br />
-AE<br />
-Photoshop<br />
-iMovie<br />
+Unity, Git, AE, Photoshop, iMovie<br />
 
 ## Game system control
 Request System<br />
