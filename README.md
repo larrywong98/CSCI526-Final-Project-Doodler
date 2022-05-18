@@ -35,12 +35,12 @@ White blood cell blade<br />
 Hellish Slasher<br />
 
 ## Maps
-level1 Blood Vessel<br />
-level2 Blood Vessel<br />
-level3 Lymphatic tissue<br />
-level4 Intestines<br />
-level5 kidney<br />
-level6 Stomach<br />
+Level1 Blood Vessel<br />
+Level2 Blood Vessel<br />
+Level3 Lymphatic tissue<br />
+Level4 Intestines<br />
+Level5 kidney<br />
+Level6 Stomach<br />
 
 ## Storyline
 
